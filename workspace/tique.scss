@@ -1,0 +1,15 @@
+.accordion {
+      a {
+        &[aria-expanded="true"] {
+          color: theme-color(primary);
+          &:before {
+            content: "\f078";
+          }
+        }
+        &[aria-expanded="false"] {
+          &:before{
+            content: "\f077";
+          }
+        }
+      }
+    }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tiquei</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/iconfonts/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css">
+  <link rel="stylesheet" href="tiqueiCustomCss.css">
+
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/logo-mini.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+        <div class="row flex-grow">
+          <div class="col-lg-6 background-branco d-flex align-items-center justify-content-center">
+            <div class="auth-form-transparent text-left p-3">
+              <div class="brand-logo">
+                <img src="images/logo.png" style="width: 100px;" alt="logo">
+              </div>
+              <h4>Seja bem-vindo!</h4>
+              <form class="pt-3">
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                   <div class="input-group">
+                    <div class="input-group-prepend bg-transparent">
+                      <span class="input-group-text bg-transparent border-right-0">
+                        <i class="fa fa-user style-preto-38 "></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control form-control-lg border-left-0" id="exampleInputEmail" >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Senha</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend bg-transparent">
+                      <span class="input-group-text bg-transparent border-right-0">
+                        <i class="fa fa-lock style-preto-38 "></i>
+                      </span>
+                    </div>
+                    <input type="password" class="form-control form-control-lg border-right-0 border-left-0" id="senha" >
+                      <div>
+                        <img id="passImg" class="show-pass form-control form-control-lg border-left-0" onclick="showPass();" src="images/visualizacao.png">
+                      </div>
+                    </div>
+                </div>
+                <div class="my-2 d-flex justify-content-between align-items-center">
+                  <div class="form-check">
+                    <label class="form-check-label text-muted">
+                      <input type="checkbox" class="form-check-input">
+                      Permanecer logado
+                    </label>
+                  </div>
+                  <a href="pages/esqueciMinhaSenha.html" class="auth-link text-black">Esqueceu a senha?</a>
+                </div>
+                <div class="my-3">
+                  <a class="btn btn-rounded btn-laranja  btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="pages/dashboardBasico.html">Entrar</a>
+                </div>
+                <div class="text-center mt-4 font-weight-light">
+                  Não tem conta? <a href="pages/cadastro.html" class="text-primary">Cadastre-se !</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 background-img-login  d-flex flex-row padding-zero">
+               <p class="text-white font-weight-medium text-center flex-grow align-self-end">by Accesstage Tecnologia S.A. </p>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/misc.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+
+  <script type="text/javascript">
+    
+   function showPass() {
+     var img = document.getElementById("passImg");
+    var campo = document.getElementById("senha");
+    if (campo.type === "password") {
+        campo.type = "text";
+        img.src ="images/visualizacao-off.png" 
+    } else {
+      img.src ="images/visualizacao.png" 
+        campo.type = "password";
+    }
+}
+  </script>
+  <!-- endinject -->
+</body>
+
+</html>

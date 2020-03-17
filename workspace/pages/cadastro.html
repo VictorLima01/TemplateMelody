@@ -1,0 +1,398 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tiquei</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../vendors/iconfonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../vendors/css/vendor.bundle.addons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../tiqueiCustomCss.css">
+
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <link rel="shortcut icon" href="../images/logo-mini.png" />
+    <script src="../js/jquery-1.2.6.pack.js" type="text/javascript"></script>
+    <script src="../js/jquery.maskedinput-1.1.4.pack.js" type="text/javascript" ></script>
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+          <div class="row flex-grow">
+            <div class="col-lg-6 background-branco d-flex align-items-center justify-content-center">
+              <div class="auth-form-transparent form-cadastro text-left p-4">
+              <div class="row">
+              <div class="col-12 grid-margin">
+                <div class="card" style="border:none ; ">
+                  <div>
+                     <form id="example-wizard" action="#">
+                      <div>
+                        <h3>Usuário</h3>
+                        <section>
+                          <div class="p-3">
+                            
+                          <h4>Etapa 1: Cadastre seus dados</h4>
+                          </div>
+                           <div class="form-group margin-bottom-cadastro">
+                             <label>Nome</label>
+                            <div class="input-group">
+                             <input type="text" class="form-control    " id="exampleInputNome"  >
+                            </div>
+                          </div>
+                          <div class="form-group margin-bottom-cadastro">
+                            <label>E-mail</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" data-inputmask="'alias': 'email'"  id="exampleInputEmail">
+                            </div>
+                          </div>
+                           <div class="form-group margin-bottom-cadastro">
+                           <label>Telefone</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control " data-inputmask="'mask': '(99)9 9999-9999' " id="exampleInputTelefone" >
+                            </div>
+                          </div>
+                          <div  class="form-group margin-bottom-cadastro">
+                           <label>Senha</label>
+                            <div class="input-group">
+                              <input type="password" class="form-control form-control-lg border-right-0 " id="senha" >
+                                <div>
+                                  <img id="passImg" class="show-pass form-control form-control-lg border-left-0" onclick="showPass();" src="../images/visualizacao.png">
+                                </div>
+                            </div>
+                          </div>
+                          <div  class="form-group margin-bottom-cadastro">
+                           <label>Confirmar senha</label>
+                            <div class="input-group">
+                             <input id="senha-2" type="password" class="form-control   "  >
+                             
+                            </div>
+                          </div>
+                         </section>
+                        <h3>Empresa</h3>
+                        <section>
+                          <div class="pb-3">
+                          <h4>Etapa 2: Cadastre sua Empresa</h4>
+                        </div>
+                          <div class="form-group margin-bottom-cadastro">
+                            <label>CNPJ</label>
+                            <input name="cnpj" class="form-control form-padding-left" type="text" id="cnpj" data-inputmask="'mask': '99.999.999/9999-99' " >
+                          </div>
+                          <div class="form-group margin-bottom-cadastro">
+                            <label>Razão Social</label>
+                            <input type="text" class="form-control form-padding-left" >
+                          </div>
+                          <div class="form-group margin-bottom-cadastro">
+                             <label>Segmento </label>
+                            <select class="form-control  " id="exampleFormControlSelect2">
+                            <option selected disabled>Selecione        </option>
+                            <option>Salões de Beleza e Estética       </option>
+                            <option>Pizzarias                         </option>
+                            <option>Perfumarias                       </option>
+                            <option>Padarias                          </option>
+                            <option>Outros                            </option>
+                            <option>Minimercados                      </option>
+                            <option>Lojas de Vestuário                </option>
+                            <option>Loja de Material de Construção    </option>
+                            <option>Cosméticos                        </option>
+                            <option>Cafés e Casas de Chá              </option>
+                            <option>Bares, Restaurantes e Lanchonetes </option>
+                            <option>Auto-Peças e Veículos             </option>
+                            </select>
+                         </div>
+                          <div class="form-group margin-bottom-cadastro">
+                            <label>Onde nos encontrou?</label>
+                            <select class="form-control  " id="exampleFormControlSelect2">
+                            <option selected disabled>Selecione </option>
+                            <option>Base Antiga                           </option>     
+                            <option>Outros                                </option>
+                            <option>Facebook                              </option>
+                            <option>Google                                </option>
+                            <option>Gestão de Restaurantes                </option>
+                            <option>Indicação                             </option>
+                            <option>Ligação                               </option>
+                            <option>MarketUp                              </option>
+                            <option>Panfleto                              </option>
+                            <option>Site                                  </option>
+                            <option>Linkedin                              </option>
+                            <option>Twitter                               </option>
+                            <option>Fispal                                </option>
+                            <option>Youtube                               </option>
+                            <option>Instagram                             </option>
+                            <option>Accesstage                            </option>
+                            <option>Rede Globo                            </option>
+                            <option>VR Benefícios                         </option>
+                            <option>Sebrae - MPE Tech Day                 </option>
+                            <option>Vai de VISA                           </option>
+                            <option>Digi Office                           </option>
+                            <option>Ibevar                                </option>
+                            <option>Feira do Empreendedor                 </option>
+                            <option>4 keys                                </option>
+                            </select>
+                         </div>
+                        </section>
+                        <h3>Operadora</h3>
+                        <section>
+                          <div class="pb-3">
+                          <h4>Etapa 3: Cadastre sua Operadora</h4>
+                        </div>
+                          <div class="row">  
+                                            <div class="col-md-6">
+                      <div id="dragula-left" class="py-2">
+                        <div class="card rounded-border-SG border mb-2">
+                          <div class="card-body p-3 card-cad-oper ">
+                            
+                              <div class="media-body">
+                                <a href="#" type="link" data-toggle="modal" data-target="#operadoraModal">
+                                <img src="../images/operadoras/cielo.png"  class=" center-img-cad-operadoras" alt="image"/></a>
+                              </div>                              
+                            
+                          </div>
+                        </div>
+                        <div class="card rounded-border-SG border mb-2">
+                          <div class="card-body p-3 card-cad-oper">
+                               <div class="media-body" >
+                                <a disabled = "true" href="#"><img src="../images/operadoras/getnet.png"  class=" center-img-cad-operadoras" alt="image"/></a>
+                              </div>  
+                          </div>
+                        </div>
+                        <div class="card rounded-border-SG border mb-2">
+                          <div class="card-body p-3 card-cad-oper">
+                            <div class="media-body">
+                                <a href="#"><img src="../images/operadoras/rede.png"  class=" center-img-cad-operadoras" alt="image"/></a>
+                              </div>  
+                          </div>
+                        </div>
+                        <div class="card rounded-border-SG border mb-2">
+                          <div class="card-body p-3 card-cad-oper">
+                               <div class="media-body">
+                                <a href="#"><img src="../images/operadoras/sodexo.png"  class=" center-img-cad-operadoras" alt="image"/></a>
+                              </div>  
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div id="dragula-right" class="py-2">
+                        <div class="card rounded-border-SG border mb-2">
+                          <div class="card-body p-3 card-cad-oper " style="padding: 15px !important;">
+                               <div class="media-body">
+                                <a href="#"><img src="../images/operadoras/stone.png"  class=" center-img-cad-operadoras" alt="image"/></a>
+                              </div>  
+                          </div>
+                        </div>
+                       
+                        <div class="card rounded-border-SG border mb-2"> 
+                          <div class="card-body p-3 card-cad-oper" style="padding: 7px !important;">
+                               <div class="media-body">
+                                <a href="#"><img src="../images/operadoras/vr.png" style="    height: 40px;"  class=" center-img-cad-operadoras" alt="image"/></a>
+                              </div>  
+                          </div>
+                        </div>
+                        <div class="card rounded border mb-2">
+                          <div class="card-body p-3 card-cad-oper">
+                            <div class="media">
+                              <div class="media-body">
+                                <a href="#"><img src="../images/operadoras/bin.png"  class=" center-img-cad-operadoras" alt="image"/></a>
+                              </div>                             
+                            </div> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-center" style="width :100%;">
+                        <p class="style-preto-38" style="font-size: 0.9rem;"> Ao se cadastrar você concorda com o nosso <br>
+                        <a class="termos-texto" data-toggle="modal" data-target="#termosModal">termo de serviços e politica de privacidade</a></p>
+                    </div>
+                  </div>
+                        </section>
+                  
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+               <!-- MODAL -->
+    <div class="modal fade" id="operadoraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="    max-width: 28%;"  role="document">
+                <div class="modal-content">
+                <div class="container-scroller">
+
+                <div class="container-fluid ">
+                  <div class="close-dialog-button">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                      <div class=" mx-auto">
+                        <div class=" text-center auth-form-light text-left p-5">
+
+                         <div class="brand-logo ">
+                            <img src="../images/operadoras/cielo.png"  style="width: 100px;" alt="logo">
+                          </div>
+                          <h4>Cadastrar Operadora</h4>
+                          <h6 class="font-weight-light font-subtitulo-dialog">Insira os dados da operadora para continuar</h6>
+                          <form class="pt-3">
+                            <div class="form-group text-left">
+                              <label>Número de Estabelecimento</label>
+                              <input type="email" class="form-control  " id="exampleInputEmail1" >
+                            </div>
+                            <div class="form-group text-left">
+                              <label>E-mail</label>
+                              <input type="email" class="form-control  " id="exampleInputEmail1" >
+                            </div>
+                               <div class="form-group text-left">
+                              <label>Senha</label>
+                              <input type="password" class="form-control  " id="exampleInputPassword1" >
+                            </div>
+                            <div class="mt-3">
+                              <a class="btn btn-block btn-rounded btn-laranja btn-primary btn-lg font-weight-medium auth-form-btn .btn-laranja " data-dismiss="modal">Conectar</a>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    
+                  
+                  <!-- content-wrapper ends -->
+                </div>
+                <!-- page-body-wrapper ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- FIM MODAL-->
+   <div class="modal fade" id="termosModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="    max-width: 50%;"  role="document">
+                <div class="modal-content" style="    height: 
+                ;">
+                <div class="container-scroller">
+
+                <div class="container-fluid ">
+                  <div class="close-dialog-button">
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                      <div class=" mx-auto">
+                        <div class="text-center auth-form-light text-left p-5">
+
+                        <h4>Termo</h4>
+                          
+                          <form class="pt-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </p>
+                          </form>
+                        </div>
+                      </div>
+                    
+                  
+                  <!-- content-wrapper ends -->
+                </div>
+                <!-- page-body-wrapper ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+              </div>
+            </div>
+            <div class="col-lg-6 background-img-login  d-flex flex-row padding-zero">
+               <p class="text-white font-weight-medium text-center flex-grow align-self-end">by Accesstage Tecnologia S.A. </p>
+          </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../vendors/js/vendor.bundle.base.js"></script>
+    <script src="../vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="../js/off-canvas.js"></script>
+    <script src="../js/hoverable-collapse.js"></script>
+    <script src="../js/misc.js"></script>
+    <script src="../js/settings.js"></script>
+  <script src="../js/todolist.js"></script>
+  <script src="../tiqueiCustomJs.js"></script>
+
+    <script src="../js/wizard.js"></script>
+    <script type="text/javascript">
+
+      var form = $("#example-wizard");
+      form.children("div").steps({
+        headerTag: "h3",
+        bodyTag: "section",
+        transitionEffect: "slideLeft",
+  
+        onFinished: function(event, currentIndex) {
+          window.location.replace("../index.html");
+
+        }
+      });
+    
+       $('a[href$="next"]').text('Próximo');
+       $('a[href$="previous"]').text('Anterior');
+      $('a[href$="previous"]').class=('btn-outline-primary');
+       $('a[href$="finish"]').text('Finalizar');
+       
+
+          function showPass() {
+           var img = document.getElementById("passImg");
+          var campo = document.getElementById("senha");
+          var campo2 = document.getElementById("senha-2");
+          if (campo.type === "password") {
+              campo.type = "text";
+              campo2.type = "text";
+              img.src ="../images/visualizacao-off.png" 
+          } else {
+            img.src ="../images/visualizacao.png" 
+              campo.type = "password";
+              campo2.type = "password";
+          }
+}
+      
+    </script>
+    <!-- endinject -->
+  </body>
+
+  </html>
+    
