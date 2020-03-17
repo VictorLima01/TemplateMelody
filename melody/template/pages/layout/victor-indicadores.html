@@ -108,11 +108,18 @@
               <span class="menu-title">Indicadores</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="posclientes-victor.html">
-              <i class="fa fa-puzzle-piece menu-icon"></i>
-              <span class="menu-title">Possiveís clientes</span>
+           <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
+              <i class="fab fa-trello menu-icon"></i>
+              <span class="menu-title">Rede de Observação</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="page-layouts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="posclientes-victor.html">Possíveis clientes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/layout/rtl-layout.html">Adicionar nova franquia</a></li>
+              </ul>
+            </div>
           </li>
          </ul>
       </nav>
@@ -122,7 +129,7 @@
 		<div class="right_col" role="main">
 		  <div class="page-header">
             <h3 class="page-title">
-              Basic Tables
+              Indicadores de Clientes
             </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -135,50 +142,48 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Basic Table</h4>
-                  <p class="card-description">
-                    Add class <code>.table</code>
-                  </p>
+                  <h4 class="card-title">CNPJs Cadastrados</h4>
+                  
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Profile</th>
-                          <th>VatNo.</th>
-                          <th>Created</th>
+                          <th>Nome</th>
+                          <th>CNPJ</th>
+                          <th>Data</th>
                           <th>Status</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Jacob</td>
+                          <td>Produtos e Comercios Ltda.</td>
                           <td>53275531</td>
-                          <td>12 May 2017</td>
-                          <td><label class="badge badge-danger badge-pill">Pending</label></td>
+                          <td>12 Maio 2017</td>
+                          <td><label class="badge badge-success badge-pill">Completo</label></td>
                         </tr>
                         <tr>
-                          <td>Messsy</td>
+                          <td>Quitanda Veloso</td>
                           <td>53275532</td>
-                          <td>15 May 2017</td>
-                          <td><label class="badge badge-warning badge-pill">In progress</label></td>
+                          <td>15 Maio 2017</td>
+                          <td><label class="badge badge-success badge-pill">Completo</label></td>
                         </tr>
                         <tr>
-                          <td>John</td>
+                          <td>Mercado da Luz</td>
                           <td>53275533</td>
-                          <td>14 May 2017</td>
-                          <td><label class="badge badge-info badge-pill">Fixed</label></td>
+                          <td>14 Maio 2017</td>
+                          <td><label class="badge badge-warning badge-pill">Falta de dados</label></td>
                         </tr>
                         <tr>
-                          <td>Peter</td>
+                          <td>Tudo por 1 real</td>
                           <td>53275534</td>
-                          <td>16 May 2017</td>
-                          <td><label class="badge badge-success badge-pill">Completed</label></td>
+                          <td>16 Maio 2017</td>
+                          <td><label class="badge badge-success badge-pill">Completo</label></td>
                         </tr>
                         <tr>
-                          <td>Dave</td>
+                          <td>Locadora de Carros(Moovida)</td>
                           <td>53275535</td>
-                          <td>20 May 2017</td>
-                          <td><label class="badge badge-warning badge-pill">In progress</label></td>
+                          <td>20 Maio 2017</td>
+                          <td><label class="badge badge-warning badge-pill">Falta de dados</label></td>
                         </tr>
                       </tbody>
                     </table>
@@ -189,50 +194,50 @@
             <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Hoverable Table</h4>
-                  <p class="card-description">
-                    Add class <code>.table-hover</code>
-                  </p>
+				
+				 <div id="datepicker-popup" class="input-group date datepicker">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon input-group-append border-left">
+                          <span class="far fa-calendar input-group-text"></span>
+                        </span>
+                      </div>
+					  <br>
+                  <h4 class="card-title">Taxa de venda do clientes - Fev. 2019</h4>
+                  
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <thead>
                         <tr>
-                          <th>User</th>
-                          <th>Product</th>
-                          <th>Sale</th>
-                          <th>Status</th>
+                          <th>Clientes</th>
+                          <th>Serviço de transação</th>
+                          <th>Vendas</th>
+                          <th>Faturamento</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Jacob</td>
-                          <td>Photoshop</td>
+                          <td>Produtos e Comercios Ltda.</td>
+                          <td>Cielo</td>
                           <td class="text-danger"> 28.76% <i class="fa fa-arrow-down"></i></td>
-                          <td><label class="badge badge-danger badge-pill">Pending</label></td>
+                          <td><label>R$ 25.568,97</label></td>
                         </tr>
                         <tr>
-                          <td>Messsy</td>
-                          <td>Flash</td>
+                          <td>Quitanda Veloso</td>
+                          <td>Safra</td>
                           <td class="text-danger"> 21.06% <i class="fa fa-arrow-down"></i></td>
-                          <td><label class="badge badge-warning badge-pill">In progress</label></td>
+                          <td><label>R$ 8.213,65</label></td>
                         </tr>
                         <tr>
-                          <td>John</td>
-                          <td>Premier</td>
+                          <td>Mercado da Luz</td>
+                          <td>Cielo</td>
                           <td class="text-danger"> 35.00% <i class="fa fa-arrow-down"></i></td>
-                          <td><label class="badge badge-info badge-pill">Fixed</label></td>
+                          <td><label>R$ 5.562,30</label></td>
                         </tr>
                         <tr>
-                          <td>Peter</td>
-                          <td>After effects</td>
+                          <td>Locadora de Carros(Moovida)</td>
+                          <td>Pay4</td>
                           <td class="text-success"> 82.00% <i class="fa fa-arrow-up"></i></td>
-                          <td><label class="badge badge-success badge-pill">Completed</label></td>
-                        </tr>
-                        <tr>
-                          <td>Dave</td>
-                          <td>53275535</td>
-                          <td class="text-success"> 98.05% <i class="fa fa-arrow-up"></i></td>
-                          <td><label class="badge badge-warning badge-pill">In progress</label></td>
+                          <td><label>R$ 50.653,61</label></td>
                         </tr>
                       </tbody>
                     </table>
@@ -240,7 +245,27 @@
                 </div>
               </div>
             </div>
-		
+			
+          <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Números de clientes adquiridos</h4>
+                  <canvas id="lineChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Número de vendas - Cartão (Todas as maquinas)</h4>
+                  <canvas id="barChart"></canvas>
+                </div>
+              </div>
+            </div>
+
+          </div>
+		  </div>
+		</div>
 			
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
@@ -253,7 +278,7 @@
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
-    </div>
+    
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
@@ -271,6 +296,7 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+   <script src="../../js/chart.js"></script>
   <!-- End custom js for this page-->
 </body>
 

@@ -108,11 +108,18 @@
               <span class="menu-title">Indicadores</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="posclientes-victor.html">
-              <i class="fa fa-puzzle-piece menu-icon"></i>
-              <span class="menu-title">Possiveís clientes</span>
+         <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
+              <i class="fab fa-trello menu-icon"></i>
+              <span class="menu-title">Rede de Observação</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="page-layouts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="posclientes-victor.html">Possíveis clientes</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/layout/rtl-layout.html">Adicionar nova franquia</a></li>
+              </ul>
+            </div>
           </li>
          </ul>
       </nav>
@@ -120,6 +127,185 @@
       <div class="main-panel">
         <div class="content-wrapper">
 		<div class="right_col" role="main">
+		<div class="page-header">
+            <h3 class="page-title">
+              Rede de Observação
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data table</li>
+              </ol>
+            </nav>
+          </div>
+		  <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Rede de Observação</h4>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <table id="order-listing" class="table">
+                      <thead>
+                        <tr>
+                            <th>Ordem #</th>
+                            <th>Analisado em:</th>
+                            <th>Nome</th>
+                            <th>Local</th>
+                            <th>Rendimento semanal</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>21/08/2013</td>
+                            <td>Nova vida consultoria</td>
+                            <td>Belo Horizonte/MG - Brasil</td>
+                            <td>R$ 5.750,00</td>
+                            
+                            <td>
+                              <label class="badge badge-danger">Baixo rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>20/04/2016</td>
+                            <td>DOT - Estampa de roupas</td>
+                            <td>São Paulo/SP  - Brasil</td>
+                            <td>$4.500,32</td>
+                            
+                            <td>
+                              <label class="badge badge-danger">Baixo rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>21/06/2013</td>
+                            <td>Cout modas</td>
+                            <td>Osasco/SP - Brasil</td>
+                            <td>R$ 10.653,65</td>
+                            
+                            <td>
+                              <label class="badge badge-success">Bom rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>28/05/2019</td>
+                            <td>Adega João</td>
+                            <td>Rio de Janeiro/RJ - Brasil</td>
+                            <td>R$11.505,32</td>
+                            
+                            <td>
+                              <label class="badge badge-success">Bom rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>08/08/2018</td>
+                            <td>Consecionária de veículos CAR</td>
+                            <td>São Bernardo do Campo/SP - Brasil</td>
+                            <td>R$25.865,95</td>
+                           
+                            <td>
+                              <label class="badge badge-success">Bom rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>30/10/2020</td>
+                            <td>Mercadinho José</td>
+                            <td>São Paulo/SP - Brasil</td>
+                            <td>$2.865,00</td>
+                            
+                            <td>
+                              <label class="badge badge-danger">Baixo rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>11/03/2019</td>
+                            <td>Açogue Família</td>
+                            <td>São Paulo/SP - Brasil</td>
+                            <td>$2.100,00</td>
+                            
+                            <td>
+                              <label class="badge badge-danger">Baixo rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>15/06/2018</td>
+                            <td>Conserta Máquinas</td>
+                            <td></td>
+                            <td>$1.620,00</td>
+                            
+                            <td>
+                              <label class="badge badge-info">Falta de informação</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>16/11/2017</td>
+                            <td>Assitencia técnica</td>
+                            <td>São Paulo/SP - Brasil</td>
+                            <td>$9.365,00</td>
+                            
+                            <td>
+                              <label class="badge badge-success">Bom rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>03/12/2020</td>
+                            <td>Produtora de fotos</td>
+                            <td>Osasco/SP - Brasil</td>
+                            <td>$1.350,00</td>
+                            
+                            <td>
+                              <label class="badge badge-danger">Baixo rendimento</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+				  <br>
+				  <button  href="victor-indicadores.html" url="victor-indicadores.html" type="submit" class="btn btn-primary mr-2">Adicionar +</button>
+                </div>
+              </div>
+            </div>
+          </div>
 		
 			
         <!-- content-wrapper ends -->
