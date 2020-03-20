@@ -150,9 +150,13 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
-                <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
-				<li class="nav-item"> <a class="nav-link" href="form-planilha-victor.html">Add Tarefas</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="perfil-cliente-victor.html">Perfil Cliente</a></li>
+			   <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
+			    <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
+			   <b><label>Domínio do Adm</label></b>
+				<li class="nav-item"> <a class="nav-link" href="controle-responsaveis-planilha-victor.html">Responsáveis das tarefas</a></li>
+               <li class="nav-item"> <a class="nav-link" href="form-planilha-victor.html">Add Tarefas Splitter</a></li>
+				<li class="nav-item"> <a class="nav-link" href="form-planilha-collect-victor.html">Add Tarefas Collect</a></li>
                
               </ul>
             </div>
@@ -162,84 +166,102 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+			<div class="right_col" role="main">
+          
+			
 			
 			<div class="row">
-			 <div class="col-lg-6 grid-margin stretch-card">
+			 <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Usuários por operadora</h4>
-                  <div class="table-responsive">
+                  <h4 class="card-title">Responsávéis pelas tarefas</h4>
+                  <label class="col-sm-3 col-form-label">Tipo de responsável</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+                              
+                              </select>
+                          </div>
+						  <br>
+						  
+				  <div class="table-responsive">
+				  
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Operadora</th>
-                          <th>Nº Cadastro</th>
-                          <th>Nº de usuários</th>
+                          <th>Nome</th>
+                          <th>Tipo</th>
+						  <th>Produto</th>
+						  
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Cielo</td>
-                          <td>53275531</td>
-                          <td>50</td>
-                          <td> <button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
+                          <td>João</td>
+                          <td>Cliente</td>
+                          <td><select class="form-control">
+                              <option>Splitter</option>
+                              <option>Collect</option>
+                              
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>										  
+                        </tr>
+                         <tr>
+                          <td>João</td>
+                          <td>Cliente</td>
+                          <td><select class="form-control">
+                              <option>Splitter</option>
+                              <option>Collect</option>
+                              
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>										  
                         </tr>
                         <tr>
-                          <td>Getnet</td>
-                          <td>53275532</td>
-                          <td>8</td>
-                          <td> <button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
+                          <td>João</td>
+                          <td>Cliente</td>
+                          <td><select class="form-control">
+                              <option>Splitter</option>
+                              <option>Collect</option>
+                              
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>										  
                         </tr>
                         <tr>
-                          <td>Sodexo</td>
-                          <td>53275533</td>
-                          <td>10</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
+                          <td>João</td>
+                          <td>Cliente</td>
+                          <td><select class="form-control">
+                              <option>Splitter</option>
+                              <option>Collect</option>
+                              
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>										  
                         </tr>
-                        <tr>
-                          <td>VR</td>
-                          <td>53275534</td>
-                          <td>3</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button><td>
+                         <tr>
+                          <td>João</td>
+                          <td>Accesstage</td>
+                          <td><select class="form-control">
+                              <option>Splitter</option>
+                              <option>Collect</option>
+                              
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>										  
                         </tr>
-                        <tr>
-                          <td>Ticket</td>
-                          <td>53275535</td>
-                          <td>87</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Bin</td>
-                          <td>53275535</td>
-                          <td>11</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Stone</td>
-                          <td>53275535</td>
-                          <td>2</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Rede</td>
-                          <td>53275535</td>
-                          <td>27</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Vero</td>
-                          <td>53275535</td>
-                          <td>17</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
+						
                       </tbody>
+					  
                     </table>
                   </div>
-                </div>
-              </div>
+				  
+				  
+				</div>
+			 </div>
             </div>
-
+			 
+			
+			
 			</div>
+
 			</div>
 		</div>
 			

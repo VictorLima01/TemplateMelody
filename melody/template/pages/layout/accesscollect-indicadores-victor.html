@@ -142,8 +142,7 @@
                 <li class="nav-item"> <a class="nav-link" href="#">Vero</a></li>
               </ul>
               </div>
-          </li>
-		  <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="fas fa-table menu-icon"></i>
               <span class="menu-title">Organizador de Tarefas</span>
@@ -151,10 +150,12 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-			   <li class="nav-item"> <a class="nav-link" href="controle-responsaveis-planiha-victor.html">Responsáveis das tarefas</a></li>
-                <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
-                <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
-				<li class="nav-item"> <a class="nav-link" href="form-planilha-victor.html">Add Tarefas Splitter</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="perfil-cliente-victor.html">Perfil Cliente</a></li>
+			   <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
+			    <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
+			   <b><label>Domínio do Adm</label></b>
+				<li class="nav-item"> <a class="nav-link" href="controle-responsaveis-planilha-victor.html">Responsáveis das tarefas</a></li>
+               <li class="nav-item"> <a class="nav-link" href="form-planilha-victor.html">Add Tarefas Splitter</a></li>
 				<li class="nav-item"> <a class="nav-link" href="form-planilha-collect-victor.html">Add Tarefas Collect</a></li>
                
               </ul>
@@ -168,7 +169,7 @@
 		<div class="right_col" role="main">
 		  <div class="page-header">
             <h3 class="page-title">
-              Controle Atividades Access Collect
+              Controle Atividades Access Collect 
             </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -182,24 +183,19 @@
               <div class="card">
                 <div class="card-body">
 				 <div class="card-body">
-				 <div class="row">
-				 <div class="col-lg-6 grid-margin">
-                      <h4 class="card-title">Selecione um mês e um dois dias da semana</h4>
-                      <p class="card-description">Clique no icone de calendário</p>
-                      <div id="datepicker-popup" class="input-group date datepicker">
-                        <input type="text" class="form-control">
-                        <span class="input-group-addon input-group-append border-left">
-                          <span class="far fa-calendar input-group-text"></span>
-                        </span>
-						</div>
-                      </div>
-					 
-                    </div>
-					 <button  type="submit" class="btn btn-primary mr-2">Adicionar +</button>
-					<br>
-					<br>
-					<br>
-                  <h4 class="card-title">Tabela Access Collect</h4>
+					
+				
+                  <h3 class="card-title">Atvidade Access Collect</h3>
+				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Todos</option>
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+							   <option>Banco</option>
+                              </select>
+                          </div>
+						  <br>
                 
                   <div class="table-responsive">
                     <table class="table">
@@ -215,10 +211,14 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Entendimento do processo</td>
-                          <td>Accesstage/ Cliente</td>
-                          <td>01/05/2020</td>
-						  <td>05/05/2020</td>
+                          <td>Primeiro Contato(Checklist)</td>
+                          <td>Accesstage</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
                           <td><label class="badge badge-success badge-pill">Realizado</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
@@ -226,23 +226,16 @@
                               </select></td>
 						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
                         </tr>
+                       
                         <tr>
-                          <td>Gerar arquivo de exemplo</td>
-                          <td>Cliente</td>
-                          <td>02/05/2020</td>
-						  <td>08/06/2020</td>
-                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
-						  <td> <select class="form-control">
-                              <option>Realizado</option>
-                              <option>Em processo</option>
-                              </select></td>
-							<td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
-                        </tr>
-                        <tr>
-                          <td>Testar processo em homologação</td>
+                          <td>Envio de cronograma</td>
                           <td>Accesstage</td>
-                          <td>03/05/2020</td>
-						  <td>09/05/2020</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
                           <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
@@ -251,23 +244,16 @@
                               </select></td>
 						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
                         </tr>
+                       
                         <tr>
-                          <td>Validação do processo (homologação)</td>
+                          <td>Retorno documentação preenchida</td>
                           <td>Cliente</td>
-                          <td>04/05/2020</td>
-						  <td>10/07/2020</td>
-                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
-						  <td> <select class="form-control">
-                              <option>Realizado</option>
-                              <option>Em processo</option>
-                              </select></td>
-						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
-                        </tr>
-                        <tr>
-                          <td>Go Live</td>
-                          <td>Accesstage</td>
-                          <td>05/05/2020</td>
-						  <td>08/08/2020</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
                           <td><label class="badge badge-info badge-pill">Em processo</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
@@ -277,10 +263,653 @@
 						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
                         </tr>
 						<tr>
-                          <td>Produção Assistida</td>
+                          <td>Envio arquivo de teste</td>
+                          <td>Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+				  
+                </div>
+              </div>
+            </div>
+			
+			</div>
+		  </div>
+		  
+		  <div class="row">
+		  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				 <div class="card-body">
+					
+				
+                  <h3 class="card-title">Desenvolvimento Mapa Simples</h3>
+				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Todos</option>
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+							  <option>Banco</option>
+                              </select>
+                          </div>
+						  <br>
+                
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Atividades</th>
+                          <th>Responsável</th>
+						  <th>Data do começo da atividade</th>
+						  <th>Data estimada de entrega</th>
+						  <th>Status</th>
+						  
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Criação DE/PARA</td>
                           <td>Accesstage</td>
-                          <td>06/05/2020</td>
-						  <td>06/08/2020</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-success badge-pill">Realizado</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Desenvolvimento de Mapa</td>
+                          <td>Accesstage</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Homologação Mapa</td>
+                          <td>Accesstage</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                             
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Mapa em produção</td>
+                          <td>Accesstage</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Processamento do arquivo bancário</td>
+                          <td>Banco</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Banco enviar o arquivo de retorno</td>
+                          <td>Banco</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Validação do arquivo de retorno pelo cliente</td>
+                          <td>Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+				  
+                </div>
+              </div>
+            </div>
+			
+			</div>
+		  </div>
+		   <div class="row">
+		  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				 <div class="card-body">
+					
+				
+                  <h3 class="card-title">Abertura de Relacionamento Bradesco</h3>
+				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Todos</option>
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+							  <option>Banco</option>
+                              </select>
+                          </div>
+						  <br>
+                
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Atividades</th>
+                          <th>Responsável</th>
+						  <th>Data do começo da atividade</th>
+						  <th>Data estimada de entrega</th>
+						  <th>Status</th>
+						  
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Enviar formulário preenchido aos bancos</td>
+                          <td>Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-success badge-pill">Realizado</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Abertura de Solicitação</td>
+                          <td>Bradesco(Banco)</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       </tbody>
+                    </table>
+                  </div>
+				  
+                </div>
+              </div>
+            </div>
+			
+			</div>
+		  </div>
+		   <div class="row">
+		  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				 <div class="card-body">
+					
+				
+                  <h3 class="card-title">Abertura de Relacionamento Santander</h3>
+				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Todos</option>
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+							  <option>Banco</option>
+                              </select>
+                          </div>
+						  <br>
+                
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Atividades</th>
+                          <th>Responsável</th>
+						  <th>Data do começo da atividade</th>
+						  <th>Data estimada de entrega</th>
+						  <th>Status</th>
+						  
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Enviar formulário preenchido aos bancos</td>
+                          <td>Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-success badge-pill">Realizado</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Abertura de Solicitação</td>
+                          <td>Santander(Banco)</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+				  
+                </div>
+              </div>
+            </div>
+			
+			</div>
+		  </div>
+		  <div class="row">
+		  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				 <div class="card-body">
+					
+				
+                  <h3 class="card-title">Abertura de Relacionamento Banco do Brasil</h3>
+				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Todos</option>
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+							  <option>Banco</option>
+                              </select>
+                          </div>
+						  <br>
+                
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Atividades</th>
+                          <th>Responsável</th>
+						  <th>Data do começo da atividade</th>
+						  <th>Data estimada de entrega</th>
+						  <th>Status</th>
+						  
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Enviar formulário preenchido aos bancos</td>
+                          <td>Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-success badge-pill">Realizado</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Abertura de Solicitação</td>
+                          <td>Banco do Brasil(Banco)</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+				  
+                </div>
+              </div>
+            </div>
+			
+			</div>
+		  </div>
+		  <div class="row">
+		  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				 <div class="card-body">
+					
+				
+                  <h3 class="card-title">Conectividade</h3>
+				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Todos</option>
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+							  <option>Banco</option>
+                              </select>
+                          </div>
+						  <br>
+                
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Atividades</th>
+                          <th>Responsável</th>
+						  <th>Data do começo da atividade</th>
+						  <th>Data estimada de entrega</th>
+						  <th>Status</th>
+						  
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Instalação Apus Client</td>
+                          <td>Accesstage</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-success badge-pill">Realizado</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Configuração de diretórios e nomenclaturas</td>
+                          <td>Accesstage/Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Teste de Conectividade</td>
+                          <td>Accesstage/Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+				  
+                </div>
+              </div>
+            </div>
+			
+			</div>
+		  </div>
+		  
+		  	  <div class="row">
+		  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				 <div class="card-body">
+					
+				
+                  <h3 class="card-title">Configuração do Access Collect</h3>
+				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Todos</option>
+                              <option>Accesstage</option>
+                              <option>Cliente</option>
+							  <option>Banco</option>
+                              </select>
+                          </div>
+						  <br>
+                
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Atividades</th>
+                          <th>Responsável</th>
+						  <th>Data do começo da atividade</th>
+						  <th>Data estimada de entrega</th>
+						  <th>Status</th>
+						  
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Envio dos dados de acesso ao usuário Master</td>
+                          <td>Accesstage/Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-success badge-pill">Realizado</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Configuração empresa no produto</td>
+                          <td>Accesstage</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              
+                              </select></td>
+						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+                       
+                        <tr>
+                          <td>Treinamento</td>
+                          <td>Accesstage/Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                             
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Envio do primeiro arquivo</td>
+                          <td>Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Go Live (Produção)</td>
+                          <td>Accesstage/Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Inicio do faturamento</td>
+                          <td>Accesstage</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+						  <td> <select class="form-control">
+                              <option>Realizado</option>
+                              <option>Em processo</option>
+                              </select></td>
+						  <td><button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+                        </tr>
+						<tr>
+                          <td>Produção Assistida</td>
+                          <td>Accesstage/Cliente</td>
+                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
+						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
+                        </div></td>
                           <td><label class="badge badge-info badge-pill">Em processo</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
