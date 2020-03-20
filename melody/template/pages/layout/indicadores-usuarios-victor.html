@@ -102,12 +102,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="victor-indicadores.html">
-              <i class="fa fa-home menu-icon"></i>
-              <span class="menu-title">Indicadores</span>
-            </a>
-          </li>
+         
            <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
               <i class="fab fa-trello menu-icon"></i>
@@ -172,7 +167,7 @@
 		   <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Logins (Usuários inativos depois de 30 dias)</h4>
+                  <h4 class="card-title">Controle de usuários (Usuários inativos depois de 30 dias)</h4>
                   <canvas id="doughnutChart"></canvas>
                 </div>
               </div>
@@ -195,6 +190,19 @@
                 </div>
               </div>
             </div>
+			 <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Logins</h4>
+                  <canvas id="linechart-multi2"></canvas>
+                </div>
+              </div>
+            </div>
+			
+            </div>
+			
+			
+			<div class="row">
 			 <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -269,6 +277,15 @@
                 </div>
               </div>
             </div>
+			 <div class="col-lg-6 grid-margin ">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">logins nos períodos (Nov/19): </h4>
+                  <canvas id="areaChart"></canvas>
+                </div>
+              </div>
+            </div>
+			
 			
 			</div>
 			</div>
@@ -303,6 +320,8 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="../../js/chart5.js"></script>
+  <script src="../../js/chart6.js"></script>
   <script src="../../js/js-grid.js"></script>
   <script src="../../js/db.js"></script>
    <script src="../../js/chart2.js"></script>
