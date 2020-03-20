@@ -102,12 +102,7 @@
               </div>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="victor-indicadores.html">
-              <i class="fa fa-home menu-icon"></i>
-              <span class="menu-title">Indicadores</span>
-            </a>
-          </li>
+         
            <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
               <i class="fab fa-trello menu-icon"></i>
@@ -118,7 +113,7 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="posclientes-victor.html">Possíveis clientes</a></li>
                 <li class="nav-item"> <a class="nav-link" href="form-victor.html">Adicionar nova franquia</a></li>
-			
+				
               </ul>
             </div>
           </li>
@@ -128,7 +123,7 @@
               <span class="menu-title">Indicadores Tiquei</span>
             </a>
           </li>
-		  <li class="nav-item">
+		   <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="fas fa-chart-pie menu-icon"></i>
               <span class="menu-title">Usuários por operadora</span>
@@ -158,6 +153,8 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
                 <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
+				<li class="nav-item"> <a class="nav-link" href="form-planilha-victor.html">Add Tarefas Splitter</a></li>
+				<li class="nav-item"> <a class="nav-link" href="form-planilha-collect-victor.html">Add Tarefas Collect</a></li>
                
               </ul>
             </div>
@@ -168,141 +165,143 @@
       <div class="main-panel">
         <div class="content-wrapper">
 		<div class="right_col" role="main">
-		  <div class="page-header">
-            <h3 class="page-title">
-              Indicadores de Clientes
-            </h3>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Tables</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Basic tables</li>
-              </ol>
-            </nav>
-          </div>
           <div class="row">
-            <div class="col-lg-6 grid-margin stretch-card">
+             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">CNPJs Cadastrados</h4>
-                  
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Nome</th>
-                          <th>CNPJ</th>
-                          <th>Data</th>
-                          <th>Status</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Produtos e Comercios Ltda.</td>
-                          <td>53275531</td>
-                          <td>12 Maio 2017</td>
-                          <td><label class="badge badge-success badge-pill">Completo</label></td>
-                        </tr>
-                        <tr>
-                          <td>Quitanda Veloso</td>
-                          <td>53275532</td>
-                          <td>15 Maio 2017</td>
-                          <td><label class="badge badge-success badge-pill">Completo</label></td>
-                        </tr>
-                        <tr>
-                          <td>Mercado da Luz</td>
-                          <td>53275533</td>
-                          <td>14 Maio 2017</td>
-                          <td><label class="badge badge-warning badge-pill">Falta de dados</label></td>
-                        </tr>
-                        <tr>
-                          <td>Tudo por 1 real</td>
-                          <td>53275534</td>
-                          <td>16 Maio 2017</td>
-                          <td><label class="badge badge-success badge-pill">Completo</label></td>
-                        </tr>
-                        <tr>
-                          <td>Locadora de Carros(Moovida)</td>
-                          <td>53275535</td>
-                          <td>20 Maio 2017</td>
-                          <td><label class="badge badge-warning badge-pill">Falta de dados</label></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-				
-				 <div id="datepicker-popup" class="input-group date datepicker">
-                        <input type="text" class="form-control">
-                        <span class="input-group-addon input-group-append border-left">
-                          <span class="far fa-calendar input-group-text"></span>
-                        </span>
+                  <h4 class="card-title">Formulário adicional de rede de observação</h4>
+                  <form class="form-sample">
+                    <p class="card-description">
+                      Informações da empresa
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Nome completo</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
                       </div>
-					  <br>
-                  <h4 class="card-title">Taxa de venda do clientes - Fev. 2019</h4>
-                  
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>Clientes</th>
-                          <th>Serviço de transação</th>
-                          <th>Vendas</th>
-                          <th>Faturamento</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Produtos e Comercios Ltda.</td>
-                          <td>Cielo</td>
-                          <td class="text-danger"> 28.76% <i class="fa fa-arrow-down"></i></td>
-                          <td><label>R$ 25.568,97</label></td>
-                        </tr>
-                        <tr>
-                          <td>Quitanda Veloso</td>
-                          <td>Safra</td>
-                          <td class="text-danger"> 21.06% <i class="fa fa-arrow-down"></i></td>
-                          <td><label>R$ 8.213,65</label></td>
-                        </tr>
-                        <tr>
-                          <td>Mercado da Luz</td>
-                          <td>Cielo</td>
-                          <td class="text-danger"> 35.00% <i class="fa fa-arrow-down"></i></td>
-                          <td><label>R$ 5.562,30</label></td>
-                        </tr>
-                        <tr>
-                          <td>Locadora de Carros(Moovida)</td>
-                          <td>Pay4</td>
-                          <td class="text-success"> 82.00% <i class="fa fa-arrow-up"></i></td>
-                          <td><label>R$ 50.653,61</label></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Ordem de prioridade</label>
+                          <div class="col-sm-9">
+                             <select class="form-control">
+                              <option>Prioridade máxima</option>
+                              <option>Prioridade média</option>
+                              <option>Prioridade mínima</option>
+                              </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Renda semanal (R$)</label>
+                          <div class="col-sm-9">
+                            <input class="form-control" data-inputmask="'alias': 'currency'" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Data da observação</label>
+                          <div class="col-sm-9">
+                           <input class="form-control" data-inputmask="'alias': 'datetime'" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					 <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Telefone</label>
+                          <div class="col-sm-9">
+                           <input class="form-control" data-inputmask="'alias': 'phonebe'" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Email</label>
+                          <div class="col-sm-9">
+                            <input class="form-control" data-inputmask="'alias': 'email'" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <p class="card-description">
+                      Endereço
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Endereço 1 </label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Estado</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Endereço 2(Opcional)</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Código - Postal</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Cidade</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">País</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+					 <button  type="submit" class="btn btn-primary mr-2">Adicionar +</button>
+                  </form>
                 </div>
               </div>
             </div>
+				
+				
+					 
+               
 			
-          <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Números de clientes adquiridos</h4>
-                  <canvas id="lineChart"></canvas>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Número de vendas - Cartão (Todas as maquinas)</h4>
-                  <canvas id="barChart"></canvas>
-                </div>
-              </div>
-            </div>
+			
+          
 
           </div>
 		  </div>
