@@ -151,8 +151,9 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
+			  <li class="nav-item"> <a class="nav-link" href="form-cliente-planilha-victor.html">Cadastro Cliente</a></li>
 			  <li class="nav-item"> <a class="nav-link" href="perfil-cliente-victor.html">Perfil Cliente</a></li>
-			   <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
 			    <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
 			   <b><label>Domínio do Adm</label></b>
 				<li class="nav-item"> <a class="nav-link" href="controle-responsaveis-planilha-victor.html">Responsáveis das tarefas</a></li>
@@ -172,7 +173,7 @@
              <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Formulário adicional de rede de observação</h4>
+                  <h4 class="card-title">Formulário Clientes</h4>
                   <form class="form-sample">
                     <p class="card-description">
                       Informações da empresa
@@ -188,13 +189,9 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Ordem de prioridade</label>
+                          <label class="col-sm-3 col-form-label">CNPJ</label>
                           <div class="col-sm-9">
-                             <select class="form-control">
-                              <option>Prioridade máxima</option>
-                              <option>Prioridade média</option>
-                              <option>Prioridade mínima</option>
-                              </select>
+                            <input type="text" class="form-control" />
                           </div>
                         </div>
                       </div>
@@ -202,17 +199,17 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Renda semanal (R$)</label>
-                          <div class="col-sm-9">
-                            <input class="form-control" data-inputmask="'alias': 'currency'" />
+                          <label class="col-sm-3 col-form-label">Endereço</label>
+						   <div class="col-sm-9">
+                            <input type="text" class="form-control" />
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Data da observação</label>
+                          <label class="col-sm-3 col-form-label">Número</label>
                           <div class="col-sm-9">
-                           <input class="form-control" data-inputmask="'alias': 'datetime'" />
+                            <input type="text" class="form-control" />
                           </div>
                         </div>
                       </div>
@@ -220,9 +217,9 @@
 					 <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Telefone</label>
+                          <label class="col-sm-3 col-form-label">Complemento</label>
                           <div class="col-sm-9">
-                           <input class="form-control" data-inputmask="'alias': 'phonebe'" />
+                            <input type="text" class="form-control" placeholder="Ex: Andar.." />
                           </div>
                         </div>
                       </div>
@@ -234,15 +231,23 @@
                           </div>
                         </div>
                       </div>
+					   <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Telefone</label>
+                          <div class="col-sm-9">
+                            <input class="form-control" data-inputmask="'alias': 'phonebe'" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                    
                     <p class="card-description">
-                      Endereço
+                      Informações do comprador
                     </p>
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Endereço 1 </label>
+                          <label class="col-sm-3 col-form-label">Nome Completo</label>
                           <div class="col-sm-9">
                             <input type="text" class="form-control" />
                           </div>
@@ -250,7 +255,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Estado</label>
+                          <label class="col-sm-3 col-form-label">CPF</label>
                           <div class="col-sm-9">
                             <input type="text" class="form-control" />
                           </div>
@@ -260,17 +265,20 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Endereço 2(Opcional)</label>
+                          <label class="col-sm-3 col-form-label">Idade</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" />
+                            <input type="number" class="form-control" />
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Código - Postal</label>
+                          <label class="col-sm-3 col-form-label">Produto Desejado</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" />
+                             <select class="form-control">
+                              <option>Splitter</option>
+                              <option>Access Collect</option>
+							</select>
                           </div>
                         </div>
                       </div>
@@ -278,22 +286,22 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Cidade</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
+                          <label class="col-sm-3 col-form-label">Email</label>
+                         <div class="col-sm-9">
+                            <input class="form-control" data-inputmask="'alias': 'email'" />
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">País</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
+                          <label class="col-sm-3 col-form-label">Telefone</label>
+						  <div class="col-sm-9">
+                            <input class="form-control" data-inputmask="'alias': 'phonebe'" />
                           </div>
-                        </div>
+                         </div>
                       </div>
                     </div>
-					 <button  type="submit" class="btn btn-primary mr-2">Adicionar +</button>
+					 <button  type="submit" class="btn btn-primary mr-2">Enviar dados</button>
                   </form>
                 </div>
               </div>
