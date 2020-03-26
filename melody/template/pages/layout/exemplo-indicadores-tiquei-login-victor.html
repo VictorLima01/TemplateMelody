@@ -200,7 +200,7 @@
         <div class="content-wrapper">
 		<div class="right_col" role="main">
           <div class="row">
-		  <div class="col-lg-6 grid-margin ">
+		  <div class="col-lg-6 grid-margin stretch-card ">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Média logins diário </h4>
@@ -212,8 +212,8 @@
 			 <div class="col-lg-6 grid-margin ">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Número de Usuários Logados por dispositivo (Semanas Fev/2020)</h4>
-                  <div id="c3-line-chart"></div>
+                  <h4 class="card-title">Número Logins Durante o ano (2019) </h4>
+                  <div id="column-chart" class="flot-chart"></></div>
                 </div>
               </div>
             </div>
@@ -221,7 +221,16 @@
 			
 			</div>
 
-			
+			<div class = "row">
+			<div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Origem da base de Usuários</h4>
+                  <div id="c3-bar-chart"></div>
+                </div>
+              </div>
+            </div>
+			</div>
 			
 			
 			</div>
@@ -256,7 +265,7 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  
+  <script src="../../js/flot-chart.js"></script>
   <script src="../../js/c3.js"></script>
   <script src="../../js/chart.js"></script>
    <script src="../../js/chart2.js"></script>
