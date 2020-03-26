@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Indicadores do Admin</title>
+  <title>Exemplo</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
@@ -116,11 +116,19 @@
 				 </ul>
             </div>
           </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="indicadores-usuarios-victor.html">
+		  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="fas fa-chart-pie menu-icon"></i>
               <span class="menu-title">Indicadores Tiquei</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-cadastro-victor.html">Cadastros</a></li>                
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-login-victor.html">Logins</a></li>
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-financeiro-victor.html">Financeiro</a></li>
+              </ul>
+            </div>
           </li>
 		      <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -192,93 +200,15 @@
         <div class="content-wrapper">
 		<div class="right_col" role="main">
           <div class="row">
-		   <div class="col-lg-6 grid-margin stretch-card">
+		  <div class="col-lg-6 grid-margin ">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Controle de usuários (Usuários inativos depois de 30 dias)</h4>
-                  <canvas id="doughnutChart"></canvas>
+                  <h4 class="card-title">Média logins diário </h4>
+				  <br><br>
+                  <canvas id="areaChart"></canvas>
                 </div>
               </div>
             </div>
-			 <div class="col-lg-6 grid-margin ">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Assinaturas - Tiquei</h4>
-                  <canvas id="barChart"></canvas>
-                </div>
-              </div>
-            </div>
-			
-			</div>
-			<div class="row">
-			 <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Usuários por operadora</h4>
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Operadora</th>
-                          <th>Nº de usuários</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Cielo</td>
-                          <td>50</td>
-                          <td> <button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-                        <tr>
-                          <td>Getnet</td>
-                          <td>8</td>
-                          <td> <button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-                        <tr>
-                          <td>Sodexo</td>
-                          <td>10</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-                        <tr>
-                          <td>VR</td>
-                          <td>3</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button><td>
-                        </tr>
-                        <tr>
-                          <td>Ticket</td>
-                          <td>87</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Bin</td>
-                          <td>11</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Stone</td>
-                          
-                          <td>2</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Rede</td>
-                          
-                          <td>27</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-						 <tr>
-                          <td>Vero</td>
-                         
-                          <td>17</td>
-                          <td><button  type="submit" class="btn btn-primary mr-2">Visualizar</button></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-			 
 			 <div class="col-lg-6 grid-margin ">
               <div class="card">
                 <div class="card-body">
@@ -289,29 +219,11 @@
             </div>
 			
 			
-            </div>
-			
-			
-			<div class="row">
-			 <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Número de Cadastros por dispositivo</h4>
-                  <canvas id="linechart-multi2"></canvas>
-                </div>
-              </div>
-            </div>
-			 <div class="col-lg-6 grid-margin ">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Média logins diário </h4>
-                  <canvas id="areaChart"></canvas>
-                </div>
-              </div>
-            </div>
-			
-			
 			</div>
+
+			
+			
+			
 			</div>
 		</div>
 			

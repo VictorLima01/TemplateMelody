@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Indicadores do Admin</title>
+  <title>Exemplo</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
@@ -116,11 +116,19 @@
 				 </ul>
             </div>
           </li>
-		   <li class="nav-item">
-            <a class="nav-link" href="indicadores-usuarios-victor.html">
+		  <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="fas fa-chart-pie menu-icon"></i>
               <span class="menu-title">Indicadores Tiquei</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-cadastro-victor.html">Cadastros</a></li>                
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-login-victor.html">Logins</a></li>
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-financeiro-victor.html">Financeiro</a></li>
+              </ul>
+            </div>
           </li>
 		      <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -204,6 +212,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Assinaturas - Tiquei</h4>
+				  <br><br>
                   <canvas id="barChart"></canvas>
                 </div>
               </div>
