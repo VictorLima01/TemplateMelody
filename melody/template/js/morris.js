@@ -140,17 +140,22 @@ $(function() {
       element: 'morris-donut-example',
       colors: ['#76C1FA', '#F36368', '#63CF72', '#FABA66'],
       data: [{
-          label: "Download Sales",
-          value: 12
+          label: "Facebook",
+          value: 25
         },
         {
-          label: "In-Store Sales",
-          value: 30
+          label: "Linkedin",
+          value: 25
         },
         {
-          label: "Mail-Order Sales",
-          value: 20
+          label: "Indicação",
+          value: 25
+        },
+		{
+          label: "Google",
+          value: 25
         }
+		
       ]
     });
   }

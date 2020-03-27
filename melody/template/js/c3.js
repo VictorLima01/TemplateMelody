@@ -4,8 +4,9 @@
     bindto: '#c3-line-chart',
     data: {
       columns: [
-        ['data1', 30, 200, 100, 400, 150, 250],
-        ['data2', 50, 20, 10, 40, 15, 25]
+        ['IOS', 30, 12, 22, 50, 19, 23],
+        ['Android', 50, 20, 10, 40, 15, 25],
+		['Web', 40, 10, 20, 30, 18, 22]
       ]
     },
     color: {
@@ -22,7 +23,7 @@
   setTimeout(function() {
     c3LineChart.load({
       columns: [
-        ['data1', 230, 190, 300, 500, 300, 400]
+        ['IOS', 230, 190, 300, 500, 300, 400]
       ]
     });
   }, 1000);
@@ -30,28 +31,40 @@
   setTimeout(function() {
     c3LineChart.load({
       columns: [
-        ['data3', 130, 150, 200, 300, 200, 100]
+        ['Web', 130, 150, 200, 300, 200, 100]
       ]
     });
   }, 1500);
+   setTimeout(function() {
+    c3LineChart.load({
+      columns: [
+        ['Andorid', 230, 190, 300, 500, 300, 400]
+      ]
+    });
+  }, 2000);
 
   setTimeout(function() {
     c3LineChart.unload({
-      ids: 'data1'
+      ids: 'IOS'
     });
-  }, 2000);
+  }, 2500);
 
   var c3SplineChart = c3.generate({
     bindto: '#c3-spline-chart',
     data: {
       columns: [
-        ['data1', 30, 200, 100, 400, 150, 250],
-        ['data2', 130, 100, 140, 200, 150, 50]
+        ['Jan', 30, 200, 100, 400, 150, 250],
+        ['Fev', 130, 100, 140, 200, 150, 50],
+		 ['Mar', 13, 100, 140, 200, 150, 50],
+		  ['Abr', 100, 100, 140, 200, 150, 50],
+		   ['Mai', 52, 100, 140, 200, 150, 50],
+		   ['Jun', 52, 100, 140, 200, 150, 50]
+		
       ],
       type: 'spline'
     },
     color: {
-      pattern: ['rgba(88,216,163,1)', 'rgba(237,28,36,0.6)', 'rgba(4,189,254,0.6)']
+      pattern: ['rgba(88,216,163,1)', 'rgba(237,28,36,0.6)', 'rgba(4,189,254,0.6)', 'rgba(75,0,130,0.6)', 'rgba(178,34,34,0.6)','rgba(173,255,47,0.6)', 'rgba(255,255,0,0.6)']
     },
     padding: {
       top: 0,
@@ -64,8 +77,10 @@
     bindto: '#c3-bar-chart',
     data: {
       columns: [
-        ['data1', 30, 200, 100, 400, 150, 250],
-        ['data2', 130, 100, 140, 200, 150, 50]
+        ['Facebook', 30, 200, 100, 400, 150, 250],
+        ['Indicação', 130, 100, 140, 200, 150, 50]
+		
+		
       ],
       type: 'bar'
     },
@@ -88,7 +103,7 @@
   setTimeout(function() {
     c3BarChart.load({
       columns: [
-        ['data3', 130, -150, 200, 300, -200, 100]
+        ['Linkedin', 130, 0, 200, 300, 0, 100]
       ]
     });
   }, 1000);
@@ -97,12 +112,14 @@
     bindto: '#c3-step-chart',
     data: {
       columns: [
-        ['data1', 300, 350, 300, 0, 0, 100],
-        ['data2', 130, 100, 140, 200, 150, 50]
+        ['data1', 300, 350, 300, 100, 220, 100],
+        ['data2', 130, 100, 140, 200, 150, 50],
+		['data3', 130, 220, 150, 120, 350, 70],
       ],
       types: {
         data1: 'step',
-        data2: 'area-step'
+        data2: 'area-step',
+		data3: 'area-step'
       }
     },
     color: {

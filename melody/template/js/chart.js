@@ -5,10 +5,10 @@ $(function() {
    */
   'use strict';
   var data = {
-    labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
+    labels: ["Bloqueadas", "Canceladas Cartão", "Pagas Cartão", "Pagas Boleto", "Aberto Boleto", "Pagas Depósito", "Gratuitas"],
     datasets: [{
-      label: '# of Votes',
-      data: [10, 19, 3, 5, 2, 3],
+      label: '',
+      data: [10, 19, 3, 5, 2, 3, 20],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -29,11 +29,43 @@ $(function() {
       fill: false
     }]
   };
-  var multiLineData = {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    var data2 = {
+    labels: ["Cielo", "Getnet", "Sodexo", "VR", "Ticket", "Bin", "Stone", "Rede", "Vero"],
     datasets: [{
-        label: 'Dataset 1',
-        data: [12, 19, 3, 5, 2, 3],
+      label: '',
+      data: [10, 19, 32, 54, 25, 3, 20, 86, 97],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(255, 159, 64, 0.2)',
+		 'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)'
+      ],
+      borderColor: [
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)',
+		 'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)'
+		
+      ],
+      borderWidth: 1,
+      fill: false
+    }]
+  };
+  var multiLineData = {
+    labels: ["Fev/19", "Mar/19", "Abr/19", "Mai/19", "Jun/19", "Jul/19", "Ago/19", "Set/19", "Out/19", "Nov/19", "Dez/19"],
+    datasets: [{
+        label: 'IOS',
+        data: [12, 19, 3, 5, 2, 3, 6, 7, 10, 11, 12],
         borderColor: [
           '#587ce4'
         ],
@@ -41,8 +73,8 @@ $(function() {
         fill: false
       },
       {
-        label: 'Dataset 2',
-        data: [5, 23, 7, 12, 42, 23],
+        label: 'Android',
+        data: [5, 23, 7, 12, 42, 23, 28, 15, 15,19,20],
         borderColor: [
           '#ede190'
         ],
@@ -50,16 +82,17 @@ $(function() {
         fill: false
       },
       {
-        label: 'Dataset 3',
-        data: [15, 10, 21, 32, 12, 33],
+        label: 'Web',
+        data: [15, 10, 21, 32, 12, 33, 5,13,16,14,11],
         borderColor: [
           '#f44252'
         ],
         borderWidth: 2,
         fill: false
       }
-    ]
-  };
+	]
+ 
+	};
   var options = {
     scales: {
       yAxes: [{
@@ -80,7 +113,7 @@ $(function() {
   };
   var doughnutPieData = {
     datasets: [{
-      data: [30, 40, 30],
+      data: [33.33 , 33.33 , 33.33],
       backgroundColor: [
         'rgba(255, 99, 132, 0.5)',
         'rgba(54, 162, 235, 0.5)',
@@ -101,11 +134,42 @@ $(function() {
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-      'Pink',
-      'Blue',
-      'Yellow',
+      'Ativos  345', 
+      'Cadastrados  391', 
+	  'Inativos  25',
     ]
   };
+  var PieData = {
+    datasets: [{
+      data: [25 , 25 , 25],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.5)',
+        'rgba(54, 162, 235, 0.5)',
+        'rgba(255, 206, 86, 0.5)',
+        'rgba(75, 192, 192, 0.5)',
+        'rgba(153, 102, 255, 0.5)',
+        'rgba(255, 159, 64, 0.5)'
+      ],
+      borderColor: [
+        'rgba(255,99,132,1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+      ],
+    }],
+	
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: [
+      'IOS  115',
+      'Android  129', 
+      'WEB  123', 
+	 
+    ]
+  };
+  
   var doughnutPieOptions = {
     responsive: true,
     animation: {
@@ -113,11 +177,22 @@ $(function() {
       animateRotate: true
     }
   };
+   var PieOptions = {
+    responsive: true,
+    animation: {
+      animateScale: true,
+      animateRotate: true
+    }
+  };
+  
+  
   var areaData = {
-    labels: ["2013", "2014", "2015", "2016", "2017"],
+    labels: ["1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"],
     datasets: [{
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
+      label: 'Todos os dispositivos',
+	 
+      data: [1, 5, 3, 5, 2, 3, 8, 9, 8, 6 , 11 , 25, 23, 14, 18, 26, 17, 28, 23, 10, 15,11, 3, 5 ],
+	 
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -277,6 +352,15 @@ $(function() {
       options: options
     });
   }
+    if ($("#barChart2").length) {
+    var barChartCanvas = $("#barChart2").get(0).getContext("2d");
+    // This will get the first returned node in the jQuery collection.
+    var barChart2 = new Chart(barChartCanvas, {
+      type: 'bar',
+      data: data2,
+      options: options
+    });
+  }
 
   if ($("#lineChart").length) {
     var lineChartCanvas = $("#lineChart").get(0).getContext("2d");
@@ -318,10 +402,12 @@ $(function() {
     var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
     var pieChart = new Chart(pieChartCanvas, {
       type: 'pie',
-      data: doughnutPieData,
-      options: doughnutPieOptions
+      data: PieData,
+      options: PieOptions
     });
   }
+  
+
 
   if ($("#areaChart").length) {
     var areaChartCanvas = $("#areaChart").get(0).getContext("2d");

@@ -88,12 +88,11 @@
   //Horizontal bar chart
   if ($('#ct-chart-horizontal-bar').length) {
     new Chartist.Bar('#ct-chart-horizontal-bar', {
-      labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      labels: ['fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'],
       series: [
         [5, 4, 3, 7, 5, 10, 3],
         [3, 2, 9, 5, 4, 6, 4],
         [2, 6, 7, 1, 3, 5, 9],
-        [2, 6, 7, 1, 3, 5, 19],
       ]
     }, {
       seriesBarDistance: 10,
