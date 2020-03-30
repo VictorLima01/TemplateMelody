@@ -55,22 +55,7 @@ $(function() {
 	 
     ]
   };
-   var multiLineData3 = {
-    labels: ["Fev/19", "Mar/19", "Abr/19", "Mai/19", "Jun/19", "Jul/19", "Ago/19", "Set/19", "Out/19", "Nov/19", "Dez/19"],
-    datasets: [{
-        label: 'Clientes',
-        data: [1000, 2956, 1444, 8555, 865, 1056, 1054, 2544, 1098, 1147, 1285],
-        borderColor: [
-          '#587ce4'
-        ],
-        borderWidth: 2,
-        fill: false
-      },
-      
-	]
- 
-	};
-  
+   
   var options = {
     scales: {
       yAxes: [{
@@ -97,14 +82,7 @@ $(function() {
     }
   };
   
-   if ($("#linechart-multi3").length) {
-    var multiLineCanvas = $("#linechart-multi3").get(0).getContext("2d");
-    var lineChart3 = new Chart(multiLineCanvas, {
-      type: 'line',
-      data: multiLineData3,
-      options: options
-    });
-  }
+ 
   
   if ($("#barChart3").length) {
     var barChartCanvas = $("#barChart3").get(0).getContext("2d");

@@ -41,12 +41,11 @@ google.charts.setOnLoadCallback(drawStuff);
 
 function drawStuff() {
   var data = new google.visualization.arrayToDataTable([
-    ['Opening Move', 'Percentage'],
-    ["King's pawn (e4)", 44],
-    ["Queen's pawn (d4)", 31],
-    ["Knight to King 3 (Nf3)", 12],
-    ["Queen's bishop pawn (c4)", 10],
-    ['Other', 3]
+    ['Canais de distribuição', 'Quant.'],
+    ["Vero", 44],
+    ["Forkeys", 31],
+    ["VR", 12]
+    
   ]);
 
   var options = {
@@ -54,8 +53,8 @@ function drawStuff() {
     legend: {
       position: 'none'
     },
-    colors: ['#76C1FA'],
-
+    colors: ['#FF0000'],
+	
     chartArea: {
       width: 401
     },

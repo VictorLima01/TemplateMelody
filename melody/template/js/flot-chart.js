@@ -346,6 +346,7 @@
 	  ["Nov", 17],
 	  ["Dez", 17],
     ];
+	 
 
     if ($("#column-chart").length) {
       $.plot("#column-chart", [data], {
@@ -371,6 +372,7 @@
 
       });
     }
+
   });
 
 
