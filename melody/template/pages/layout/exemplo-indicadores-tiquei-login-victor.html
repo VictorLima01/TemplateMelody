@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Exemplo</title>
+  <title>Indicadores Tiquei</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
@@ -127,20 +127,10 @@
                 <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-cadastro-victor.html">Cadastros</a></li> 
                 <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-login-victor.html">Logins</a></li>
                 <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-financeiro-victor.html">Financeiro</a></li>
-              </ul>
-            </div>
-          </li>
-		      <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="fas fa-chart-pie menu-icon"></i>
-              <span class="menu-title">Usuários por operadora</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="cielo-victor.html">Cielo</a></li>
-                <li class="nav-item"> <a class="nav-link" href="getnet-victor.html">Getnet</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Sodexo</a></li>
+				  <b><label>Usuários por operadora</label></b>
+				   <li class="nav-item"><a class="nav-link" href="cielo-victor.html">Cielo</a></li> 
+                <li class="nav-item"><a class="nav-link" href="getnet-victor.html">Getnet</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Sodexo</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">VR</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Ticket</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Bin</a></li>
@@ -148,8 +138,10 @@
                 <li class="nav-item"> <a class="nav-link" href="#">Rede</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Vero</a></li>
               </ul>
-              </div>
+			
+            </div>
           </li>
+		     
 		  <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="fas fa-table menu-icon"></i>
@@ -173,7 +165,7 @@
  <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="far fa-compass menu-icon"></i>
-              <span class="menu-title">Indicadores Portal</span>
+              <span class="menu-title">Indicadores Accesstage</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="form-elements">
@@ -204,6 +196,14 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Média logins diário </h4>
+				   <div class="col-sm-9">
+                             <select class="form-control">
+							 <option>Ontem</option>
+                              <option>últimos 15 dias</option>
+                              <option>Último mês</option>
+                              <option>Último ano</option>
+                              </select>
+                          </div>
 				  <br><br>
                   <canvas id="areaChart"></canvas>
                 </div>
@@ -220,17 +220,20 @@
 			
 			
 			</div>
-
-			<div class = "row">
-			<div class="col-lg-6 grid-margin stretch-card">
+			<div class="row">
+			 <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Origem da base de Usuários</h4>
-                  <div id="c3-bar-chart"></div>
+                  <h4 class="card-title">Logins por canais de distribuição</h4>
+                  <div class="google-chart-container d-flex align-items-center justify-content-center h-100">
+                    <div id="Bar-chart2" class="google-charts"></div>
+                  </div>
                 </div>
               </div>
             </div>
+			
 			</div>
+			
 			
 			
 			</div>
@@ -256,6 +259,7 @@
   <script src="../../vendors/js/vendor.bundle.addons.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
   <script src="../../js/off-canvas.js"></script>
@@ -265,6 +269,7 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  
   <script src="../../js/flot-chart.js"></script>
   <script src="../../js/c3.js"></script>
   <script src="../../js/chart.js"></script>
