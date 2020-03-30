@@ -227,43 +227,53 @@
                   <canvas id="areaChart2"></canvas>
                 </div>
               </div>
+			 </div>
+			  <div class="col-lg-6 grid-margin stretch-card ">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Cadastro por segmento CNPJ</h4>
+				 <canvas id="barChart3"></canvas>
+                </div>
+              </div>
             </div>
-			
 			
 			</div>
 			
 			
 			<div class = "row">
 			          
-			<div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">			             
+			<div class="col-lg-6 grid-margin  ">
+              <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Segmento por CNPJs</h4>
-                  <div id="c3-bar-chart2"></div>
+                  <h4 class="card-title">Cadastros por operadora</h4>
+				   <label>Escolha uma operadora para Visualizar</label>
+				  <br><br><br>
+                  <canvas id="barChart2"></canvas>
                 </div>
               </div>
             </div>
 			<div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Origem da base de Usuários - CNPJ</h4>
-                  <div id="c3-bar-chart"></div>
+                  <h4 class="card-title">Onde nos encontrou?</h4>
+                  <div id="c3-pie-chart"></div>
                 </div>
               </div>
             </div>
 			</div>
 			<div class="row">
-			<div class="col-lg-6 grid-margin stretch-card">
+			   <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Origem da base de Usuários - CNPJ</h4>
-                  <div id="morris-donut-example"></div>
+                  <h4 class="card-title">Cadastro por canais de distribuição</h4>
+                  <div class="google-chart-container d-flex align-items-center justify-content-center h-100">
+                    <div id="Bar-chart" class="google-charts"></div>
+                  </div>
                 </div>
               </div>
             </div>
 			
 			</div>
-			
 			
 		
 			</div>
@@ -289,6 +299,7 @@
   <script src="../../vendors/js/vendor.bundle.addons.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
   <script src="../../js/off-canvas.js"></script>
@@ -298,7 +309,7 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-   <script src="../../js/morris.js"></script>
+    <script src="../../js/google-charts.js"></script>
   <script src="../../js/c3.js"></script>
   <script src="../../js/chart.js"></script>
    <script src="../../js/chart2.js"></script>
