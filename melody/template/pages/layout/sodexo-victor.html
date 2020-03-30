@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Indicadores Tiquei</title>
+  <title>Indicadores do Admin</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
@@ -102,7 +102,7 @@
               </div>
             </div>
           </li>
-         
+        
            <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
               <i class="fab fa-trello menu-icon"></i>
@@ -116,7 +116,7 @@
 				 </ul>
             </div>
           </li>
-		 <li class="nav-item">
+		  <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
               <i class="fas fa-chart-pie menu-icon"></i>
               <span class="menu-title">Indicadores Tiquei</span>
@@ -149,7 +149,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-			   <li class="nav-item"> <a class="nav-link" href="form-cliente-planilha-victor.html">Cadastro Cliente</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="form-cliente-planilha-victor.html">Cadastro Cliente</a></li>
 			  <li class="nav-item"> <a class="nav-link" href="perfil-cliente-victor.html">Perfil Cliente</a></li>
 			   <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
 			    <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
@@ -161,7 +161,7 @@
               </ul>
             </div>
           </li>
- <li class="nav-item">
+		     <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="far fa-compass menu-icon"></i>
               <span class="menu-title">Indicadores Accesstage</span>
@@ -190,92 +190,75 @@
       <div class="main-panel">
         <div class="content-wrapper">
 		<div class="right_col" role="main">
-          <div class="row">
-		   <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Controle de usuários (Usuários inativos depois de 30 dias)</h4>
-                  <canvas id="doughnutChart"></canvas>
-                </div>
-              </div>
-            </div>
-			 <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Número de Cadastros por dispositivo - 2019</h4>
-                  <canvas id="pieChart"></canvas>
-                </div>
-              </div>
-            </div>
-			
-			
-			</div>
 			<div class="row">
-			<div class="col-lg-6 grid-margin stretch-card ">
+			<div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Média de cadastro por período </h4>
-				  <div class="col-sm-9">
-                             <select class="form-control">
-							 <option>Ontem</option>
-                              <option>últimos 15 dias</option>
-                              <option>Último mês</option>
-                              <option>Último ano</option>
-                              </select>
-                          </div>
-				  <br><br>
-                  <canvas id="areaChart2"></canvas>
-                </div>
-              </div>
-			 </div>
-			  <div class="col-lg-6 grid-margin stretch-card ">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Cadastro por segmento CNPJ</h4>
-				 <canvas id="barChart3"></canvas>
-                </div>
-              </div>
-            </div>
-			
-			</div>
-			
-			
-			<div class = "row">
-			          
-			<div class="col-lg-6 grid-margin  ">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Cadastros por operadora</h4>
-				   <label>Escolha uma operadora para Visualizar</label>
-				  <br><br><br>
-                  <canvas id="barChart2"></canvas>
-                </div>
-              </div>
-            </div>
-			<div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Onde nos encontrou?</h4>
-                  <div id="c3-pie-chart"></div>
-                </div>
-              </div>
-            </div>
-			</div>
-			<div class="row">
-			   <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Cadastro por canais de distribuição</h4>
-                  <div class="google-chart-container d-flex align-items-center justify-content-center h-100">
-                    <div id="Bar-chart" class="google-charts"></div>
+                  <h4 class="card-title">Usuários pela operadora Sodexo</h4>
+					<div class="table-responsive">
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>
+                            Nome operadora
+                          </th>
+                          <th>
+                            Total usuários Tiquei
+                          </th>
+                          <th>
+                             Nº Usuários-Sodexo
+                          </th>
+                          <th>
+                             Nº Usuários ativos
+                          </th>
+						  <th>
+							Nº Usuários inativos
+						  </th>
+						  <th>
+							Assinaturas principais
+						  </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            Sodexo
+                          </td>
+                          <td>
+                            365
+                          </td>
+                          <td>
+                            121
+                          </td>
+                          <td>
+                            98
+                          </td>
+						  <td>
+							23
+						  </td>
+						  <td>
+							Pagas boleto
+						  </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
             </div>
+			</div>
+			<div class="row">
+			 <div class="col-lg-6 grid-margin ">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Serviços usados - Sodexo</h4>
+                  <canvas id="barChart2"></canvas>
+                </div>
+              </div>
+            </div>
+			
 			
 			</div>
-			
-		
 			</div>
 		</div>
 			
@@ -299,7 +282,6 @@
   <script src="../../vendors/js/vendor.bundle.addons.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
   <script src="../../js/off-canvas.js"></script>
@@ -309,10 +291,7 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-    <script src="../../js/google-charts.js"></script>
-  <script src="../../js/c3.js"></script>
-  <script src="../../js/chart.js"></script>
-   <script src="../../js/chart2.js"></script>
+   <script src="../../js/chart3.js"></script>
   <!-- End custom js for this page-->
 </body>
 
