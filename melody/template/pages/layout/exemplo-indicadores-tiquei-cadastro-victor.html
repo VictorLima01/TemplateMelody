@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Exemplo</title>
+  <title>Indicadores Tiquei</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
@@ -116,7 +116,7 @@
 				 </ul>
             </div>
           </li>
-		  <li class="nav-item">
+		 <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
               <i class="fas fa-chart-pie menu-icon"></i>
               <span class="menu-title">Indicadores Tiquei</span>
@@ -127,20 +127,10 @@
                 <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-cadastro-victor.html">Cadastros</a></li> 
                 <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-login-victor.html">Logins</a></li>
                 <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-financeiro-victor.html">Financeiro</a></li>
-              </ul>
-            </div>
-          </li>
-		      <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="fas fa-chart-pie menu-icon"></i>
-              <span class="menu-title">Usuários por operadora</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="cielo-victor.html">Cielo</a></li>
-                <li class="nav-item"> <a class="nav-link" href="getnet-victor.html">Getnet</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Sodexo</a></li>
+				  <b><label>Usuários por operadora</label></b>
+				   <li class="nav-item"><a class="nav-link" href="cielo-victor.html">Cielo</a></li> 
+                <li class="nav-item"><a class="nav-link" href="getnet-victor.html">Getnet</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="#">Sodexo</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">VR</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Ticket</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Bin</a></li>
@@ -148,7 +138,8 @@
                 <li class="nav-item"> <a class="nav-link" href="#">Rede</a></li>
                 <li class="nav-item"> <a class="nav-link" href="#">Vero</a></li>
               </ul>
-              </div>
+			
+            </div>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
@@ -173,7 +164,7 @@
  <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="far fa-compass menu-icon"></i>
-              <span class="menu-title">Indicadores Portal</span>
+              <span class="menu-title">Indicadores Accesstage</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="form-elements">
@@ -211,8 +202,29 @@
 			 <div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Número de Cadastros por dispositivo</h4>
-                  <canvas id="linechart-multi2"></canvas>
+                  <h4 class="card-title">Número de Cadastros por dispositivo - 2019</h4>
+                  <canvas id="pieChart"></canvas>
+                </div>
+              </div>
+            </div>
+			
+			
+			</div>
+			<div class="row">
+			<div class="col-lg-6 grid-margin stretch-card ">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Média de cadastro por período </h4>
+				  <div class="col-sm-9">
+                             <select class="form-control">
+							 <option>Ontem</option>
+                              <option>últimos 15 dias</option>
+                              <option>Último mês</option>
+                              <option>Último ano</option>
+                              </select>
+                          </div>
+				  <br><br>
+                  <canvas id="areaChart2"></canvas>
                 </div>
               </div>
             </div>
@@ -220,9 +232,7 @@
 			
 			</div>
 			
-			  <h3 class="page-title">
-              Canais de Distribuição </h3>
-			<br><br>
+			
 			<div class = "row">
 			          
 			<div class="col-lg-6 grid-margin stretch-card">
