@@ -1,13 +1,14 @@
 $(function() {
 	
 	// Gráfico Cielo
-	  var data4 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+ var data4 = {
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
+	
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
-        'rgba(178,34,34, 0.2)',
+       'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
         'rgba(75,0,130, 0.2)',
         'rgba(255,255,0, 0.2)',
@@ -18,7 +19,7 @@ $(function() {
 		 'rgba(124,252,0, 0.2)'
       ],
       borderColor: [
-        'rgba(178,34,34, 1)',
+		 'rgba(178,34,34, 1)',
         'rgba(0,255,0, 1)',
         'rgba(75,0,130, 1)',
         'rgba(255,255,0, 1)',
@@ -65,10 +66,10 @@ $(function() {
   
   // Gráfico Getnet
    var data5 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
@@ -127,10 +128,10 @@ $(function() {
   
   // Gráfico Sodexo
   var data6 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
@@ -190,10 +191,10 @@ $(function() {
   
   //Gráfico VR 
     var data7 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
@@ -252,10 +253,10 @@ $(function() {
   
   // Gráfico ticket
     var data8 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
@@ -318,10 +319,10 @@ $(function() {
   //Gráfico bin
   
     var data9 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels:["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
@@ -384,10 +385,10 @@ $(function() {
   //Gráfico Stone
   
     var data10 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
@@ -449,10 +450,10 @@ $(function() {
   
   //Gráfico Rede
     var data11 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19, 5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
@@ -513,10 +514,10 @@ $(function() {
   
   //Gráfico vero
     var data12 = {
-    labels: [ "Ifood", "UberEats", "Pagas Cartão", "Pagas Débito/crédito/Online", "Gratuitas", "Sodexo", "Ticket", "Alelo", "VR"],
+    labels: ["ifood", "Uber", "Cartão", "Online/cartão", "Sodexo", "Ticket", "Alelo", "VR"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20, 12, 10],
+      data: [10, 19,  5, 2, 3, 20, 12, 10],
       backgroundColor: [
         'rgba(178,34,34, 0.2)',
         'rgba(0,255,0, 0.2)',
