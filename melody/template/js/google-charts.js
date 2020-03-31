@@ -43,8 +43,9 @@ function drawStuff() {
   var data = new google.visualization.arrayToDataTable([
     ['Canais de distribuição', 'Quant.'],
     ["Vero", 44],
-    ["Forkeys", 31],
-    ["VR", 12]
+    ["4keys", 31],
+    ["VR", 12],
+	["Tiquei", 25]
     
   ]);
 

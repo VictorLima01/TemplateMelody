@@ -1,17 +1,18 @@
   $(function() {
   
    var data3 = {
-    labels: ["Bar", "Restaurantes", "Lanchonetes", "Padaria", "Mercado"],
+    labels: ["Auto-Peças", "Bar,Res,Lan,pizza,pada", "Café,Casa-chá", "Cosméticos", "Metrial-const",  "Minimercado", "outros/perfume,salão,vestuário"],
     datasets: [{
       label: '',
-      data: [10, 19, 3, 5, 2, 3, 20],
+      data: [26, 19, 32, 54, 25, 36, 20],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
         'rgba(255, 206, 86, 0.2)',
         'rgba(75, 192, 192, 0.2)',
         'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
+        'rgba(255, 159, 64, 0.2)',
+		 'rgba(255, 99, 132, 0.2)'
       ],
       borderColor: [
         'rgba(255,99,132,1)',
@@ -19,7 +20,8 @@
         'rgba(255, 206, 86, 1)',
         'rgba(75, 192, 192, 1)',
         'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        'rgba(255, 159, 64, 1)',
+		 'rgba(255, 99, 132, 1)'
       ],
       borderWidth: 1,
       fill: false
@@ -204,8 +206,9 @@ function drawStuff() {
   var data2 = new google.visualization.arrayToDataTable([
     ['Canais de distribuição', 'Quant.'],
     ["Vero", 44],
-    ["Forkeys", 31],
-    ["VR", 12]
+    ["4keys", 31],
+    ["VR", 12],
+	["Tiquei", 25]
     
   ]);
 
@@ -214,7 +217,7 @@ function drawStuff() {
     legend: {
       position: 'none'
     },
-    colors: ['#00FF00'],
+    colors: ['#FF0000'],
 	
     chartArea: {
       width: 401
