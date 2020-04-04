@@ -240,6 +240,108 @@ function drawStuff() {
   var chart = new google.charts.Bar(document.getElementById('Bar-chart2'));
   chart.draw(data2, options2);
 };
+ var multiAreaData9 = {
+    labels: ["1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"],
+    datasets: [{
+        label: 'Número de acessos ao produto',
+        data: [8, 11, 13, 15, 12, 13, 16, 15, 13, 19, 11, 14, 25, 22, 28, 26, 15, 13, 12, 45, 44, 26, 8 ,3],
+        borderColor: ['rgba(255, 99, 132, 0.5)'],
+        backgroundColor: ['rgba(255, 99, 132, 0.5)'],
+        borderWidth: 1,
+        fill: true
+      }
+    
+    ]
+  };
+ var multiAreaOptions = {
+    plugins: {
+      filler: {
+        propagate: true
+      }
+    },
+    elements: {
+      point: {
+        radius: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false
+        }
+      }]
+    }
+  }
+   if ($("#areachart-multi9").length) {
+    var multiAreaCanvas = $("#areachart-multi9").get(0).getContext("2d");
+    var multiAreaChart9 = new Chart(multiAreaCanvas, {
+      type: 'line',
+      data: multiAreaData9,
+      options: multiAreaOptions
+    });
+  }
+  var data28 = {
+    labels: ["Auto-peças", "Bar,Res,Lan,pizza,pada", "Café,Casa-chá", "Cosméticos", "Metrial-const",  "Minimercado", "outros/perfume,salão,vestuário"],
+	
+    datasets: [{
+      label: '',
+      data: [26, 19, 32, 54, 25, 36, 20],
+      backgroundColor: [
+       'rgba(178,34,34, 0.2)',
+        'rgba(0,255,0, 0.2)',
+        'rgba(75,0,130, 0.2)',
+        'rgba(255,255,0, 0.2)',
+        'rgba(0,250,154,0.2)',
+        'rgba(0,0,255,0.2)',
+		'rgba(220,20,60,0.2)',
+        'rgba(0,128,0,0.2)',
+		 'rgba(124,252,0, 0.2)'
+      ],
+      borderColor: [
+		 'rgba(178,34,34, 1)',
+        'rgba(0,255,0, 1)',
+        'rgba(75,0,130, 1)',
+        'rgba(255,255,0, 1)',
+        'rgba(0,250,154,1)',
+        'rgba(0,0,255,1)',
+		 'rgba(220,20,60,1)',
+        'rgba(0,128,0,1)',
+		 'rgba(124,252,0, 1)'
+      ],
+      borderWidth: 1,
+      fill: false
+    }]
+  };
+  var options = {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    },
+    legend: {
+      display: false
+    },
+    elements: {
+      point: {
+        radius: 0
+      }
+    }
 
-
+  };
+   if ($("#barChart28").length) {
+    var barChartCanvas = $("#barChart28").get(0).getContext("2d");
+    // This will get the first returned node in the jQuery collection.
+    var barChart28 = new Chart(barChartCanvas, {
+      type: 'bar',
+      data: data28,
+      options: options
+    });
+  }
 });
