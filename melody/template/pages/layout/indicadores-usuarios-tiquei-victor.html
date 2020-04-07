@@ -119,7 +119,7 @@
 		    <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
               <i class="fas fa-chart-pie menu-icon"></i>
-              <span class="menu-title">Indicadores Tiquei</span>
+              <span class="menu-title">Tiquei</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="e-commerce">
@@ -131,6 +131,7 @@
 				 <b><label>Usuários</label></b>
 				  <li class="nav-item"><a class="nav-link" href="indicadores-usuarios-tiquei-victor.html">Tabela de todos os usuários</a></li>
 				  <li class="nav-item"><a class="nav-link" href="perfil-usuarios-tiquei-victor.html">Perfil de usuários</a></li>
+				   <li class="nav-item"><a class="nav-link" href="mudar-senha-victor.html">Mudar Senha</a></li>
 				  <b><label>Operadoras</label></b>
 				   <li class="nav-item"><a class="nav-link" href="cielo-victor.html">Cielo</a></li> 
                 <li class="nav-item"><a class="nav-link" href="getnet-victor.html">Getnet</a></li>
@@ -169,7 +170,7 @@
  <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="far fa-compass menu-icon"></i>
-              <span class="menu-title">Indicadores Accesstage</span>
+              <span class="menu-title">Accesstage</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="form-elements">
@@ -196,175 +197,32 @@
         <div class="content-wrapper">
 		<div class="right_col" role="main">
           <div class="row">
-		   <div class="col-lg-6 grid-margin stretch-card ">
+		   <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Assinaturas - Tiquei</h4>
-				  <br><br><br>
-                  <canvas id="barChart"></canvas>
+                  <h4 class="card-title">Todos os usuários</h4>
+                  <p class="card-description">Selecione um usuário para visulizar</p>
+                  <div class="sort-panel d-flex align-items-ceter mb-4">
+                    <label class="d-flex justify-content-start mb-0">
+                      Order by:
+                      <select id="sortingField" class="form-control form-control-sm mr-4 ml-4 w-30">
+                          <option>Nome</option>
+                          <option>Canal de distribuição</option>
+                          <option>Segmento</option>
+                          <option>Razão Social</option>
+                          <option>CNPJ</option>
+                      </select>
+                    </label>
+                    <button type="button" id="sort" class="btn btn-info btn-sm">Atualizar</button>
+                  </div>
+                  <div id="js-grid-sortable2"></div>
+				  
                 </div>
               </div>
             </div>
-			<div class="col-lg-6 grid-margin ">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Faturamento Geral Tiquei - 2019 (R$)</h4>
-				   <table class="table">
-				   <thead>
-                        <tr>
-                          <th>Escolha um Mês</th>
-                          <th>Escolha o tipo do faturamento</th>
-						  
-                        </tr>
-                      </thead>
-				   <div class="col-sm-6">
-				   <td><select class="form-control">
-                              <option>Janeiro</option>
-                              <option>Fevereiro</option>
-                              <option>Março</option>
-							    <option>Abril</option>
-								  <option>Maio</option><
-								    <option>Junho</option>
-									  <option>Julho</option>
-									    <option>Agosto</option>
-										  <option>Setembro</option>
-										    <option>Outubro</option>
-											<option>Novembro</option>
-											<option>Dezembro</option>
-									  </select></td>
-									   <td><select class="form-control">
-								<option>Geral</option>
-                              <option>Tipo 1 </option>
-                              <option>Tipo2</option>
-                              <option>Tipo3</option>
-									  </select></td>
-									  </div></tr></table>
-						  <canvas id="linechart-multi3"></canvas>
-						</div>
-					  </div>
-					</div>
-				   </div>
-					
-			
-				<div class="row">
-				<div class="col-lg-6 grid-margin ">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Faturamento VR - 2019 (R$)</h4>
-				   <table class="table">
-				   <thead>
-                        <tr>
-                          <th>Escolha um Mês</th>
-                          <th>Escolha o tipo do faturamento</th>
-						  
-                        </tr>
-                      </thead>
-				   <div class="col-sm-6">
-				   <td><select class="form-control">
-                              <option>Janeiro</option>
-                              <option>Fevereiro</option>
-                              <option>Março</option>
-							    <option>Abril</option>
-								  <option>Maio</option><
-								    <option>Junho</option>
-									  <option>Julho</option>
-									    <option>Agosto</option>
-										  <option>Setembro</option>
-										    <option>Outubro</option>
-											<option>Novembro</option>
-											<option>Dezembro</option>
-									  </select></td>
-									   <td><select class="form-control">
-								<option>Geral</option>
-                              <option>Tipo 1 </option>
-                              <option>Tipo2</option>
-                              <option>Tipo3</option>
-									  </select></td>
-									  </div></tr></table>
-									  
-						  <canvas id="linechart-multi4"></canvas>
-						</div>
-					  </div>
-					</div>
-				 <div class="col-lg-6 grid-margin ">
-              <div class="card">
-                <div class="card-body">
-                  <tr><h4 class="card-title">Faturamento Vero - 2019 (R$)</h4>
-				   <table class="table">
-				   <thead>
-                        <tr>
-                          <th>Escolha um Mês</th>
-                          <th>Escolha o tipo do faturamento</th>
-						  
-                        </tr>
-                      </thead>
-				   <div class="col-sm-6">
-				   <td><select class="form-control">
-                              <option>Janeiro</option>
-                              <option>Fevereiro</option>
-                              <option>Março</option>
-							    <option>Abril</option>
-								  <option>Maio</option><
-								    <option>Junho</option>
-									  <option>Julho</option>
-									    <option>Agosto</option>
-										  <option>Setembro</option>
-										    <option>Outubro</option>
-											<option>Novembro</option>
-											<option>Dezembro</option>
-									  </select></td>
-									   <td><select class="form-control">
-								<option>Geral</option>
-                              <option>Tipo 1 </option>
-                              <option>Tipo2</option>
-                              <option>Tipo3</option>
-									  </select></td>
-									  </div></tr></table>
-						  <canvas id="linechart-multi5"></canvas>
-						</div>
-					  </div>
-					</div>
-				</div>
-				<div class="col-lg-6 grid-margin ">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Faturamento 4Keys - 2019 (R$)</h4>
-				   <table class="table">
-				   <thead>
-                        <tr>
-                          <th>Escolha um Mês</th>
-                          <th>Escolha o tipo do faturamento</th>
-						  
-                        </tr>
-                      </thead>
-				   <div class="col-sm-6">
-				   <td><select class="form-control">
-                              <option>Janeiro</option>
-                              <option>Fevereiro</option>
-                              <option>Março</option>
-							    <option>Abril</option>
-								  <option>Maio</option><
-								    <option>Junho</option>
-									  <option>Julho</option>
-									    <option>Agosto</option>
-										  <option>Setembro</option>
-										    <option>Outubro</option>
-											<option>Novembro</option>
-											<option>Dezembro</option>
-									  </select></td>
-									   <td><select class="form-control">
-								<option>Geral</option>
-                              <option>Tipo 1 </option>
-                              <option>Tipo2</option>
-                              <option>Tipo3</option>
-									  </select></td>
-									  </div></tr></table>
-						  <canvas id="linechart-multi6"></canvas>
-						</div>
-					  </div>
-					</div>
-			
-			
+		  
+		  
+		  </div>
 			</div>
 		</div>
 			
@@ -397,10 +255,8 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="../../js/chart-line.js"></script>
-  <script src="../../js/c3.js"></script>
-  <script src="../../js/chart.js"></script>
-   <script src="../../js/chart2.js"></script>
+  <script src="../../js/js-grid2.js"></script>
+  <script src="../../js/db2.js"></script>
   <!-- End custom js for this page-->
 </body>
 
