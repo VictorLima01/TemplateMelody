@@ -326,6 +326,7 @@
                       </thead>
 				   <div class="col-sm-6">
 				   <td><select class="form-control">
+							 <option>Geral</option>
                               <option>Getnet</option>
                               <option>Cielo</option>
                               <option>Sodexo</option>
@@ -397,22 +398,77 @@
             </div>
 		</div>
 		<div class="row">
-		 <div class="col-lg-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Taxas por operadora</h4>
-                  <canvas id="doughnutChart2"></canvas>
-                </div>
-              </div>
-            </div>
+		 <!-- <div class="col-lg-6 grid-margin stretch-card"> -->
+              <!-- <div class="card"> -->
+                <!-- <div class="card-body"> -->
+                  <!-- <h4 class="card-title">Taxas por operadora</h4> -->
+				  <!-- <div class="col-sm-6"> -->
+                             <!-- <select class="form-control"> -->
+								<!-- <option>Geral</option> -->
+								<!-- <option>Getnet</option> -->
+                              <!-- <option>Cielo</option> -->
+                              <!-- <option>Sodexo</option> -->
+							    <!-- <option>VR</option> -->
+								  <!-- <option>Ticket</option>< -->
+								    <!-- <option>Bin</option> -->
+									  <!-- <option>Stone</option> -->
+									    <!-- <option>Rede</option> -->
+										  <!-- <option>Vero</option> -->
+                               <!-- </select> -->
+                          <!-- </div> -->
+                  <!-- <canvas id="doughnutChart2"></canvas> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
 			<div class="col-lg-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Taxas por dispositivo</h4>
-                  <canvas id="doughnutChart5"></canvas>
+                  <h4 class="card-title">Taxas por operadora</h4>
+				  <div class="col-sm-6">
+                             <select class="form-control">
+								<option>Getnet</option>
+                              <option>Cielo</option>
+                              <option>Sodexo</option>
+							    <option>VR</option>
+								  <option>Ticket</option><
+								    <option>Bin</option>
+									  <option>Stone</option>
+									    <option>Rede</option>
+										  <option>Vero</option>
+                               </select>
+                          </div>
+                  <div id="c3-pie-chart2"></div>
                 </div>
               </div>
             </div>
+			<div class="col-lg-6 grid-margin ">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Faturamento de taxas por operadoras</h4>
+				   <table class="table">
+				   <thead>
+                        <tr>
+                          <th>Escolha uma operadora</th>	  
+                        </tr>
+                      </thead>
+				   <div class="col-sm-6">
+				   <td><select class="form-control">
+							 <option>Geral</option>
+                              <option>Getnet</option>
+                              <option>Cielo</option>
+                              <option>Sodexo</option>
+							    <option>VR</option>
+								  <option>Ticket</option><
+								    <option>Bin</option>
+									  <option>Stone</option>
+									    <option>Rede</option>
+										  <option>Vero</option>
+									  </select></td>
+									  </div></tr></table>
+						  <canvas id="linechart-multi9"></canvas>
+						</div>
+					  </div>
+					</div>
 		</div>
 		<div class="row">
 		<div class="col-lg-6 grid-margin stretch-card ">
@@ -423,7 +479,14 @@
                 </div>
               </div>
             </div>
-		
+		<div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Taxas por dispositivo</h4>
+                  <canvas id="doughnutChart5"></canvas>
+                </div>
+              </div>
+            </div>
 		</div>
 			</div>
         <!-- content-wrapper ends -->
