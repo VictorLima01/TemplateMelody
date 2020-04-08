@@ -471,46 +471,115 @@ $(function() {
       fill: false
     }]
   };
-    var doughnutPieData2 = {
-    datasets: [{
-      data: [22.22 , 11.11 , 11.11, 11.11, 11.11, 11.11, 11.11, 11.11, 11.11],
-      backgroundColor: [
-       'rgba(72,209,204, 0.2)',
-        'rgba(255,0,0, 0.2)',
-        'rgba(0,139,139, 0.2)',
-        'rgba(50,205,50, 0.2)',
-        'rgba(139,0,0, 0.2)',
-        'rgba(255, 159, 64, 0.2)',
-		 'rgba(127,255,0, 0.2)',
-        'rgba(255,140,0, 0.2)',
-        'rgba(47,79,79, 0.2)'
+    var multiLineData9 = {
+    labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17","18","19","20", "21", "22","23", "24", "25", "26", "27", "28", "29", "30", "31"],
+	datasets: [{
+        label: 'Jan',
+        data: [448447, 1256568, 37899, 564782, 222654, 321654, 678548, 798210, 101254, 110567, 128654, 154789, 154789, 659123, 895654,448447, 1256568, 37899, 564782, 222654, 321654, 678548, 798210, 101254, 110567, 128654, 154789, 154789, 659123, 895654 ],
+        borderColor: [
+          '#FF8C00'
+        ],
+        borderWidth: 2,
+        fill: false
+      },
+      
+	]
+ 
+	};	
+  var c3PieChart2 = c3.generate({
+    bindto: '#c3-pie-chart2',
+    data: {
+      // iris data from R
+      columns: [
+        ['Getnet', 30],
+        ['Cielo', 120],
+		['Sodexo', 120],
+		['VR', 120],
+		['Ticket', 120],
+		['Bin', 120],
+		['Stone', 120],
+		['Rede', 120],
+		['Vero', 120],
+		
       ],
-      borderColor: [
-        'rgba(72,209,204,1)',
-        'rgba(255,0,0, 1)',
-        'rgba(0,139,139, 1)',
-        'rgba(50,205,50,1)',
-        'rgba(139,0,0, 1)',
-        'rgba(255, 159, 64, 1)',
-		 'rgba(127,255,0,1)',
-        'rgba(255,140,0,1)',
-        'rgba(47,79,79,1)'
-      ],
-    }],
+      type: 'pie',
+      onclick: function(d, i) {
+        console.log("onclick", d, i);
+      },
+      onmouseover: function(d, i) {
+        console.log("onmouseover", d, i);
+      },
+      onmouseout: function(d, i) {
+        console.log("onmouseout", d, i);
+      }
+    },
+    color: {
+      pattern: ['#B22222', '#00CED1', '#00008B', '#32CD32', '#FF0000', '#191970', '#7FFF00', '#FFA500', '#808080']
+    },
+    padding: {
+      top: 0,
+      right: 0,
+      bottom: 30,
+      left: 0,
+    }
+  });
 
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: [
-      'Cielo R$ 2.300,00', 
-      'Getnet R$ 6.564,56', 
-	  'Sodexo R$ 3.564,89',
-	  'vr R$ 9.865,56',
-	  'Ticket R$ 5.654,00',
-	  'Bin R$ 2.654,89',
-	  'Stone R$ 1.564,89',
-	  'Rede R$ 2.654,87',
-	  'Vero R$ 86.654,56'
-    ]
-  };
+  setTimeout(function() {
+    c3PieChart2.load({
+      columns: [
+        ["Getnet", 11.11],
+        ["Cielo", 11.11],
+        ["Sodexo", 15.12],
+		["VR", 11.11],
+		["Ticket", 17.11],
+		["Bin", 11.11],
+		["Stone", 11.11],
+		["Rede", 11.11],
+		["Vero", 11.11],
+      ]
+    });
+  }, 1500);
+
+    // var doughnutPieData2 = {
+    // datasets: [{
+      // data: [22.22 , 11.11 , 11.11, 11.11, 11.11, 11.11, 11.11, 11.11, 11.11],
+      // backgroundColor: [
+       // 'rgba(72,209,204, 0.2)',
+        // 'rgba(255,0,0, 0.2)',
+        // 'rgba(0,139,139, 0.2)',
+        // 'rgba(50,205,50, 0.2)',
+        // 'rgba(139,0,0, 0.2)',
+        // 'rgba(255, 159, 64, 0.2)',
+		 // 'rgba(127,255,0, 0.2)',
+        // 'rgba(255,140,0, 0.2)',
+        // 'rgba(47,79,79, 0.2)'
+      // ],
+      // borderColor: [
+        // 'rgba(72,209,204,1)',
+        // 'rgba(255,0,0, 1)',
+        // 'rgba(0,139,139, 1)',
+        // 'rgba(50,205,50,1)',
+        // 'rgba(139,0,0, 1)',
+        // 'rgba(255, 159, 64, 1)',
+		 // 'rgba(127,255,0,1)',
+        // 'rgba(255,140,0,1)',
+        // 'rgba(47,79,79,1)'
+      // ],
+    // }],
+
+    // // These labels appear in the legend and in the tooltips when hovering different arcs
+    // labels: [
+      // 'Cielo ', 
+      // 'Getnet ', 
+	  // 'Sodexo ',
+	  // 'vr',
+	  // 'Ticket',
+	  // 'Bin',
+	  // 'Stone',
+	  // 'Rede',
+	  // 'Vero'
+    // ]
+  // };
    var doughnutPieData5 = {
     datasets: [{
       data: [50,25,25],
@@ -609,20 +678,28 @@ $(function() {
     });
   }
   
-  if ($("#doughnutChart2").length) {
-    var doughnutChartCanvas = $("#doughnutChart2").get(0).getContext("2d");
-    var doughnutChart2 = new Chart(doughnutChartCanvas, {
-      type: 'doughnut',
-      data: doughnutPieData2,
-      options: doughnutPieOptions
-    });
-  }
+  // if ($("#doughnutChart2").length) {
+    // var doughnutChartCanvas = $("#doughnutChart2").get(0).getContext("2d");
+    // var doughnutChart2 = new Chart(doughnutChartCanvas, {
+      // type: 'doughnut',
+      // data: doughnutPieData2,
+      // options: doughnutPieOptions
+    // });
+  // }
    if ($("#doughnutChart5").length) {
     var doughnutChartCanvas = $("#doughnutChart5").get(0).getContext("2d");
     var doughnutChart5 = new Chart(doughnutChartCanvas, {
       type: 'doughnut',
       data: doughnutPieData5,
       options: doughnutPieOptions
+    });
+  }
+  if ($("#linechart-multi9").length) {
+    var multiLineCanvas = $("#linechart-multi9").get(0).getContext("2d");
+    var lineChart9 = new Chart(multiLineCanvas, {
+      type: 'line',
+      data: multiLineData9,
+      options: options
     });
   }
  //End Vendas 
