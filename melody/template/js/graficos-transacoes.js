@@ -447,6 +447,39 @@ $(function() {
       fill: false
     }]
   };
+    var data34 = {
+    labels: ["Cielo/10", "Getnet/19", "Sodexo/32", "VR/54", "Ticket/25", "Bin/3", "Stone/20", "Rede/86", "Vero/97"],
+	
+    datasets: [{
+      label: '',
+      data: [10, 19, 32, 54, 25, 3, 20, 86, 97],
+      backgroundColor: [
+        'rgba(72,209,204, 0.2)',
+        'rgba(255,0,0, 0.2)',
+        'rgba(0,139,139, 0.2)',
+        'rgba(50,205,50, 0.2)',
+        'rgba(139,0,0, 0.2)',
+        'rgba(255, 159, 64, 0.2)',
+		 'rgba(127,255,0, 0.2)',
+        'rgba(255,140,0, 0.2)',
+        'rgba(47,79,79, 0.2)'
+      ],
+      borderColor: [
+        'rgba(72,209,204,1)',
+        'rgba(255,0,0, 1)',
+        'rgba(0,139,139, 1)',
+        'rgba(50,205,50,1)',
+        'rgba(139,0,0, 1)',
+        'rgba(255, 159, 64, 1)',
+		 'rgba(127,255,0,1)',
+        'rgba(255,140,0,1)',
+        'rgba(47,79,79,1)'
+		
+      ],
+      borderWidth: 1,
+      fill: false
+    }]
+  };
   var data33 = {
     labels: ["Vero", "4Keys", "VR", "Tiquei"],
 	
@@ -486,94 +519,100 @@ $(function() {
 	]
  
 	};	
-  // var c3PieChart2 = c3.generate({
-    // bindto: '#c3-pie-chart2',
-    // data: {
-      // // iris data from R
-      // columns: [
-        // ['Getnet', 30],
-        // ['Cielo', 120],
-		// ['Sodexo', 120],
-		// ['VR', 120],
-		// ['Ticket', 120],
-		// ['Bin', 120],
-		// ['Stone', 120],
-		// ['Rede', 120],
-		// ['Vero', 120],
+  var c3PieChart2 = c3.generate({
+    bindto: '#c3-pie-chart2',
+    data: {
+      // iris data from R
+      columns: [
+        ['Getnet', 30],
+        ['Cielo', 120],
+		['Sodexo', 120],
+		['VR', 120],
+		['Ticket', 120],
+		['Bin', 120],
+		['Stone', 120],
+		['Rede', 120],
+		['Vero', 120],
 		
+      ],
+      type: 'pie',
+      onclick: function(d, i) {
+        console.log("onclick", d, i);
+      },
+      onmouseover: function(d, i) {
+        console.log("onmouseover", d, i);
+      },
+      onmouseout: function(d, i) {
+        console.log("onmouseout", d, i);
+      }
+    },
+    color: {
+      pattern: ['#B22222', '#00CED1', '#00008B', '#32CD32', '#FF0000', '#191970', '#7FFF00', '#FFA500', '#808080']
+    },
+    padding: {
+      top: 0,
+      right: 0,
+      bottom: 30,
+      left: 0,
+    }
+  });
+
+  setTimeout(function() {
+    c3PieChart2.load({
+      columns: [
+        ["Getnet", 11.11],
+        ["Cielo", 11.11],
+        ["Sodexo", 15.12],
+		["VR", 11.11],
+		["Ticket", 17.11],
+		["Bin", 11.11],
+		["Stone", 11.11],
+		["Rede", 11.11],
+		["Vero", 11.11],
+      ]
+    });
+  }, 1500);
+
+    // var doughnutPieData2 = {
+    // datasets: [{
+      // data: [22.22 , 11.11 , 11.11, 11.11, 11.11, 11.11, 11.11, 11.11, 11.11],
+      // backgroundColor: [
+       // 'rgba(72,209,204, 0.2)',
+        // 'rgba(255,0,0, 0.2)',
+        // 'rgba(0,139,139, 0.2)',
+        // 'rgba(50,205,50, 0.2)',
+        // 'rgba(139,0,0, 0.2)',
+        // 'rgba(255, 159, 64, 0.2)',
+		 // 'rgba(127,255,0, 0.2)',
+        // 'rgba(255,140,0, 0.2)',
+        // 'rgba(47,79,79, 0.2)'
       // ],
-      // type: 'pie',
-      // onclick: function(d, i) {
-        // console.log("onclick", d, i);
-      // },
-      // onmouseover: function(d, i) {
-        // console.log("onmouseover", d, i);
-      // },
-      // onmouseout: function(d, i) {
-        // console.log("onmouseout", d, i);
-      // }
-    // },
-    // color: {
-      // pattern: ['#B22222', '#00CED1', '#00008B', '#32CD32', '#FF0000', '#191970', '#7FFF00', '#FFA500', '#808080']
-    // },
-    // padding: {
-      // top: 0,
-      // right: 0,
-      // bottom: 30,
-      // left: 0,
-    // }
-  // });
+      // borderColor: [
+        // 'rgba(72,209,204,1)',
+        // 'rgba(255,0,0, 1)',
+        // 'rgba(0,139,139, 1)',
+        // 'rgba(50,205,50,1)',
+        // 'rgba(139,0,0, 1)',
+        // 'rgba(255, 159, 64, 1)',
+		 // 'rgba(127,255,0,1)',
+        // 'rgba(255,140,0,1)',
+        // 'rgba(47,79,79,1)'
+      // ],
+    // }],
 
-  // setTimeout(function() {
-    // c3PieChart2.load({
-      // columns: [
-        // ["Getnet", 11.11],
-        // ["Cielo", 11.11],
-        // ["Sodexo", 15.12],
-		// ["VR", 11.11],
-		// ["Ticket", 17.11],
-		// ["Bin", 11.11],
-		// ["Stone", 11.11],
-		// ["Rede", 11.11],
-		// ["Vero", 11.11],
-      // ]
-    // });
-  // }, 1500);
-    var data34 = {
-    labels: ["Cielo", "Getnet", "Sodexo", "VR", "Ticket", "Bin", "Stone", "Rede", "Vero"],
-	
-    datasets: [{
-      label: '',
-      data: [120256, 565897, 322365, 548956, 254756, 356987, 202356, 862563, 972563],
-      backgroundColor: [
-        'rgba(72,209,204, 0.2)',
-        'rgba(255,0,0, 0.2)',
-        'rgba(0,139,139, 0.2)',
-        'rgba(50,205,50, 0.2)',
-        'rgba(139,0,0, 0.2)',
-        'rgba(255, 159, 64, 0.2)',
-		 'rgba(127,255,0, 0.2)',
-        'rgba(255,140,0, 0.2)',
-        'rgba(47,79,79, 0.2)'
-      ],
-      borderColor: [
-        'rgba(72,209,204,1)',
-        'rgba(255,0,0, 1)',
-        'rgba(0,139,139, 1)',
-        'rgba(50,205,50,1)',
-        'rgba(139,0,0, 1)',
-        'rgba(255, 159, 64, 1)',
-		 'rgba(127,255,0,1)',
-        'rgba(255,140,0,1)',
-        'rgba(47,79,79,1)'
-		
-      ],
-      borderWidth: 1,
-      fill: false
-    }]
-  };
-
-
+    // // These labels appear in the legend and in the tooltips when hovering different arcs
+    // labels: [
+      // 'Cielo ', 
+      // 'Getnet ', 
+	  // 'Sodexo ',
+	  // 'vr',
+	  // 'Ticket',
+	  // 'Bin',
+	  // 'Stone',
+	  // 'Rede',
+	  // 'Vero'
+    // ]
+  // };
    var doughnutPieData5 = {
     datasets: [{
       data: [50,25,25],
@@ -665,13 +704,13 @@ $(function() {
    if ($("#barChart33").length) {
     var barChartCanvas = $("#barChart33").get(0).getContext("2d");
     // This will get the first returned node in the jQuery collection.
-    var barChart31 = new Chart(barChartCanvas, {
+    var barChart33 = new Chart(barChartCanvas, {
       type: 'bar',
       data: data33,
       options: options
     });
   }
-     if ($("#barChart34").length) {
+  if ($("#barChart34").length) {
     var barChartCanvas = $("#barChart34").get(0).getContext("2d");
     // This will get the first returned node in the jQuery collection.
     var barChart34 = new Chart(barChartCanvas, {
@@ -680,6 +719,15 @@ $(function() {
       options: options
     });
   }
+  
+  // if ($("#doughnutChart2").length) {
+    // var doughnutChartCanvas = $("#doughnutChart2").get(0).getContext("2d");
+    // var doughnutChart2 = new Chart(doughnutChartCanvas, {
+      // type: 'doughnut',
+      // data: doughnutPieData2,
+      // options: doughnutPieOptions
+    // });
+  // }
    if ($("#doughnutChart5").length) {
     var doughnutChartCanvas = $("#doughnutChart5").get(0).getContext("2d");
     var doughnutChart5 = new Chart(doughnutChartCanvas, {
