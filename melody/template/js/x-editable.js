@@ -16,6 +16,151 @@
         name: 'username',
         title: 'Enter username'
       });
+	   $('#username2').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username2',
+        title: 'Enter username'
+      });
+	   $('#username3').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username3',
+        title: 'Enter username'
+      });
+	   $('#username4').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username4',
+        title: 'Enter username'
+      });
+	  $('#username5').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username5',
+        title: 'Enter username'
+      });
+	   $('#username6').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username6',
+        title: 'Enter username'
+      });
+	   $('#username7').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username7',
+        title: 'Enter username'
+      });
+	   $('#username8').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username8',
+        title: 'Enter username'
+      });
+ $('#username9').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username9',
+        title: 'Enter username'
+      });
+	   $('#username10').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username10',
+        title: 'Enter username'
+      });
+	   $('#username11').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username11',
+        title: 'Enter username'
+      });
+	   $('#username12').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username12',
+        title: 'Enter username'
+      });
+	  $('#username13').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username13',
+        title: 'Enter username'
+      });
+	   $('#username14').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username14',
+        title: 'Enter username'
+      });
+	   $('#username15').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username15',
+        title: 'Enter username'
+      });
+	   $('#username16').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username16',
+        title: 'Enter username'
+      });
+	  $('#username17').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username17',
+        title: 'Enter username'
+      });
+	  $('#username18').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username18',
+        title: 'Enter username'
+      });
+	   $('#username19').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username19',
+        title: 'Enter username'
+      });
+	   $('#username20').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username20',
+        title: 'Enter username'
+      });
+	   $('#username21').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username21',
+        title: 'Enter username'
+      });
+	   $('#username22').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username22',
+        title: 'Enter username'
+      });
+	   $('#username23').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username23',
+        title: 'Enter username'
+      });
+	   $('#username24').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username24',
+        title: 'Enter username'
+      });
+	  $('#username25').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username25',
+        title: 'Enter username'
+      });
+
 
       $('#firstname').editable({
         validate: function(value) {
@@ -48,6 +193,13 @@
       });
 
       $('#dob').editable();
+	   $('#dob2').editable();
+	     $('#dob3').editable();
+		   $('#dob4').editable();
+		     $('#dob5').editable();
+			   $('#dob6').editable();
+			     $('#dob7').editable();
+				   $('#dob8').editable();
 
       $('#event').editable({
         placement: 'right',
