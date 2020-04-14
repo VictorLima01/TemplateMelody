@@ -447,6 +447,39 @@ $(function() {
       fill: false
     }]
   };
+    var data34 = {
+    labels: ["Cielo/10", "Getnet/19", "Sodexo/32", "VR/54", "Ticket/25", "Bin/3", "Stone/20", "Rede/86", "Vero/97"],
+	
+    datasets: [{
+      label: '',
+      data: [10, 19, 32, 54, 25, 3, 20, 86, 97],
+      backgroundColor: [
+        'rgba(72,209,204, 0.2)',
+        'rgba(255,0,0, 0.2)',
+        'rgba(0,139,139, 0.2)',
+        'rgba(50,205,50, 0.2)',
+        'rgba(139,0,0, 0.2)',
+        'rgba(255, 159, 64, 0.2)',
+		 'rgba(127,255,0, 0.2)',
+        'rgba(255,140,0, 0.2)',
+        'rgba(47,79,79, 0.2)'
+      ],
+      borderColor: [
+        'rgba(72,209,204,1)',
+        'rgba(255,0,0, 1)',
+        'rgba(0,139,139, 1)',
+        'rgba(50,205,50,1)',
+        'rgba(139,0,0, 1)',
+        'rgba(255, 159, 64, 1)',
+		 'rgba(127,255,0,1)',
+        'rgba(255,140,0,1)',
+        'rgba(47,79,79,1)'
+		
+      ],
+      borderWidth: 1,
+      fill: false
+    }]
+  };
   var data33 = {
     labels: ["Vero", "4Keys", "VR", "Tiquei"],
 	
@@ -671,9 +704,18 @@ $(function() {
    if ($("#barChart33").length) {
     var barChartCanvas = $("#barChart33").get(0).getContext("2d");
     // This will get the first returned node in the jQuery collection.
-    var barChart31 = new Chart(barChartCanvas, {
+    var barChart33 = new Chart(barChartCanvas, {
       type: 'bar',
       data: data33,
+      options: options
+    });
+  }
+  if ($("#barChart34").length) {
+    var barChartCanvas = $("#barChart34").get(0).getContext("2d");
+    // This will get the first returned node in the jQuery collection.
+    var barChart34 = new Chart(barChartCanvas, {
+      type: 'bar',
+      data: data34,
       options: options
     });
   }
