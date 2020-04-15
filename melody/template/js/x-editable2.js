@@ -10,7 +10,55 @@
         '<button type="button" class="btn btn-default btn-sm editable-cancel">' +
         '<i class="fa fa-fw fa-times"></i>' +
         '</button>';
-      $('#username9').editable({
+     $('#username').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username',
+        title: 'Enter username'
+      });
+	   $('#username2').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username2',
+        title: 'Enter username'
+      });
+	   $('#username3').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username3',
+        title: 'Enter username'
+      });
+	   $('#username4').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username4',
+        title: 'Enter username'
+      });
+	  $('#username5').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username5',
+        title: 'Enter username'
+      });
+	   $('#username6').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username6',
+        title: 'Enter username'
+      });
+	   $('#username7').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username7',
+        title: 'Enter username'
+      });
+	   $('#username8').editable({
+        type: 'text',
+        pk: 1,
+        name: 'username8',
+        title: 'Enter username'
+      });
+ $('#username9').editable({
         type: 'text',
         pk: 1,
         name: 'username9',
