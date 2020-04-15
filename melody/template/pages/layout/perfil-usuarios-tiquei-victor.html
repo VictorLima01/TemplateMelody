@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
   <title>Indicadores Tiquei</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
@@ -15,6 +26,7 @@
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/style.css">
+  
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
@@ -199,44 +211,53 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-		<div class="right_col" role="main">
-          <div class="row">
-		      <div class="col-9 grid-margin">
-              <div class="card">
-                <div class="card-body">
-				<div class="row">
-				<div class="col-md-12 grid-margin">
-                 <div class="sender-details"><center>
-                    <img class="img-sm rounded-circle mr-12" src="http://via.placeholder.com/40x40" alt="">
-					<br><br>
-                    <div class="details">
-					
-                      <p class="msg-subject">
-                        Cadastrado em : 21/05/2020 - 21:36 
-                      </p>
-                      <p class="sender-email">
-							João Alves
-                        <a href="#">Cliente/Empresa</a>
-                      </p>
-					  <div class="border-bottom py-4">
-                        <p>Produtos adquiridos</p>
-                        <div>
-                          <label class="badge badge-outline-dark">Tiquei</label>
-                          <label class="badge badge-outline-dark">Splitter</label>
-                
-                        </div>                                                               
-                      </div>
-                    </div>
-                  </div></center>
-				  </div>
-				  </div>
-                  <form id="editable-form" class="editable-form">
-				 
-                  <p class="msg-subject"><b><h5>
-					*Tiquei
-					</p></b></h5>
-                    <div class="row">
-                      <div class="col-md-6">
+		 <div class="card">
+           <div class="card-body">
+			
+	<div class="container bootstrap snippet">
+    <div class="row">
+	<br>
+  		<div class="col-sm-10"><h1>João Alves</h1></div>
+    </div>
+	<br>
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+              
+
+      <div class="text-center">
+        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+      </div></hr><br>
+
+               
+          <div class="panel panel-default">
+            <div class="panel-heading">Email da empresa <i class="fa fa-link fa-1x"></i></div>
+            <div class="panel-body"><a href="http://bootnipets.com">access@access.gmail.com</a></div>
+          </div>
+          
+          
+          <ul class="list-group">
+            <li class="list-group-item text-muted">Dados do usuário <i class="fa fa-dashboard fa-1x"></i></li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Logins</strong></span> 125</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Operadora</strong></span> Cielo</li>
+            <li class="list-group-item text-right"><span class="pull-left"><strong>Parceiro</strong></span> VR</li>
+          </ul> 
+               
+          
+        </div><!--/col-3-->
+
+    	<div class="col-sm-9">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Tiquei</a></li>
+                <li><a data-toggle="tab" href="#messages">Splliter</a></li>
+                <li><a data-toggle="tab" href="#settings">Collect</a></li>
+              </ul>
+			  <br>
+            <div class="tab-pane active" id="home">
+                <h5><b><label>Informações pessoais</label></b></h5>
+
+                 <form id="editable-form" class="editable-form">
+                      <div class="row">
+					  <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Nome completo</label>
                         <div class="col-6 col-lg-8 d-flex align-items-center">
@@ -244,7 +265,7 @@
                         </div>
                         </div>
                       </div>
-					  <div class="col-md-6">
+                     <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Email</label>
                         <div class="col-6 col-lg-8 d-flex align-items-center">
@@ -252,8 +273,9 @@
                         </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
+						<br>
+						</div>
+						<div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Telefone</label>
@@ -262,7 +284,8 @@
                         </div>
                         </div>
                       </div>
-					  <div class="col-md-6">
+					  <br><br>
+                     <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Senha</label>
                         <div class="col-6 col-lg-8 d-flex align-items-center">
@@ -270,15 +293,21 @@
                         </div>
                         </div>
                       </div>
-                    </div>
-					
-					
-					 
-					   <p class="card-description">
-                      Empresa
-                    </p>
-                    <div class="row">
-                     <div class="col-md-6">
+                     </div>
+              	</form>
+              
+              
+              
+             </div><!--/tab-pane-->
+			
+             <div class="tab-pane active" id="home">
+              <br></br>
+               <h5><b><label>Informações da empresa</label></b></h5>
+               
+               
+                  <form id="editable-form" class="editable-form">
+                      <div class="row">
+					  <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">CNPJ</label>
                         <div class="col-6 col-lg-8 d-flex align-items-center">
@@ -294,9 +323,18 @@
                         </div>
                         </div>
                       </div>
-                    </div>
-                   <div class="row">
+					</div>
+					<div class="row">
                       <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Telefone</label>
+                        <div class="col-6 col-lg-8 d-flex align-items-center">
+                          <a href="#" id="username9" data-type="text" data-pk="1">(00)0000-0000</a>
+                        </div>
+                        </div>
+                      </div>
+          
+                       <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Segmento</label>
                         <div class="col-6 col-lg-8 d-flex align-items-center">
@@ -304,7 +342,9 @@
                         </div>
                         </div>
                       </div>
-                        <div class="col-md-6">
+					  </div>
+					  <div class="row">
+                       <div class="col-md-6">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Onde nos encontrou?</label>
                         <div class="col-6 col-lg-8 d-flex align-items-center">
@@ -312,139 +352,18 @@
                         </div>
                         </div>
                       </div>
-                    </div>
-                    </form>
-					</div>
-					</div>
-					</div>
-					</div>
-					<div class="row">
-					<div class="col-9 grid-margin">
-					<div class="card">
-					<div class="card-body">
-					<p class="msg-subject"><b><h5>
-					*Splitter
-					</p></b></h5>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Nome completo</label>
-                         <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="João Alves Neto das Neves" aria-label="">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-					  
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Email</label>
-                          <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="access.access@access.com" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">CPF</label>
-                            <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="000.000.000-00" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-					  <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Senha</label>
-                                <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="123456" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-                    </div>
-					 <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Telefone</label>
-                             <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="(00)0000-0000" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-					 </div>
-					
-					 
-					   <p class="card-description">
-                      Empresa
-                    </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">CNPJ</label>
-                                 <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="1232354998" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Razão Social</label>
-                                <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="Padaria joaquim" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-                    </div>
-                   <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Telefone</label>
-                                 <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="(00)" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Email</label>
-                                <div class="input-group">
-                      <input readonly=“true” class="form-control" placeholder="oemail@gmail.com" aria-label="Recipient's username">
-                      <div class="input-group-append">
-                        <button class="btn btn-sm btn-primary" type="button">Alterar</button>
-                      </div>
-                    </div>
-                        </div>
-                      </div>
-                    </div>
-                    </form>
-                </div>
-              </div>
-            </div>
-		</div>
+                 </div>
+              	</form>
+               
+             </div><!--/tab-pane-->
+               
+              </div><!--/tab-pane-->
+          </div><!--/tab-content-->
+
+        </div><!--/col-9-->
+    </div><!--/row-->
+	</div>	
+</div>	
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
@@ -463,6 +382,7 @@
   <!-- plugins:js -->
   <script src="../../vendors/js/vendor.bundle.base.js"></script>
   <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+  
   <!-- endinject -->
   <!-- Plugin js for this page-->
   <!-- End plugin js for this page-->
@@ -474,8 +394,8 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-   <script src="../../js/x-editable.js"></script>
-  <script src="../../js/profile-demo.js"></script>
+    <script src="../../js/exemplo2-perfil.js"></script>
+    <script src="../../js/x-editable2.js"></script>
   <!-- End custom js for this page-->
 </body>
 
