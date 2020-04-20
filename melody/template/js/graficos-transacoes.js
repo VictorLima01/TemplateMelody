@@ -2,6 +2,33 @@ $(function() {
 	 
 
  //Gráficos Vendas na parte de transações
+ google.charts.load("current", {
+  packages: ["corechart"]
+});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Work', 11],
+    ['Eat', 2],
+    ['Commute', 2],
+    ['Watch TV', 2],
+    ['Sleep', 7]
+  ]);
+
+  var options = {
+    title: 'My Daily Activities',
+    pieHole: 0.4,
+    colors: ['#76C1FA', '#63CF72', '#F36368', '#FABA66'],
+    chartArea: {
+      width: 500
+    },
+  };
+
+  var Donutchart = new google.visualization.PieChart(document.getElementById('Donut-chart2'));
+  Donutchart.draw(data, options);
+}
  var data28 = {
     labels: ["Auto-peças", "Alimentação", "Café", "Cosméticos", "Metrial-const",  "Minimercado", "outros"],
 	
