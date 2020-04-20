@@ -54,12 +54,12 @@ var horizontalBarChartData = {
 				backgroundColor:  'rgba(255, 99, 132, 0.2)',
 				borderColor:  'rgba(255, 99, 132, 1)',
 				borderWidth: 1,
-				data: [25, 23, 32, 10, 14, 32, 18]
+				data: [394019, 23, 32, 10, 14, 32, 18]
 			}, {
 				label: 'Vendas em R$',
 				backgroundColor: 'rgba(54, 162, 235, 0.2)',
 				borderColor: 'rgba(54, 162, 235, 1)',
-				data: [15, 11, 18, 36, 52, 86, 29]
+				data: [ 139948754.29, 11, 18, 36, 52, 86, 29]
 			}]
 
 		};
