@@ -1,8 +1,195 @@
+
+
 var ctx = document.getElementById('myChart').getContext('2d');
+var mixedChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        datasets: [
+		
+		{
+            label: 'Auto-peças',
+            data: [1235698, 1896545, 1086547, 2564789, 1456236, 5698741, 1236547],
+            type: 'line',
+			fill: false,
+			 borderColor: [
+          '#02F83C'
+        ],
+        borderWidth: 2,
+            // this dataset is drawn on top
+            order: 1
+        },
+		{
+            label: 'Alimentação',
+            data: [2346798, 2896545, 2086547, 3564789, 2456236, 7698741, 1886547],
+            type: 'line',
+			fill: false,
+			 borderColor: [
+          '#191970'
+        ],
+        borderWidth: 2,
+            // this dataset is drawn on top
+            order: 1
+        },
+		{
+            label: 'Café',
+            data: [1334567, 7654321, 3023456, 6543217, 2345671, 3654712, 4567123],
+            type: 'line',
+			fill: false,
+			 borderColor: [
+          '#7FFFD4'
+        ],
+        borderWidth: 2,
+            // this dataset is drawn on top
+            order: 1
+        },
+		{
+            label: 'Cosméticos',
+            data: [1466553, 6967671, 9081584, 1010945, 3447647	, 8073745, 9902184],
+            type: 'line',
+			fill: false,
+			 borderColor: [
+          '#FF0000	'
+        ],
+        borderWidth: 2,
+            // this dataset is drawn on top
+            order: 1
+        },
+		{
+            label: 'Material-const',
+            data: [1080431	, 5014118, 5369906	, 3889758, 1071176, 3894451, 7952160],
+            type: 'line',
+			fill: false,
+			 borderColor: [
+          '#FFA500'
+        ],
+        borderWidth: 2,
+            // this dataset is drawn on top
+            order: 1
+        },{
+            label: 'Minimercado',
+            data: [9006168	, 4859183, 6657627	,6955001, 8206898, 3385152	, 8057008],
+            type: 'line',
+			fill: false,
+			 borderColor: [
+          '#FFD700'
+        ],
+        borderWidth: 2,
+            // this dataset is drawn on top
+            order: 1
+        },
+		{
+            label: 'outros',
+            data: [6615620, 2236276, 1967027, 1333333, 3430896, 9075929, 2941698],
+            type: 'line',
+			fill: false,
+			 borderColor: [
+          '#8B008B'
+        ],
+        borderWidth: 2,
+            // this dataset is drawn on top
+            order: 1
+        }],
+        labels: ['01', "02", "03", "04", "05",  "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"]
+    },
+   options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+   }
+});
+
+
+// var lineChartData = {
+			// labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			// datasets: [{
+				// label: 'My First dataset',
+				// borderColor:[ 'rgba(255, 99, 132, 1)'],
+				// backgroundColor:[  'rgba(255, 99, 132, 0.2)'],
+				// fill: false,
+				// data: [15, 25, 26, 33],
+				// yAxisID: 'y-axis-1',
+			// }, {
+				// label: 'My Second dataset',
+				// borderColor: [ 'rgba(54, 162, 235, 1)'],
+				// backgroundColor: ['rgba(54, 162, 235, 0.2)'],
+				// fill: false,
+				// data: [28, 33, 12, 32],
+				// yAxisID: 'y-axis-2'
+			// }]
+		// };
+
+		// window.onload = function() {
+			// var ctx = document.getElementById('canvas').getContext('2d');
+			// window.myLine = Chart.Line(ctx, {
+				// data: lineChartData,
+				// options: {
+					// responsive: true,
+					// hoverMode: 'index',
+					// stacked: false,
+					// title: {
+						// display: true,
+						// text: 'Chart.js Line Chart - Multi Axis'
+					// },
+					// scales: {
+						// yAxes: [{
+							// type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							// display: true,
+							// position: 'left',
+							// id: 'y-axis-1',
+						// }, {
+							// type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+							// display: true,
+							// position: 'right',
+							// id: 'y-axis-2',
+
+							// // grid line settings
+							// gridLines: {
+								// drawOnChartArea: false, // only want the grid lines for one axis to show up
+							// },
+						// }],
+					// }
+				// }
+			// });
+		// };
+
+  // var ctx = document.getElementById('myChart2').getContext('2d');
+// var mixedChart = new Chart(ctx, {
+    // type: 'line',
+    // data: {
+         // datasets: [
+		// {
+            // label: 'Vendas em R$',
+            // data: [1235698, 1896545, 1086547, 2564789, 1456236, 5698741, 1236547],
+            // type: 'line',
+			 // borderColor: [
+          // '#02F83C'
+        // ],
+        // borderWidth: 2,
+            // // this dataset is drawn on top
+            // order: 1
+        // }],
+        // labels: ['Auto-peças', "Alimentação", "Café", "Cosméticos", "Metrial-const",  "Minimercado", "outros"]
+    // },
+   // options: {
+        // scales: {
+            // yAxes: [{
+                // ticks: {
+                    // beginAtZero: true
+                // }
+            // }]
+        // }
+   // }
+// });
+ var ctx = document.getElementById('myChart3').getContext('2d');
 var mixedChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        datasets: [{
+         datasets: [
+		 {
             label: 'Quantidade',
             data: [110, 247, 346, 408, 508, 456, 899],
 			 backgroundColor: [
@@ -23,17 +210,8 @@ var mixedChart = new Chart(ctx, {
 			],
 			borderWidth: 1,
             order: 2
-        }, {
-            label: 'Vendas em R$',
-            data: [1235698, 1896545, 1086547, 2564789, 1456236, 5698741, 1236547],
-            type: 'line',
-			 borderColor: [
-          '#02F83C'
-        ],
-        borderWidth: 2,
-            // this dataset is drawn on top
-            order: 1
-        }],
+        }
+		],
         labels: ['Auto-peças', "Alimentação", "Café", "Cosméticos", "Metrial-const",  "Minimercado", "outros"]
     },
    options: {
@@ -46,303 +224,55 @@ var mixedChart = new Chart(ctx, {
         }
    }
 });
-<<<<<<< HEAD
-// var myChart = new Chart(ctx, {
-    // type: 'bar',
-    // data: {
-        // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        // datasets: [{
-            // label: '# of Votes',
-            // data: [12, 19, 3, 5, 2, 3],
-            // backgroundColor: [
-                // 'rgba(255, 99, 132, 0.2)',
-                // 'rgba(54, 162, 235, 0.2)',
-                // 'rgba(255, 206, 86, 0.2)',
-                // 'rgba(75, 192, 192, 0.2)',
-                // 'rgba(153, 102, 255, 0.2)',
-                // 'rgba(255, 159, 64, 0.2)'
-            // ],
-            // borderColor: [
-                // 'rgba(255, 99, 132, 1)',
-                // 'rgba(54, 162, 235, 1)',
-                // 'rgba(255, 206, 86, 1)',
-                // 'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            // ],
-            // borderWidth: 1
-        // }]
-    // },
-    // options: {
-        // scales: {
-            // yAxes: [{
-                // ticks: {
-                    // beginAtZero: true
-                // }
-            // }]
-        // }
-    // }
-// });
+// var randomScalingFactor = function() {
+			// return Math.round(Math.random() * 100);
+		// };
 
-=======
+		// var config = {
+			// type: 'doughnut',
+			// data: {
+				// datasets: [{
+					// data: [25, 25, 25, 25],
+					// backgroundColor: [
+					// 'rgba(178,34,34, 0.2)',
+					// 'rgba(0,255,0, 0.2)',
+					// 'rgba(75,0,130, 0.2)',
+					// 'rgba(255,255,0, 0.2)',
+					// ],
+					 // borderColor: [
+					// 'rgba(178,34,34, 1)',
+					// 'rgba(0,255,0, 1)',
+					// 'rgba(75,0,130, 1)',
+					// 'rgba(255,255,0, 1)',
+					// ],
+					// label: 'Dataset 1'
+				// }],
+				// labels: [
+					// 'Web - 25%' ,
+					// 'IOS - 25%' ,
+					// 'Android - 25%',
+					// 'Poral - 25%' 
+					
+				// ]
+			// },
+			// options: {
+				// responsive: true,
+				// legend: {
+					// position: 'left',
+				// },
+				// title: {
+					// display: true,
+					// text: ''
+				// },
+				// animation: {
+					// animateScale: true,
+					// animateRotate: true
+				// }
+			// }
+		// };
 
-var horizontalBarChartData = {
-			labels: ['Auto-peças', "Alimentação", "Café", "Cosméticos", "Metrial-const",  "Minimercado", "outros"],
-			datasets: [{
-				label: 'Quantidade',
-				backgroundColor:  'rgba(255, 99, 132, 0.2)',
-				borderColor:  'rgba(255, 99, 132, 1)',
-				borderWidth: 1,
-				data: [394019, 23, 32, 10, 14, 32, 18]
-			}, {
-				label: 'Vendas em R$',
-				backgroundColor: 'rgba(54, 162, 235, 0.2)',
-				borderColor: 'rgba(54, 162, 235, 1)',
-				data: [ 139948754.29, 11, 18, 36, 52, 86, 29]
-			}]
+		// window.onload = function() {
+			// var ctx = document.getElementById('chart-area').getContext('2d');
+			// window.myDoughnut = new Chart(ctx, config);
+		// };
 
-		};
-
-		window.onload = function() {
-			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myHorizontalBar = new Chart(ctx, {
-				type: 'horizontalBar',
-				data: horizontalBarChartData,
-				options: {
-					// Elements options apply to all of the options unless overridden in a dataset
-					// In this case, we are setting the border of each horizontal bar to be 2px wide
-					elements: {
-						rectangle: {
-							borderWidth: 2,
-						}
-					},
-					responsive: true,
-					legend: {
-						position: 'right',
-					},
-					title: {
-						display: true,
-					}
-				}
-			});
-
-		};
-
-		document.getElementById('randomizeData').addEventListener('click', function() {
-			var zero = Math.random() < 0.2 ? true : false;
-			horizontalBarChartData.datasets.forEach(function(dataset) {
-				dataset.data = dataset.data.map(function() {
-					return zero ? 0.0 : randomScalingFactor();
-				});
-
-			});
-			window.myHorizontalBar.update();
-		});
-
-		var colorNames = Object.keys(window.chartColors);
-
-		document.getElementById('addDataset').addEventListener('click', function() {
-			var colorName = colorNames[horizontalBarChartData.datasets.length % colorNames.length];
-			var dsColor = window.chartColors[colorName];
-			var newDataset = {
-				label: 'Dataset ' + (horizontalBarChartData.datasets.length + 1),
-				backgroundColor: color(dsColor).alpha(0.5).rgbString(),
-				borderColor: dsColor,
-				data: []
-			};
-
-			for (var index = 0; index < horizontalBarChartData.labels.length; ++index) {
-				newDataset.data.push(randomScalingFactor());
-			}
-
-			horizontalBarChartData.datasets.push(newDataset);
-			window.myHorizontalBar.update();
-		});
-
-		document.getElementById('addData').addEventListener('click', function() {
-			if (horizontalBarChartData.datasets.length > 0) {
-				var month = MONTHS[horizontalBarChartData.labels.length % MONTHS.length];
-				horizontalBarChartData.labels.push(month);
-
-				for (var index = 0; index < horizontalBarChartData.datasets.length; ++index) {
-					horizontalBarChartData.datasets[index].data.push(randomScalingFactor());
-				}
-
-				window.myHorizontalBar.update();
-			}
-		});
-
-		document.getElementById('removeDataset').addEventListener('click', function() {
-			horizontalBarChartData.datasets.pop();
-			window.myHorizontalBar.update();
-		});
-
-		document.getElementById('removeData').addEventListener('click', function() {
-			horizontalBarChartData.labels.splice(-1, 1); // remove the label first
-
-			horizontalBarChartData.datasets.forEach(function(dataset) {
-				dataset.data.pop();
-			});
-
-			window.myHorizontalBar.update();
-		});
-		
-		//Financial Chart
-		
-		function generateData() {
-			var unit = document.getElementById('unit').value;
-
-			function unitLessThanDay() {
-				return unit === 'second' || unit === 'minute' || unit === 'hour';
-			}
-
-			function beforeNineThirty(date) {
-				return date.hour() < 9 || (date.hour() === 9 && date.minute() < 30);
-			}
-
-			// Returns true if outside 9:30am-4pm on a weekday
-			function outsideMarketHours(date) {
-				if (date.isoWeekday() > 5) {
-					return true;
-				}
-				if (unitLessThanDay() && (beforeNineThirty(date) || date.hour() > 16)) {
-					return true;
-				}
-				return false;
-			}
-
-			function randomNumber(min, max) {
-				return Math.random() * (max - min) + min;
-			}
-
-			function randomBar(date, lastClose) {
-				var open = randomNumber(lastClose * 0.95, lastClose * 1.05).toFixed(2);
-				var close = randomNumber(open * 0.95, open * 1.05).toFixed(2);
-				return {
-					t: date.valueOf(),
-					y: close
-				};
-			}
-
-			var date = moment('Jan 01 1990', 'MMM DD YYYY');
-			var now = moment();
-			var data = [];
-			var lessThanDay = unitLessThanDay();
-			for (; data.length < 600 && date.isBefore(now); date = date.clone().add(1, unit).startOf(unit)) {
-				if (outsideMarketHours(date)) {
-					if (!lessThanDay || !beforeNineThirty(date)) {
-						date = date.clone().add(date.isoWeekday() >= 5 ? 8 - date.isoWeekday() : 1, 'day');
-					}
-					if (lessThanDay) {
-						date = date.hour(9).minute(30).second(0);
-					}
-				}
-				data.push(randomBar(date, data.length > 0 ? data[data.length - 1].y : 30));
-			}
-
-			return data;
-		}
-
-		var ctx = document.getElementById('chart1').getContext('2d');
-		ctx.canvas.width = 1000;
-		ctx.canvas.height = 300;
-
-		var color = Chart.helpers.color;
-		var cfg = {
-			data: {
-				datasets: [{
-					label: 'CHRT - Chart.js Corporation',
-					backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-					borderColor: window.chartColors.red,
-					data: generateData(),
-					type: 'line',
-					pointRadius: 0,
-					fill: false,
-					lineTension: 0,
-					borderWidth: 2
-				}]
-			},
-			options: {
-				animation: {
-					duration: 0
-				},
-				scales: {
-					xAxes: [{
-						type: 'time',
-						distribution: 'series',
-						offset: true,
-						ticks: {
-							major: {
-								enabled: true,
-								fontStyle: 'bold'
-							},
-							source: 'data',
-							autoSkip: true,
-							autoSkipPadding: 75,
-							maxRotation: 0,
-							sampleSize: 100
-						},
-						afterBuildTicks: function(scale, ticks) {
-							var majorUnit = scale._majorUnit;
-							var firstTick = ticks[0];
-							var i, ilen, val, tick, currMajor, lastMajor;
-
-							val = moment(ticks[0].value);
-							if ((majorUnit === 'minute' && val.second() === 0)
-									|| (majorUnit === 'hour' && val.minute() === 0)
-									|| (majorUnit === 'day' && val.hour() === 9)
-									|| (majorUnit === 'month' && val.date() <= 3 && val.isoWeekday() === 1)
-									|| (majorUnit === 'year' && val.month() === 0)) {
-								firstTick.major = true;
-							} else {
-								firstTick.major = false;
-							}
-							lastMajor = val.get(majorUnit);
-
-							for (i = 1, ilen = ticks.length; i < ilen; i++) {
-								tick = ticks[i];
-								val = moment(tick.value);
-								currMajor = val.get(majorUnit);
-								tick.major = currMajor !== lastMajor;
-								lastMajor = currMajor;
-							}
-							return ticks;
-						}
-					}],
-					yAxes: [{
-						gridLines: {
-							drawBorder: false
-						},
-						scaleLabel: {
-							display: true,
-							labelString: 'Closing price ($)'
-						}
-					}]
-				},
-				tooltips: {
-					intersect: false,
-					mode: 'index',
-					callbacks: {
-						label: function(tooltipItem, myData) {
-							var label = myData.datasets[tooltipItem.datasetIndex].label || '';
-							if (label) {
-								label += ': ';
-							}
-							label += parseFloat(tooltipItem.value).toFixed(2);
-							return label;
-						}
-					}
-				}
-			}
-		};
-
-		var chart = new Chart(ctx, cfg);
-
-		document.getElementById('update').addEventListener('click', function() {
-			var type = document.getElementById('type').value;
-			var dataset = chart.config.data.datasets[0];
-			dataset.type = type;
-			dataset.data = generateData();
-			chart.update();
-		});
->>>>>>> bugfix/style
