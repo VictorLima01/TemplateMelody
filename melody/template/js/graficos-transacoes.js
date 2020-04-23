@@ -2,33 +2,48 @@ $(function() {
 	 
 
  //Gráficos Vendas na parte de transações
- google.charts.load("current", {
-  packages: ["corechart"]
-});
-google.charts.setOnLoadCallback(drawChart);
+ 
+var horizontalBarChartData = {
+			labels: ['Auto-peças', "Alimentação", "Café", "Cosméticos", "Metrial-const",  "Minimercado", "outros"],
+			datasets: [{
+				label: 'Quantidade',
+				backgroundColor:  'rgba(255, 99, 132, 0.2)',
+				borderColor:  'rgba(255, 99, 132, 1)',
+				borderWidth: 1,
+				data: [394019, 23, 32, 10, 14, 32, 18]
+			}, {
+				label: 'Vendas em R$',
+				backgroundColor: 'rgba(54, 162, 235, 0.2)',
+				borderColor: 'rgba(54, 162, 235, 1)',
+				data: [ 139948754.29, 11, 18, 36, 52, 86, 29]
+			}]
 
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-    ['Task', 'Hours per Day'],
-    ['Work', 11],
-    ['Eat', 2],
-    ['Commute', 2],
-    ['Watch TV', 2],
-    ['Sleep', 7]
-  ]);
+		};
 
-  var options = {
-    title: 'My Daily Activities',
-    pieHole: 0.4,
-    colors: ['#76C1FA', '#63CF72', '#F36368', '#FABA66'],
-    chartArea: {
-      width: 500
-    },
-  };
+		window.onload = function() {
+			var ctx = document.getElementById('bar-horizontal').getContext('2d');
+			window.myHorizontalBar = new Chart(ctx, {
+				type: 'horizontalBar',
+				data: horizontalBarChartData,
+				options: {
+					// Elements options apply to all of the options unless overridden in a dataset
+					// In this case, we are setting the border of each horizontal bar to be 2px wide
+					elements: {
+						rectangle: {
+							borderWidth: 2,
+						}
+					},
+					responsive: true,
+					legend: {
+						position: 'right',
+					},
+					title: {
+						display: true,
+					}
+				}
+			});
 
-  var Donutchart = new google.visualization.PieChart(document.getElementById('Donut-chart2'));
-  Donutchart.draw(data, options);
-}
+		};
  var data28 = {
     labels: ["Auto-peças", "Alimentação", "Café", "Cosméticos", "Metrial-const",  "Minimercado", "outros"],
 	
@@ -117,30 +132,32 @@ function drawChart() {
   };
     var doughnutPieData3 = {
     datasets: [{
-      data: [50, 25,25],
+      data: [25, 25,25, 25],
       backgroundColor: [
-       'rgba(210,105,30,0.2)',
-        'rgba(128,128,128, 0.2)',
-        'rgba(255,0,0, 0.2)'
+      'rgba(178,34,34, 0.2)',
+					'rgba(0,255,0, 0.2)',
+					'rgba(75,0,130, 0.2)',
+					'rgba(255,255,0, 0.2)',
         
       ],
       borderColor: [
-        'rgba(210,105,30, 1)',
-        'rgba(128,128,128, 1)',
-        'rgba(255,0,0, 1)'
-        
+       
       ],
     }],
 
     // These labels appear in the legend and in the tooltips when hovering different arcs
     labels: [
-      'Web 564', 
-      'IOS 165', 
-	  'Android 865'
+    'Web - 25%' ,
+	'IOS - 25%' ,
+	'Android - 25%',
+    'Poral - 25%' 
     ]
   };
     var doughnutPieOptions = {
     responsive: true,
+	legend: {
+					position: 'left',
+				},
     animation: {
       animateScale: true,
       animateRotate: true
