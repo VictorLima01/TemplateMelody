@@ -26,7 +26,8 @@
             width: 150
           },
           {
-            name: "CNPJ",
+			title:"CNPJ",
+            name: "cnpj",
             type: "text",
             width: 200
           },
@@ -40,7 +41,8 @@
             
           },
           {
-            name: "Razão Social",
+			title:"Razão social",
+            name: "razao-social",
             type: "text",
 			width: 150
           },

@@ -4,25 +4,25 @@
     var db = {
 
       loadData: function(filter) {
-        return $.grep(this.clients, function(client) {
-          return (!filter.Name || client.Name.indexOf(filter.Name) > -1) &&
-            (filter.Age === undefined || client.Age === filter.Age) &&
-            (!filter.Address || client.Address.indexOf(filter.Address) > -1) &&
-            (!filter.Country || client.Country === filter.Country) &&
+        return $.grep(this.clients2, function(client2) {
+          return (!filter.Nome || client2.Nome.indexOf(filter.Nome) > -1) &&
+            (filter.cnpj === undefined || client2.Id === filter.Name) &&
+            (!filter.Segmento || client2.Segmento.indexOf(filter.Segmento) > -1) &&
+             (!filter.Country || client.Country === filter.Country) &&
             (filter.Married === undefined || client.Married === filter.Married);
         });
       },
 	  
 
       insertItem: function(insertingClient) {
-        this.clients.push(insertingClient);
+        this.clients2.push(insertingClient);
       },
 
       updateItem: function(updatingClient) {},
 
       deleteItem: function(deletingClient) {
-        var clientIndex = $.inArray(deletingClient, this.clients);
-        this.clients.splice(clientIndex, 1);
+        var clientIndex = $.inArray(deletingClient, this.clients2);
+        this.clients2.splice(clientIndex, 1);
       }
 	
     };
@@ -64,61 +64,61 @@
       }
     ];
 
-    db.clients = [{
+    db.clients2 = [{
         "Nome": "MINI MERCADO HM",
-        "CNPJ": 16445395000176,
+        "cnpj": 16445395000176,
         "Segmento": 6,
-        "Razão Social": "HELTON VELASQUES ALIANDRO FARIA",
+        "razao-social": "HELTON VELASQUES ALIANDRO FARIA",
         "canal-distribuicao": "VR Benefícios"
 		
       },
       {
        "Nome": "FITLIFE",
-        "CNPJ": 33912290000107,
+        "cnpj": 33912290000107,
         "Segmento": 5,
-        "Razão Social": "ESPEDITO MEDEIROS DE PAIVA JUNIOR 056342",
+        "razao-social": "ESPEDITO MEDEIROS DE PAIVA JUNIOR 056342",
         "canal-distribuicao": "VR Benefícios"
       },
       {
 		"Nome": "cadi mattone spazio restaurant",
-        "CNPJ": 21769258000127,
+        "cnpj": 21769258000127,
         "Segmento": 2,
-        "Razão Social": "cadi mattone spazio restaurante e evento",
+        "razao-social": "cadi mattone spazio restaurante e evento",
         "canal-distribuicao": "VR Benefícios"
       },
       {
        "Nome": "tiago souza da silva",
-        "CNPJ": 10226580000193,
+        "cnpj": 10226580000193,
         "Segmento": 2,
-        "Razão Social": "Saude Na Fruta",
+        "razao-social": "Saude Na Fruta",
         "canal-distribuicao": "VR Benefícios"
       },
       {
        "Nome": "MENOS DEZOITO SORVETES E CONGE",
-        "CNPJ": 28231616000192,
+        "cnpj": 28231616000192,
         "Segmento":2 ,
-        "Razão Social": "MARIO LUIZ CARRE",
+        "razao-social": "MARIO LUIZ CARRE",
         "canal-distribuicao": "VR Benefícios"
       },
       {
        "Nome": "JC COM de PECAS e MANU de CAMINHOES",
-        "CNPJ": 31694869000107,
+        "cnpj": 31694869000107,
         "Segmento":1 ,
-        "Razão Social": "Jc Com De Pecas E Manutencao De Caminhoes",
+        "razao-social": "Jc Com De Pecas E Manutencao De Caminhoes",
         "canal-distribuicao": "VR Benefícios"
       },
       {
          "Nome": "INFORTEC",
-        "CNPJ": 33633028000115,
+        "cnpj": 33633028000115,
         "Segmento":7 ,
-        "Razão Social": "GABRIEL ALVES PETRY 04294318058",
+        "razao-social": "GABRIEL ALVES PETRY 04294318058",
         "canal-distribuicao": "VR Benefícios"
       },
       {
        "Nome": "Meyb Boutique",
-        "CNPJ": 22730874000137,
+        "cnpj": 22730874000137,
         "Segmento":7 ,
-        "Razão Social": "REBECCA NATHALIA MENDANHA TOLENTINO 12629379736",
+        "razao-social": "REBECCA NATHALIA MENDANHA TOLENTINO 12629379736",
         "canal-distribuicao": "4 keys"
       },
       
