@@ -17,7 +17,7 @@
         pageSize: 15,
         pageButtonCount: 5,
         deleteConfirm: "Do you really want to delete the client?",
-		 data: db.clients,
+		 data: db.clients2,
 		controller: db,
 
         fields: [{
@@ -28,13 +28,13 @@
           {
 			title:"CNPJ",
             name: "cnpj",
-            type: "text",
+            type: "number",
             width: 200
           },
           {
             name: "Segmento",
             type: "select",
-			 items: db.countries,
+			 items: db.countries2,
             valueField: "Id",
             textField: "Name",
 			width: 100
