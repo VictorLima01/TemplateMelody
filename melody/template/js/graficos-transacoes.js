@@ -3,7 +3,7 @@ $(function() {
 
  //Gráficos Vendas na parte de transações
  
-var horizontalBarChartData = {
+var horizontalBarChartData2 = {
 			labels: ['Auto-peças', "Alimentação", "Café", "Cosméticos", "Metrial-const",  "Minimercado", "outros"],
 			datasets: [{
 				label: 'Quantidade',
@@ -21,10 +21,10 @@ var horizontalBarChartData = {
 		};
 
 		window.onload = function() {
-			var ctx = document.getElementById('bar-horizontal').getContext('2d');
+			var ctx = document.getElementById('bar-horizontal2').getContext('2d');
 			window.myHorizontalBar = new Chart(ctx, {
-				type: 'horizontalBar',
-				data: horizontalBarChartData,
+				type: 'horizontalBar2',
+				data: horizontalBarChartData2,
 				options: {
 					// Elements options apply to all of the options unless overridden in a dataset
 					// In this case, we are setting the border of each horizontal bar to be 2px wide
