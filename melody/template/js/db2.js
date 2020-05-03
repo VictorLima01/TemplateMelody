@@ -6,9 +6,9 @@
       loadData: function(filter) {
         return $.grep(this.clients2, function(client2) {
           return (!filter.Nome || client2.Nome.indexOf(filter.Nome) > -1) &&
-            (filter.cnpj === undefined || client2.Id === filter.Name) &&
-            (!filter.Segmento || client2.Segmento.indexOf(filter.Segmento) > -1) &&
-             (!filter.Country || client.Country === filter.Country) &&
+            (filter.Age === undefined || client.Age === filter.Age) &&
+            (!filter.Address || client.Address.indexOf(filter.Address) > -1) &&
+            (!filter.Country || client.Country === filter.Country) &&
             (filter.Married === undefined || client.Married === filter.Married);
         });
       },
@@ -30,7 +30,7 @@
     window.db = db;
 
 
-    db.countries = [{
+    db.countries2 = [{
         Name: "",
         Id: 0
       },
