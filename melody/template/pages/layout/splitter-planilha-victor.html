@@ -204,12 +204,6 @@
             <h3 class="page-title">
               Controle Atividades Splitter 
             </h3>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Tables</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Basic tables</li>
-              </ol>
-            </nav>
           </div>
           <div class="row">
 		  <div class="col-lg-12 grid-margin stretch-card">
@@ -220,13 +214,19 @@
 				
                   <h3 class="card-title">Tabela Splitter</h3>
 				   <label class="col-sm-3 col-form-label">Responsável das tarefas:</label>
-                          <div class="col-sm-9">
+				   <div class="row">
+                          <div class="col-sm-3">
                              <select class="form-control">
                               <option>Todos</option>
                               <option>Accesstage</option>
                               <option>Cliente</option>
                               </select>
                           </div>
+						  <div class="col-sm-3">
+						 <a href="calendario-victor.html">
+						  <button class="btn btn-primary">Cronograma</button></a>
+						  </div>
+						  </div>
 						  <br>
                 
                   <div class="table-responsive">
@@ -236,6 +236,7 @@
                           <th>Atividades</th>
                           <th>Responsável</th>
 						  <th>Data do começo da atividade</th>
+						  <th>SLA(Dias)</th>
 						  <th>Data estimada de entrega</th>
 						  <th>Status</th>
 						  
@@ -245,12 +246,14 @@
                         <tr>
                           <td>Entendimento do processo</td>
                           <td>Accesstage/ Cliente</td>
-                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
-						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob2" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
+                          <td><div id="datepicker-popup" class="input-group date datepicker">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon input-group-append border-left">
+                          <span class="far fa-calendar input-group-text"></span>
+                        </span>
+                      </div></td>
+					  <td>7 dias</td>
+						  <td> 25/05/2020</td>
                           <td><label class="badge badge-success badge-pill">Realizado</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
@@ -262,31 +265,34 @@
                         <tr>
                           <td>Testar processo em homologação</td>
                           <td>Accesstage</td>
-                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob3" data-type="combodate" data-value="0000-00-00" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
-						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob4" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
-                          <td><label class="badge badge-warning badge-pill">Tempo se esgotando</label></td>
+                          <td>  <div id="datepicker-popup" class="input-group date datepicker">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon input-group-append border-left">
+                          <span class="far fa-calendar input-group-text"></span>
+                        </span>
+                      </div></td>
+						<td>7 dias</td>
+						  <td> 13/06/2020</td>
+                          <td><label class="badge badge-danger badge-pill">Tempo esgotado</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
                               <option>Em processo</option>
-                              
                               </select></td>
-						  <td> <button  type="submit" class="btn btn-primary mr-2">Enviar</button></td>
+						  <td><button type="button" class="btn btn-primary" data-toggle="popover2" title="Causa tempo esgotado" data-content="Falta de comunicação com usuário">Enviar</button></td>
                         </tr>
                        
                         <tr>
                           <td>Go Live</td>
                           <td>Accesstage</td>
-                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob5" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
-						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob6" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
-                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+                          <td>  <div id="datepicker-popup" class="input-group date datepicker">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon input-group-append border-left">
+                          <span class="far fa-calendar input-group-text"></span>
+                        </span>
+                      </div></td>
+						 <td>7 dias</td>
+						  <td> 27/06/2020</td>
+                          <td><label class="badge badge-info badge-pill">Aguardando</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
                               <option>Em processo</option>
@@ -297,13 +303,15 @@
 						<tr>
                           <td>Produção Assistida</td>
                           <td>Accesstage</td>
-                          <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob7" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
-						  <td><div class="col-6 col-lg-8 d-flex align-items-center">
-                          <a href="#" id="dob8" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth">00/00/0000</a>
-                        </div></td>
-                          <td><label class="badge badge-info badge-pill">Em processo</label></td>
+                          <td>  <div id="datepicker-popup" class="input-group date datepicker">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon input-group-append border-left">
+                          <span class="far fa-calendar input-group-text"></span>
+                        </span>
+                      </div></td>
+						<td>7 dias</td>
+						  <td> 14/07/2020</td>
+                          <td><label class="badge badge-info badge-pill">Aguardando</label></td>
 						  <td> <select class="form-control">
                               <option>Realizado</option>
                               <option>Em processo</option>
@@ -312,6 +320,7 @@
                         </tr>
                       </tbody>
                     </table>
+					<button  type="submit" class="btn btn-primary mr-2">Salvar</button>
                   </div>
 				  
                 </div>
@@ -320,6 +329,35 @@
 			
 			</div>
 		  </div>
+		   <div class="row">
+		  <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				 <div class="card-body">
+				  <h3 class="card-title">Linha de alterações</h3>
+				 <div class="table-responsive">
+                    <table  class="table table-dark">
+					<thead>
+					<tr>
+					<th>Data da última alteração</th>
+					<th>Horário da última versão</th>
+					<th>Versão</th>
+					<th>Produto</th>
+					</tr>
+					</thead>
+					<tbody>
+					<td>12/04/2020</td>
+					<td>12:00</td>
+					<td>1.0</td>
+					<td>Splitter</td>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 		   
 		</div>
 			
@@ -352,7 +390,8 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="../../js/x-editable.js"></script>
+  <script src="../../js/popover2.js"></script>
+  <script src="../../js/datepickers-splliter.js"></script>
   <!-- End custom js for this page-->
 </body>
 
