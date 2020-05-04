@@ -8,13 +8,14 @@
           center: 'title',
           right: 'month,basicWeek,basicDay'
         },
-        defaultDate: '2017-07-12',
+        defaultDate: '2020-05-01',
         navLinks: true, // can click day/week names to navigate views
         editable: true,
         eventLimit: true, // allow "more" link when too many events
         events: [{
-            title: 'All Day Event',
-            start: '2017-07-08'
+            title: 'Entendimento do processo',
+            start: '2020-05-18',
+			 end: '2020-05-25'
           },
           {
             title: 'Long Event',
