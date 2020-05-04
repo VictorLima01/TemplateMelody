@@ -1,9 +1,13 @@
-(function($) {
-  if ($("#datepicker-popup").length) {
-    $('#datepicker-popup').datepicker({
+$(document).ready(function () {
+	 'use strict';
+  if ($("#datepicker-popup2").length) {
+	  var $j = jQuery.noConflict();
+    $j("#datepicker-popup2").datepicker({
       enableOnReadonly: true,
       todayHighlight: true,
+	  
     });
+	
   }
 
-})(jQuery);
+});
