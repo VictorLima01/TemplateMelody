@@ -1,0 +1,14 @@
+#DivLateral{
+position:relative;
+float: left;
+border-width:2px;
+width:500px;
+height: 1400px;
+}
+#CardTimeline{
+position:relative;
+float: left;
+border-width:2px;
+width:160px;
+height: 150px;
+}
