@@ -3,12 +3,40 @@ position:relative;
 float: left;
 border-width:2px;
 width:500px;
-height: 1400px;
+height: 1300px;
 }
 #CardTimeline{
 position:relative;
 float: left;
 border-width:2px;
 width:160px;
-height: 150px;
+height: 160px;
 }
+.fc-event {
+    background-color: #f1f1f1 !important;
+}
+
+.fc-external-events .fc-event:first-child {
+    margin-right: 15px !important ;
+}
+
+.fc-external-events .fc-event:last-child {
+    margin-left: 15px !important ;
+}
+
+.fc-external-events {
+    margin-top: 25px !important; 
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.input-datepicker {
+    position: relative;
+}
+
+.edit-datepicker {
+    position: absolute;
+    top:6px;
+    right: 2px;
+    display: none;
+}
+
