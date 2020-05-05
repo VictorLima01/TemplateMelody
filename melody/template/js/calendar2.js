@@ -1,8 +1,8 @@
 (function($) {
   'use strict';
   $(function() {
-    if ($('#calendar2').length) {
-      $('#calendar2').fullCalendar({
+    if ($('#calendar3').length) {
+      $('#calendar3').fullCalendar({
         header: {
           left: 'prev,next today',
           center: 'title',
@@ -71,4 +71,5 @@
       })
     }
   });
+  
 })(jQuery);
