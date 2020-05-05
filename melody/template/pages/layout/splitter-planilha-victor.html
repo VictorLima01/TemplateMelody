@@ -239,10 +239,12 @@
                         <tr>
                           <th>Atividades</th>
                           <th>Responsável</th>
-						  <th>Data do começo da atividade</th>
+						  <th>Data começo</th>
 						  <th>SLA Dias utéis</th>
-						  <th>Data estimada de entrega</th>
+						  <th>Data entrega</th>
 						  <th>Status</th>
+						  <th>Observação</th>
+						  <th>Checkout</th>
 						  
                         </tr>
                       </thead>
@@ -250,60 +252,109 @@
                         <tr>
                           <td>Entendimento do processo</td>
                           <td>Accesstage/ Cliente</td>
-                          <td><div class="input-group date datepicker">
-                        <input type="text" id="datepicker-popup2" class="form-control">
-                        <span class="input-group-addon input-group-append border-left">
-                          <span class="far fa-calendar input-group-text"></span>
-                        </span>
-                      </div></td>
-					  <td><input type="number" class="form-control"></td>
+                          <td>
+						   <div class="input-datepicker">
+						    <div class="col-sm-9">
+						   <input type="text" id="datepicker-popup2" class="form-control"></div>
+						   <div class="edit-datepicker">
+                        <button type="submit" class="btn btn-success btn-sm">
+                          <i class="far fa-calendar input-group-text"></i>
+                        </button>
+                      </div></div></td>
+					  <td><div class="col-sm-7"><input type="number" class="form-control"></div></td>
 						  <td> 25/05/2020</td>
                           <td><label class="badge badge-success badge-pill">Realizado</label></td>
+						  <td></td>
+						  <td> <div class="col-sm-12">
+                             <select class="form-control">
+                              <option></option>
+                              <option>Realizado</option>
+                              <option>Aguardando</option>
+                              </select>
+                          </div></td>
                         </tr>
                        
                         <tr>
                           <td>Testar processo em homologação</td>
                           <td>Accesstage</td>
-                          <td>  <div  class="input-group date datepicker">
-                        <input type="text" class="form-control" id="datepicker-popup2">
-                        <span class="input-group-addon input-group-append border-left">
-                          <span class="far fa-calendar input-group-text"></span>
-                        </span>
-                      </div></td>
-						<td><input type="number" class="form-control"></td>
+                          <td>  <div class="input-datepicker">
+						    <div class="col-sm-9">
+						   <input type="text" id="datepicker-popup3" class="form-control"></div>
+						   <div class="edit-datepicker">
+                        <button type="submit" class="btn btn-success btn-sm">
+                          <i class="far fa-calendar input-group-text"></i>
+                        </button>
+                      </div></div></td>
+						<td><div class="col-sm-7"><input type="number" class="form-control"></div></td>
 						  <td> 13/06/2020</td>
-                          <td><label class="badge badge-danger badge-pill">Tempo esgotado</label></td>
+                          <td><label class="badge badge-danger badge-pill">Esgotado</label></td>
+						  <td> <div class="col-sm-9">
+                             <select class="form-control">
+                              <option></option>
+                              <option>Falta de comunicação cliente</option>
+                              <option>Problemas de estruturas</option>
+							  <option>Problemas com servidor</option>
+                              </select>
+                          </div></td>
+						  <td> <div class="col-sm-12">
+                             <select class="form-control">
+                              <option></option>
+                              <option>Realizado</option>
+                              <option>Aguardando</option>
+                              </select>
+                          </div></td>
                         </tr>
                        
                         <tr>
                           <td>Go Live</td>
                           <td>Accesstage</td>
-                          <td>  <div id="datepicker-popup2" class="input-group date datepicker">
-                        <input type="text" class="form-control">
-                        <span class="input-group-addon input-group-append border-left">
-                          <span class="far fa-calendar input-group-text"></span>
-                        </span>
-                      </div></td>
-						 <td><input type="number" class="form-control"></td>
+                          <td>  <div class="input-datepicker">
+						    <div class="col-sm-9">
+						   <input type="text" id="datepicker-popup4" class="form-control"></div>
+						   <div class="edit-datepicker">
+                        <button type="submit" class="btn btn-success btn-sm">
+                          <i class="far fa-calendar input-group-text"></i>
+                        </button>
+                      </div></div></td>
+						 <td><div class="col-sm-7"><input type="number" class="form-control"></div></td>
 						  <td> 27/06/2020</td>
                           <td><label class="badge badge-warning badge-pill">Esgotando</label></td>
+						  <td></td>
+						   <td> <div class="col-sm-12">
+                             <select class="form-control">
+                              <option></option>
+                              <option>Realizado</option>
+                              <option>Aguardando</option>
+                              </select>
+                          </div></td>
                         </tr>
 						<tr>
                           <td>Produção Assistida</td>
                           <td>Accesstage</td>
-                          <td>  <div id="datepicker-popup2" class="input-group date datepicker">
-                        <input type="text" class="form-control">
-                        <span class="input-group-addon input-group-append border-left">
-                          <span class="far fa-calendar input-group-text"></span>
-                        </span>
-                      </div></td>
-						<td><input type="number" class="form-control"></td>
+                          <td>  <div class="input-datepicker">
+						    <div class="col-sm-9">
+						   <input type="text" id="datepicker-popup5" class="form-control"></div>
+						   <div class="edit-datepicker">
+                        <button type="submit" class="btn btn-success btn-sm">
+                          <i class="far fa-calendar input-group-text"></i>
+                        </button>
+                      </div></div></td>
+						<td><div class="col-sm-7"><input type="number" class="form-control"></div></td>
 						  <td> 14/07/2020</td>
                           <td><label class="badge badge-info badge-pill">Aguardando</label></td>
+						  <td></td>
+						   <td> <div class="col-sm-12">
+                             <select class="form-control">
+                              <option></option>
+                              <option>Realizado</option>
+                              <option>Aguardando</option>
+                              </select>
+                          </div></td>
                         </tr>
                       </tbody>
                     </table>
 					<button  type="submit" class="btn btn-primary mr-2">Salvar</button>
+					<button  type="submit" class="btn btn-primary mr-2">Cancelar</button>
                   </div>
                 </div>
               </div>
@@ -317,12 +368,12 @@
                 <div class="card-body">
                   <h4 class="card-title">Linha do tempo de alterações</h4>
                   <div class="mt-5">
-                    <div class="timeline" id="DivLateral">
+                    <div class="timeline" id="DivLateral" >
                       <div class="timeline-wrapper timeline-wrapper-success">
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel" id="CardTimeline">
                           <div class="timeline-heading">
-                            <h6 class="timeline-title">Organizador de tarefas Splitter</h6>
+                            <h6 class="timeline-title"> Splitter</h6>
                           </div>
                           <div class="timeline-body">
                             <p>Todas as tarefas realizadas</p>
@@ -334,13 +385,14 @@
                              
                               <span class="ml-auto font-weight-bold">19 Oct 2017</span>
                           </div>
+						 <a href="#"><img src ="../../images/visualizar.png"></a>
                         </div>
                       </div>
                       <div class="timeline-wrapper timeline-wrapper-danger" >
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel" id="CardTimeline">
                           <div class="timeline-heading">
-                            <h6 class="timeline-title">Organizador de tarefas Splitter</h6>
+                            <h6 class="timeline-title">Splitter</h6>
                           </div>
                           <div class="timeline-body">
                             <p>Go live Finalizado</p>
@@ -352,13 +404,14 @@
                              
                               <span class="ml-auto font-weight-bold">10th Aug 2017</span>
                           </div>
+						   <a href="#"><img src ="../../images/visualizar.png"></a>
                         </div>
                       </div>
-                      <div class="timeline-wrapper timeline-wrapper-success" >
+                      <div class="timeline-wrapper timeline-wrapper-danger" >
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel" id="CardTimeline">
                           <div class="timeline-heading">
-                            <h6 class="timeline-title">Organizador de tarefas Splitter</h6>
+                            <h6 class="timeline-title">Splitter</h6>
                           </div>
                           <div class="timeline-body">
                             <p>Produção Assistida em aguardo</p>
@@ -370,13 +423,14 @@
                              
                               <span class="ml-auto font-weight-bold">5th Sep 2016</span>
                           </div>
+						   <a href="#"><img src ="../../images/visualizar.png"></a>
                         </div>
                       </div>
-                      <div class="timeline-wrapper timeline-inverted timeline-wrapper-info" >
+                      <div class="timeline-wrapper  timeline-wrapper-danger" >
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel" id="CardTimeline">
                           <div class="timeline-heading">
-                            <h6 class="timeline-title">Organizador de tarefas Splitter</h6>
+                            <h6 class="timeline-title">Splitter</h6>
                           </div>
                           <div class="timeline-body">
                             <p>Testas em Processo de Hologação tempo esgotado</p>
@@ -388,13 +442,14 @@
                              
                               <span class="ml-auto font-weight-bold">27th July 2016</span>
                           </div>
+						   <a href="#"><img src ="../../images/visualizar.png"></a>
                         </div>
                       </div>
-                      <div class="timeline-wrapper timeline-wrapper-primary" >
+                      <div class="timeline-wrapper timeline-wrapper-danger" >
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel" id="CardTimeline">
                           <div class="timeline-heading">
-                            <h6 class="timeline-title">Organizador de tarefas Splitter</h6>
+                            <h6 class="timeline-title">Splitter</h6>
                           </div>
                           <div class="timeline-body">
                             <p>SLA de Produção assistida alterado</p>
@@ -405,13 +460,14 @@
                           <div class="timeline-footer d-flex align-items-center">
                               <span class="ml-auto font-weight-bold">25th July 2016</span>
                           </div>
+						   <a href="#"><img src ="../../images/visualizar.png"></a>
                         </div>
                       </div>
-                      <div class="timeline-wrapper timeline-inverted timeline-wrapper-info">
+                      <div class="timeline-wrapper  timeline-wrapper-danger">
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel" id="CardTimeline">
                           <div class="timeline-heading">
-                            <h6 class="timeline-title">Organizador de tarefas Splliter</h6>
+                            <h6 class="timeline-title"> Splliter</h6>
                           </div>
                           <div class="timeline-body">
                             <p>Data homologação alterada</p>
@@ -420,15 +476,16 @@
                             <p>Versão 1.1</p>
                           </div>
                           <div class="timeline-footer d-flex align-items-center">
-                              <span class="ml-auto font-weight-bold"></span>
+                              <span class="ml-auto font-weight-bold">17/05/2020</span>
                           </div>
+						   <a href="#"><img src ="../../images/visualizar.png"></a>
                         </div>
                       </div>
-                      <div class="timeline-wrapper timeline-wrapper-success">
+                      <div class="timeline-wrapper timeline-wrapper-danger">
                         <div class="timeline-badge"></div>
                         <div class="timeline-panel" id="CardTimeline">
                           <div class="timeline-heading">
-                            <h6 class="timeline-title">Organizador de tarefas Splliter</h6>
+                            <h6 class="timeline-title">Splliter</h6>
                           </div>
 						  <div class="timeline-body">
                             <p>Status Alterado</p>
@@ -440,11 +497,67 @@
                          
                               <span class="ml-auto font-weight-bold">15/05/2020</span>
                           </div>
+						   <a href="#"><img src ="../../images/visualizar.png"></a>
                         </div>
                       </div>
                     </div>
                   </div>
+				 
+				   <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Cronograma - Versão 2.0</h4>
+				 <div class="row fc-external-events">
+                                                <div class="col-sm fc-event">
+                                                    <p>Tarefas Cliente</p>
+                                                    <p class="small-text"></p>
+                                                </div>
+                                                <div class="col-sm fc-event">
+                                                    <p>Tarefas Accesstage</p>
+                                                    <p class="small-text"></p>
+                                                </div>
+                                                <div class="col-sm fc-event">
+                                                    <p>Tarefas Banco</p>
+                                                    <p class="small-text"></p>
+                                                </div>
+                                            </div>
+                  <div id="calendar3" class="full-calendar"></div>
                 </div>
+              </div>
+            </div>
+			<br>
+			 <div class="col-md-5 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Alterações por escrito</h4>
+                  <div class="table-responsive">
+                    <table class="table  table-dark">
+                      <tbody>
+                        <tr>
+                          <td>Data entrega </td>
+						  <td>Produção Assistida</td>
+                        </tr>
+                        <tr>
+                          <td>Tempo esgotado</td>
+						  <td> Testar processo em homologação</td>
+                        </tr>
+                        <tr>
+                          <td>SLA Aumentado</td>
+						  <TD>Go Live</TD>
+                        </tr>
+                        <tr>
+                          <td>Status </td>
+                          <td>Entendimento do processo</td>
+                        </tr>
+                     
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
+				
               </div>
             </div>
           </div>
@@ -469,8 +582,8 @@
   <!-- plugins:js -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="          crossorigin="anonymous"></script>
   <script src="../../js/jquery-ui.js"></script>
-  <!-- <script src="../../vendors/js/vendor.bundle.base.js"></script> -->
-  <!-- <script src="../../vendors/js/vendor.bundle.addons.js"></script> -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script> 
+  <script src="../../vendors/js/vendor.bundle.addons.js"></script> 
   <!-- endinject -->
   <!-- Plugin js for this page-->
   <!-- End plugin js for this page-->
@@ -482,6 +595,7 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="../../js/calendar2.js"></script>
   <script src="../../js/popover2.js"></script>
   <script src="../../js/datepickers-splliter.js"></script>
   <!-- End custom js for this page-->
