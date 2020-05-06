@@ -1,0 +1,46 @@
+.fc-event {
+    /* background-color: #f1f1f1 !important; */
+}
+
+.fc-external-events .fc-event:first-child {
+    margin-right: 15px !important ;
+}
+
+.fc-external-events .fc-event:last-child {
+    margin-left: 15px !important ;
+}
+
+.fc-external-events {
+    margin-top: 25px !important; 
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+#calendar-container {
+    display: none;
+}
+
+#timeline-calendar-title {
+    margin-left: 10px;
+}
+
+.select-title {
+    align-items: center;
+}
+
+.my-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  #calendar-1-container {
+    width: 100%;
+    height: 100%;
+}
+
+  #calendar-2-container {
+      display: none;
+      width: 100%;
+      height: 100%;
+  }
