@@ -1,16 +1,23 @@
 #DivLateral{
-position:relative;
-float: left;
-border-width:2px;
-width:500px;
+position:absolute;
+margin-left: 10px;
+margin-right:1500px;
+width:750px;
 height: 1300px;
 }
 #CardTimeline{
 position:relative;
 float: left;
 border-width:2px;
-width:160px;
+width:250px;
 height: 160px;
+}
+#Calendario{
+position:relative;
+margin-left: 500px;
+margin-right: 700px;
+width:700px;
+height: 1300px;
 }
 .fc-event {
     background-color: #f1f1f1 !important;
