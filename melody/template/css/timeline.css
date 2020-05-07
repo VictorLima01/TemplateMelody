@@ -2,7 +2,7 @@
 position:absolute;
 margin-left: 10px;
 margin-right:1500px;
-width:700px;
+width:800px;
 height: 1300px;
 }
 #CardTimeline{
@@ -16,9 +16,19 @@ height: 160px;
 position:relative;
 margin-left: 500px;
 margin-right: 700px;
-width:700px;
+width:750px;
 height: 1300px;
 }
+.horario{
+visibility: hidden;
+}
+.atual{
+visibility: hidden;
+}
+.anterior{
+visibility: hidden;
+}
+
 .fc-event {
     background-color: #f1f1f1 !important;
 }
