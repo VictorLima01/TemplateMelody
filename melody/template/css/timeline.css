@@ -7,26 +7,9 @@ height: 1300px;
 }
 #CardTimeline{
 position:relative;
-float: left;
 border-width:2px;
-width:250px;
-height: 160px;
-}
-#Calendario{
-position:relative;
-margin-left: 500px;
-margin-right: 700px;
-width:750px;
-height: 1300px;
-}
-.horario{
-visibility: hidden;
-}
-.atual{
-visibility: hidden;
-}
-.anterior{
-visibility: hidden;
+width:500px;
+height: 100px;
 }
 
 .fc-event {
