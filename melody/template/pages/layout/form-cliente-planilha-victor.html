@@ -204,7 +204,13 @@
              <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
+                  <div class="col-md-6">
                   <h4 class="card-title">Formulário Clientes</h4>
+                  <div class="form-group d-flex">
+                    <input type="text" class="form-control" placeholder="Procure CPF ou CNPJ existente" value="Urbanui">
+                    <button type="submit" class="btn btn-primary ml-3">Buscar</button>
+                  </div>
+                </div>
                   <form class="form-sample">
                     <p class="card-description">
                       Informações da empresa
@@ -212,7 +218,7 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Nome completo</label>
+                          <label class="col-sm-3 col-form-label">Razão social</label>
                           <div class="col-sm-9">
                             <input type="text" class="form-control" />
                           </div>
@@ -220,8 +226,11 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">CNPJ</label>
-                          <div class="col-sm-9">
+                          <label class="col-sm-3 col-form-label">Telefone / CNPJ</label>
+                          <div class="col-sm-4">
+                            <input class="form-control" data-inputmask="'alias': 'phonebe'" />
+                          </div>
+                          <div class="col-sm-5">
                             <input class="form-control" data-inputmask="'alias': 'ip'" />
                           </div>
                         </div>
@@ -238,9 +247,9 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Número</label>
+                          <label class="col-sm-3 col-form-label">Email</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" />
+                            <input class="form-control" data-inputmask="'alias': 'email'" />
                           </div>
                         </div>
                       </div>
@@ -248,32 +257,19 @@
 					 <div class="row">
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Complemento</label>
-                          <div class="col-sm-9">
+                          <label class="col-sm-3 col-form-label">Complemento/ Numero</label>
+                          <div class="col-sm-5">
                             <input type="text" class="form-control" placeholder="Ex: Andar.." />
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Email</label>
-                          <div class="col-sm-9">
-                            <input class="form-control" data-inputmask="'alias': 'email'" />
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" />
                           </div>
                         </div>
                       </div>
-					   <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Telefone</label>
-                          <div class="col-sm-9">
-                            <input class="form-control" data-inputmask="'alias': 'phonebe'" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  </div>
                    
                     <p class="card-description">
-                      Informações do comprador
+                      Informações pessoais do cliente
                     </p>
                     <div class="row">
                       <div class="col-md-6">
@@ -286,52 +282,84 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">CPF</label>
-                          <div class="col-sm-9">
+                          <label class="col-sm-3 col-form-label">Data nascimento/ Telefone</label>
+                          <div class="col-sm-4">
+                            <input type="text" id="datepicker-popup6" class="form-control">
+                          </div>
+                          <div class="col-sm-5">
+                            <input class="form-control" data-inputmask="'alias': 'phonebe'" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                  
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Email/ CPF</label>
+                         <div class="col-sm-5">
+                            <input class="form-control" data-inputmask="'alias': 'email'" />
+                          </div>
+                          <div class="col-sm-4">
                             <input class="form-control" data-inputmask="'alias': 'ip'" />
                           </div>
                         </div>
                       </div>
                     </div>
+
+                    <p class="card-description">
+                      Produtos Disponíveis
+                    </p>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Idade</label>
-                          <div class="col-sm-9">
-                            <input type="number" class="form-control" />
+                      <div class="col-12 grid-margin">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Escolha os produtos disponíveis</h4>
+                            <p class="card-description">
+                             Arraste a coluna dos produtos disponíveis para os produtos desejados
+                            </p>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <h6 class="card-title">Produtos disponíveis</h6>
+                                <div id="dragula-event-left" class="py-2">
+                                  <div class="card rounded border mb-2">
+                                    <div class="card-body p-3">
+                                      <div class="media">
+                                        <i class="fa fa-check icon-sm text-primary align-self-center mr-3"></i>
+                                        <div class="media-body">
+                                          <h6 class="mb-1">Splliter</h6>
+                                         
+                                        </div>                              
+                                      </div> 
+                                    </div>
+                                  </div>
+                                  <div class="card rounded border mb-2">
+                                    <div class="card-body p-3">
+                                      <div class="media">
+                                        <i class="fa fa-check icon-sm text-primary align-self-center mr-3"></i>
+                                        <div class="media-body">
+                                          <h6 class="mb-1">Access Collect</h6>
+                        
+                                        </div>                              
+                                      </div> 
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <h6 class="card-title">Produtos desejados</h6>
+                                <div id="dragula-event-right" class="py-2">
+                                 
+                              
+                                 
+                            
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Produto Desejado</label>
-                          <div class="col-sm-9">
-                             <select class="form-control">
-                              <option>Splitter</option>
-                              <option>Access Collect</option>
-							</select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Email</label>
-                         <div class="col-sm-9">
-                            <input class="form-control" data-inputmask="'alias': 'email'" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Telefone</label>
-						  <div class="col-sm-9">
-                            <input class="form-control" data-inputmask="'alias': 'phonebe'" />
-                          </div>
-                         </div>
-                      </div>
-                    </div>
+                  </div>
 					 <button  type="submit" class="btn btn-primary mr-2">Enviar dados</button>
                   </form>
                 </div>
@@ -378,7 +406,10 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="../../js/dragula.js"></script>
   <script src="../../js/x-editable.js"></script>
+  <script src="../../js/popover2.js"></script>
+  <script src="../../js/datepickers-splliter.js"></script>
   <!-- End custom js for this page-->
 </body>
 
