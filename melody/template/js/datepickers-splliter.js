@@ -10,5 +10,8 @@ $( "#datepicker-popup4" ).datepicker({
 $( "#datepicker-popup5" ).datepicker({
 	inline: true
 });
+$( "#datepicker-popup6" ).datepicker({
+	inline: true
+});
 
 
