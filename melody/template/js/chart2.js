@@ -330,4 +330,6 @@ function drawStuff() {
       options: multiAreaOptions
     });
   }
+
+ 
 });
