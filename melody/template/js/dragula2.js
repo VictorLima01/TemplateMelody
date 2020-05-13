@@ -4,7 +4,8 @@
     dragula([document.getElementById("dragula-left"), document.getElementById("dragula-right")]);
     dragula([document.getElementById("profile-list-left"), document.getElementById("profile-list-right")]);
     dragula([document.getElementById("dragula-event-left"), document.getElementById("dragula-event-right")]);
-    dragula([document.getElementById("dragula-event-left2"), document.getElementById("dragula-event-right2")])
+    dragula([document.getElementById("dragula-event-left2"), document.getElementById("dragula-event-right2")]);
+    dragula([document.getElementById("dragula-event-left3"), document.getElementById("dragula-event-right3")])
     
       .on('drop', function(el) {
         console.log($(el));
