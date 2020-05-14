@@ -241,7 +241,7 @@
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Escolha o nome da atividade e o responsável</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Escolha o nome da atividade e uma descrição</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -252,12 +252,13 @@
                       <form class="form-inline">
                         <label class="col-sm-3 col-form-label">Nome Atividade</label>
                         <input type="text" class="form-control mb-2 mr-sm-2" id="txtTitulo" placeholder="Nome">
-                        <label class="col-sm-3 col-form-label">Responsável</label>
-                         <input type="text" class="form-control"  id="txtSubtitulo" placeholder="Accesstage, Cliente, Banco">
+                        <label class="col-sm-3 col-form-label">Descrição</label>
+                         <input type="text" class="form-control"  id="txtSubtitulo" maxlength="25" placeholder="Breve descrição">
                         <button type="button" class="btn btn-primary ml-3" id="btnEnviar" onclick="gravar()">Enviar</button>
                       </form>
                   </div>
                 </div>
+                <br>
                 <div class="row">
                   <div class="col-md-6">
                     <h6 class="card-title">Disponivéis</h6>
@@ -423,9 +424,13 @@
                     </div>
                   </div>
                 </div>
+               
               </div>
+             
             </div>
+            
           </div>
+          <button type="button" class="btn btn-primary btn-md" >Enviar</button>
         </div>
       </div>
     </div>
