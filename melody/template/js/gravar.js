@@ -6,7 +6,19 @@ function gravar(){
     
      
     div. innerHTML = "<h6>" + titulo +"</h6>"+ "\n" + "<p>" + subtitulo + "</p>";
-    console.log(div);
+	console.log(div);
+
+	$('#filtro').keyup(function() {
+		var array = ['txtTitulo', 'txtTitulo'];
+
+		if('#filtro' == array){
+			array.push('#listagem');
+			console.log(array);
+		};
+
+	});
+	
+
 
 }
 ///  Colocar label de options dos produtos
@@ -39,3 +51,19 @@ function removerCampos(id){
 	var node1 = document.getElementById('destino');
 	node1.removeChild(node1.childNodes[0]);
 }
+////// Mudar a cor da div
+function mudarcor() {
+	document.getElementById("cor").style.backgroundColor = "#A52A2A";
+  }
+  function mudarcor2() {
+	document.getElementById("cor2").style.backgroundColor = "#A52A2A";
+  }
+  function mudarcor3() {
+	document.getElementById("cor3").style.backgroundColor = "#A52A2A";
+  }
+  function mudarcor4() {
+	document.getElementById("cor4").style.backgroundColor = "#A52A2A";
+  }
+ 
+
+  
