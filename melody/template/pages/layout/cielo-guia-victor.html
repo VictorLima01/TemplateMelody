@@ -209,6 +209,7 @@
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="cielo-guia-victor.html">CNPJs Cliente Cielo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="envio-sms-victor.html"> Envio SMS </a></li>
                 <li class="nav-item"> <a class="nav-link" href="indicadores-sms-victor.html"> Indicadores SMS </a></li>
               </ul>
             </div>
@@ -222,13 +223,6 @@
           <div class="row">
 		   <div class="col-12">
               <div class="card">
-                <div class="card-header col-4" style="background: 	#32CD32">
-                    <ul class="nav nav-tabs card-header-tabs" >
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" style="color: #FFFAFA">Cadastro concluido</a>
-                      </li>
-                    </ul>
-                  </div>
                 <div class="card-body">
                  <div class="container">
                     <div class="row">
@@ -236,16 +230,25 @@
                             <div class="card">
                                 <h5 class="card-header">Perfil Cielo</h5>
                                 <div class="card-body">
-                                  <h5 class="card-title">ADRIEL PAIVA  <i class="fa fa-check icon-sm text-success align-self-center mr-3"></i></h5>
+                                  <h5 class="card-title">ADRIEL PAIVA  <div class="badge badge-success badge-pill">Inserido</div> </h5>
                                   <p class="card-text">Operadora Cielo</p>
-                                  <p>RegisterID 38226</p>
-                                  <p> BusinessName CADASTRO - ADRIEL PAIVA</p>
+                                  <p>Data : 08/08/2019</p>
+                                  <p>Hora: 12:35:35</p>
                                 </div>
                               </div>
                         </div>
                         <div class="col-8">
-                            <table class="table table-hover" id="lista">
-                                <input id="filtro-nome"/>
+                            <table class="table table-hover" id="table">
+                                <div class="row">
+                                    <div class="col-1">
+                                        <label>Filtrar:</label>
+                                    </div>
+                                  <div class="col-11">
+                                    <input placeholder="Search "  class="form-control col-4 " id="filtro-nome"/>
+                                </div>
+                                    
+                                </div>
+                                
                                 <thead>
                                   <tr>
                                     <th scope="col">CNPJ</th>
@@ -254,7 +257,7 @@
                                     <th scope="col">PV</th>
                                   </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="lista">
                                   <tr>
                                     <td scope="row">98.768.969/0001-01</td>
                                     <td>CADASTRO - ADRIEL PAIVA</td>
@@ -329,6 +332,8 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="../../js/sweetalert.min.js"></script>
+  <script src="../../js/switch_alert.js"></script>
   <script src="../../js/edit-table.js"></script>
   <script src="../../js/js-grid3.js"></script>
   <script src="../../js/db3.js"></script>
