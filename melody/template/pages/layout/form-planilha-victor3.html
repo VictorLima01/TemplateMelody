@@ -228,31 +228,20 @@
                 <h4 class="card-title">Adicione novas tarefas</h4>
                 <p class="mb-0 text-muted">Escolha um produto para adicionar novas tarefas, clique no <i class="far fa-plus-square text-success"></i> para adicionar mais tarefas e no <i class="fas fa-trash text-danger"></i> para excluir a ultima tarefa </p>
                 <br>
-                <div class="container">
-                <div class="row">
-                    
+                <form>
+                  <div class="form-row">
                     <div class="col-4">
-                        <label>Nome Atividade</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="txtTitulo" placeholder="Nome" onfocus="this.value='';">
+                      <input type="text" class="form-control mb-2 mr-sm-2" id="txtTitulo" placeholder="Nome" onfocus="this.value='';">
                     </div>
                     <div class="col-4">
-                        <label>Descrição</label>
-                        <input type="text" class="form-control"  id="txtSubtitulo" maxlength="25" placeholder="Breve descrição" onfocus="this.value='';">
+                      <input type="text" class="form-control"  id="txtSubtitulo" maxlength="25" placeholder="Breve descrição" onfocus="this.value='';">
                     </div>
-               
-                </div>
-              </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="button" class="btn btn-primary ml-3" id="btnEnviar" onclick="gravar()" value="Inserir dados">
-                        
-                        <button type="button" class="btn btn-outline-secondary btn-rounded btn-icon" onclick="duplicarCampos();">
-                            <i class="far fa-plus-square text-success" ></i>                          
-                          </button>
+                    <div class="col-4">
+                      <input type="button" class="btn btn-primary ml-3" id="btnEnviar" onclick="gravar()" value="Inserir dados">
                     </div>
-                </div>
-          
-            <br>
+                  </div>
+                </form>
+              <br>
                 <div class="row">
                   <div class="col-md-6" id = "listagem">
                     <div class="row">
