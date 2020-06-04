@@ -234,27 +234,33 @@
                               <div class="modal-dialog modal-sm" role="document">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel-3"> Envie um SMS com o tiulo, número e a mensagem</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel-3"> Envie um SMS</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                       <span aria-hidden="true">&times;</span>
                                     </button>
                                   </div>
                                   <div class="modal-body">
-                                    <form class="form-inline">
-                                        <label class="sr-only" for="inlineFormInputName2">Titulo</label>
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Titulo">
-                                      
-                                        <label class="sr-only" for="inlineFormInputGroupUsername2">Mensagem</label>
-                                        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Mensagem">
-                  
-                                        <label class="sr-only" for="inlineFormInputGroupUsername2">Telefone</label>
-                                        <input type="text"  data-inputmask="'alias': 'phonebe'" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Telefone">
-                  
-                                        
-                                      </form>
+                                    <form>
+                                      <div class="form-group">
+                                        <label for="formGroupExampleInput">Remetente</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Remetente">
+                                      </div>
+                                    <div class="form-group col-md-6">
+                                      <label for="inputAddress">Telefone</label>
+                            <select class="js-example-tokenizer form-control " multiple="multiple" id=" tags" placeholder="Telefone" required>
+                              <option>119879878</option>
+                              <option>119879878</option>
+                              <option>119879878</option>
+                            </select>
+                            </div>
+                                      <div class="form-group">
+                                        <label for="formGroupExampleInput2">Mensagem</label>
+                                        <textarea rows="5" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Mensagem"></textarea>
+                                      </div>
+                                    </form>
                                   </div>
                                   <div class="modal-footer">
-                                    <button type="button" class="btn btn-success">Enviar</button>
+                                    <button type="button" class="btn btn-success">Enviar <i class="fa fa-phone ml-1"></i></button>
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                                   </div>
                                 </div>
@@ -268,7 +274,7 @@
                         <div class="col-lg-6 grid-margin stretch-card ">
                             <div class="card">
                               <div class="card-body">
-                                <h4 class="card-title">Envios de SMSs por SO </h4>
+                                <h4 class="card-title">Envios de SMSs por remetente </h4>
                                  <div class="col-lg-6">
                                            <select class="form-control">
                                            <option>Hoje</option>
@@ -286,7 +292,7 @@
                           <div class="col-lg-6 grid-margin stretch-card ">
                             <div class="card">
                               <div class="card-body">
-                                <h4 class="card-title">Total de SMS enviados por período </h4>
+                                <h4 class="card-title">Envios de SMSs com sucesso </h4>
                                  <div class="col-lg-6">
                                            <select class="form-control">
                                            <option>Hoje</option>
@@ -297,10 +303,81 @@
                                             </select>
                                         </div>
                                 <br><br>
-                                <canvas id="sms-periodo"></canvas>
+                                <canvas id="sms-sucesso-falha"></canvas>
                               </div>
                             </div>
                           </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 grid-margin stretch-card ">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Total de SMS enviados por hora </h4>
+                             <div class="col-lg-6">
+                                       <select class="form-control">
+                                       <option>Hoje</option>
+                                       <option>Ontem</option>
+                                        <option>últimos 15 dias</option>
+                                        <option>Último mês</option>
+                                        <option>Último ano</option>
+                                        </select>
+                                    </div>
+                            <br><br>
+                            <canvas id="sms-periodo"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 grid-margin stretch-card ">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Total de SMS enviados por dia </h4>
+                            <diiv class="row">
+                                <div class="col-lg-6">
+                                    <select class="form-control">
+                                    <option>Hoje</option>
+                                    <option>Ontem</option>
+                                     <option>últimos 15 dias</option>
+                                     <option>Último mês</option>
+                                     <option>Último ano</option>
+                                     </select>
+                                 </div>
+                                 <div class="col-lg-6">
+                                     <select class="form-control">
+                                     <option>Todos os meses</option>
+                                     <option>Janeiro</option>
+                                      <option>Fevereiro</option>
+                                      <option>Março</option>
+                                      <option>Abril</option>
+                                      <option>Maio</option>
+                                      </select>
+                                  </div>
+                            </div>
+                             
+                            <br><br>
+                            <canvas id="sms-periodo2"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="row">
+                    <div class="col-lg-6 grid-margin stretch-card ">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">Total unicos por remetente </h4>
+                          <diiv class="row">
+                              <div class="col-lg-6">
+                                  <select class="form-control">
+                                  <option>Hoje</option>
+                                  <option>Ontem</option>
+                                   <option>últimos 15 dias</option>
+                                   <option>Último mês</option>
+                                   <option>Último ano</option>
+                                   </select>
+                               </div>
+                          </div>
+                          <canvas id="total-unico"></canvas>
+                        </div>
+                      </div>
+                  </div>
                 </div>
 				</div>
               </div>
@@ -339,6 +416,7 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="../../js/add-select.js"></script>
   <script src="../../js/modal-demo.js"></script>
   <script src="../../js/chart-cielo.js"></script>
   <!-- End custom js for this page-->
