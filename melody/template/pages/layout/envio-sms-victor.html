@@ -220,45 +220,57 @@
       <div class="main-panel">
         <div class="content-wrapper">
 		<div class="right_col" role="main">
-          <div class="row">
-		   <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                    <h4 class="card-title">Enviar SMS</h4>
-                    <p class="card-description">
-                    Adicione vários números e envie a mensagem junto ao título.
-                    </p>
-                    <form class="needs-validation" novalidate>
-                        <div class="form-row">
-                          <div class="col-md-3 mb-3">
-                            <label for="validationTooltip03">Remetente</label>
-                            <input  type="text" class="form-control" id="validationTooltip03" placeholder="Remetente" required>
-                            <div class="invalid-tooltip">
-                              Digite o remetente!
-                            </div>
-                          </div>
-                          <div class="col-md-3 mb-3">
-                            <label for="validationTooltip05">Telefone</label>
-                            <input  type="text"   class="form-control" id="validationTooltip05 tags" placeholder="Telefone" required>
-                            <div class="invalid-tooltip">
-                             Digite um Telefone
-                            </div>
-                          </div>
-                          <div class="col-md-6 mb-3">
-                            <label for="validationTooltip04">Mensagem</label>
-                            <textarea type="text" maxlength="135" minlength="20" class="form-control" id="validationTooltip04" placeholder="Mensagem" required></textarea>
-                            <div class="invalid-tooltip">
-                             Digite uma Mensagem!
-                            </div>
-                          </div>
+         <div class="row">
+            <div class="col-12">
+               <div class="card">
+                 <div class="card-body">
+            
+                        <h4 class="card-title">Enviar SMS</h4>
+                         <p class="card-description">
+                         Adicione vários números e envie a mensagem junto ao título.
+                         </p>
                          
-                        </div>
-                        <button class="btn btn-primary" type="submit">Enviar SMS<i class="fa fa-phone ml-1"></i></button>
-                      </form>
-				</div>
-              </div>
-            </div>
-         </div>
+                         <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Remetente</label>
+                                <input type="email" placeholder="remetente" class="form-control" id="inputEmail4">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputAddress">Telefones</label>
+                            <select class="js-example-tokenizer form-control" multiple="multiple" id=" tags" placeholder="Telefone" required>
+                              <option>119879878</option>
+                              <option>119879878</option>
+                              <option>119879878</option>
+                            </select>
+                            </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Mensagem</label>
+                                <textarea rows="5" type="password" class="form-control" id="inputPassword4" maxlength="135" minlength="20" placeholder="Mensagem"></textarea>
+                              </div>
+                            <div class="form-group col-md-6" >
+                              <label for="inputPassword4">Arquivo</label>
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <label for="exampleFormControlFile1">Números de telefone</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                        
+                            
+                            
+                            <button class="btn btn-primary" type="submit">Enviar SMS<i class="fa fa-phone ml-1"></i></button>
+                          </form>
+                   
+                      
+                 </div>
+               </div>
+             </div>
+          </div>
          <br>
 		  <div class="row">
             <div class="col-12">
@@ -361,6 +373,8 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="../../js/dropify.js"></script>
+  <script src="../../js/add-select.js"></script>
   <script src="../../js/paginate.js"></script>
   <script src="../../js/validation.js"></script>
   <script src="../../js/form-addons2.js"></script>
