@@ -225,124 +225,18 @@
           border-width: 5px;
           width: 10%;
         }
+        .hr--white {
+          border-style: none;
+          border-top-style: dotted;
+          border-color: white;
+          border-width: 5px;
+          width: 10%;
+        }
       </style>
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="right_col" role="main">
             <div class="row">
-              <!-- <div class="col-lg-6 grid-margin stretch-card ">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="col-12">
-                          <div class="card card-statistics">
-                            <div class="card-body">
-                              <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
-                                <div class="d-inline-block">
-                                  <i class="fa fa-users text-white icon-lg"></i>
-                                </div>
-                                <hr>
-                                <div class="statistics-item">
-                                  <p>
-                                    <i class="icon-sm fa fa-user mr-2"></i>
-                                    Total Hoje
-                                  </p>
-                                  <h2>500</h2>
-                                  <small class="text-gray">cadastros</small>
-                                </div>
-                                <div class="d-inline-block">
-                                  <i class="fa fa-users text-white icon-lg"></i>
-                                </div>
-                                  <hr>
-                                <div class="statistics-item">
-                                  <p>
-                                    <i class="icon-sm fa fa-user mr-2"></i>
-                                    Total Ontem
-                                  </p>
-                                  <h2>354</h2>
-                                  <small class="text-gray">cadastros</small>
-                                </div>
-                              
-                              
-                              
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-                    <h4 class="card-title">Operadoras requeridas pelos clientes </h4>
-                     <div class="col-lg-6">
-                               <select class="form-control">
-                               <option>Hoje</option>
-                               <option>Ontem</option>
-                                <option>últimos 15 dias</option>
-                                <option>Último mês</option>
-                                <option>Último ano</option>
-                                </select>
-                            </div>
-                    <br><br>
-                    <canvas id="polar"></canvas>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- <div class="col-lg-6 grid-margin stretch-card ">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Operadoras requeridas pelos clientes </h4>
-                    <div class="col-lg-6">
-                      <select class="js-example-tags form-control" id="id-do-select">
-                        <option>Hoje</option>
-                        <option>Ontem</option>
-                        <option  value="produto">Últimos 15 dias</option>
-                      </select>
-                    </div>
-                    <br><br>
-                    <div class="row">
-                      <div class="col-12" id="id-da-div">
-                        <div class="col-12">
-                          <div class="card card-statistics">
-                            <div class="card-body">
-                              <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
-                                <div class="d-inline-block">
-                                  <i class="fa fa-users text-white icon-lg"></i>
-                                </div>
-                                <hr>
-                                <div class="statistics-item">
-                                  <p>
-                                    <i class="icon-sm fa fa-user mr-2"></i>
-                                    Total Hoje
-                                  </p>
-                                  <h2>500</h2>
-                                  <small class="text-gray">cadastros</small>
-                                </div>
-                                <div class="d-inline-block">
-                                  <i class="fa fa-users text-white icon-lg"></i>
-                                </div>
-                                  <hr>
-                                <div class="statistics-item">
-                                  <p>
-                                    <i class="icon-sm fa fa-user mr-2"></i>
-                                    Total Ontem
-                                  </p>
-                                  <h2>354</h2>
-                                  <small class="text-gray">cadastros</small>
-                                </div>
-                              
-                              
-                              
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
             <style>
               .titulo {
@@ -408,6 +302,90 @@
                   </div>
                 </div>
               </div>
+            </div> 
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card ">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Operadoras requeridas pelos clientes </h4>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                      <div class="d-inline-block">
+                        <i class="fa fa-users text-black icon-lg"></i>
+                      </div>
+                      <hr>
+                      <div class="statistics-item">
+                        <p>
+                          <i class="icon-sm fa fa-user mr-2"></i>
+                          Total Hoje
+                        </p>
+                        <h2>500</h2>
+                        <small class="text-gray">cadastros</small>
+                      </div>
+                      <hr class="hr--white">
+                      <div class="d-inline-block">
+                        <i class="fa fa-users text-black icon-lg"></i>
+                      </div>
+                      <hr>
+                      <div class="statistics-item">
+                        <p>
+                          <i class="icon-sm fa fa-user mr-2"></i>
+                          Total Ontem
+                        </p>
+                        <h2>354</h2>
+                        <small class="text-gray">cadastros</small>
+                      </div>
+
+                    </div>
+                    <br>
+                    <div class="col-lg-6">
+                      <select class="form-control">
+
+                        <option>últimos 15 dias</option>
+                        <option>Último mês</option>
+                        <option>Último ano</option>
+                      </select>
+                    </div>
+                    <br><br>
+                    <canvas id="polar"></canvas>
+                  </div>
+                </div>
+              </div>
+              
+              
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Operadoras requeridas pelos clientes </h4>
+                      <div class="row">
+                        <div class="col-6">
+                          <h4 class="card-title">
+                            <i class="fas fa-chart-line"></i>
+                            Total Hoje
+                          </h4>
+                          <h2 class="mb-5">500 <span class="text-muted h4 font-weight-normal">Cadastros</span></h2>
+                        </div>
+                        <div class="col-6">
+                          <h4 class="card-title">
+                            <i class="fas fa-chart-line"></i>
+                            Total Ontem
+                          </h4>
+                          <h2 class="mb-5">300 <span class="text-muted h4 font-weight-normal">Cadastros</span></h2>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <select class="form-control">
+  
+                          <option>últimos 15 dias</option>
+                          <option>Último mês</option>
+                          <option>Último ano</option>
+                        </select>
+                      </div>
+                      <br><br>
+                      <canvas id="polar"></canvas>
+                    </div>
+                  </div>
+                </div>
+              
             </div>
           </div>
         </div>
