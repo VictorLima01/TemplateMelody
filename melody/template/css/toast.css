@@ -1,0 +1,84 @@
+.tela--fundo{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+/* Error toast */
+.toast--error{
+    position: absolute;
+    z-index: 1000;
+    top: calc(50% - 250px);
+    left: calc(50% - 300px);
+   
+    width: 600px;
+    height: 500px;
+    padding: 6px;
+    background: #ffffff;
+    color: #333333;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:  0 0 10px rgba(255,0,0, 5);
+}
+/* Success toast */
+.toast--success{
+    position: absolute;
+    z-index: 1000;
+    top: calc(50% - 250px);
+    left: calc(50% - 300px);
+   
+    width: 600px;
+    height: 500px;
+    padding: 6px;
+    background: #ffffff;
+    color: #333333;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:  0 0 10px rgba(50,205,50, 5);
+}
+.img--toast--access{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.img--toast--cielo{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.shake--hands{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.parceria{
+    margin-left: 25px;
+}
+.success--logo{
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.legenda{
+    margin-left: 25px;
+}
+.container{
+    margin-top: 50px;
+    padding: 0px 15px;
+    text-align: justify;
+}
+.sair-container{
+    position: relative;
+    height: 50px;
+}
+.sair-container button{
+   position: absolute;
+   top: 50px;
+   right: calc(50% - 150px);
+   width: 300px !important;
+}
+ 
+ 
