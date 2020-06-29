@@ -16,11 +16,11 @@ $('.js-example-tokenizer').on("change", function (e) {
   var valor = $(this).val();
   if (valor == "produto") {
     $('#id-da-div').hide();
-  } else {
+  } 
+  else {
     $('#id-da-div').show();
   }
-
-
+  
   log("change");
 });
 
