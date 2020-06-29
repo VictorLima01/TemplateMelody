@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Indicadores Tiquei</title>
   <!-- plugins:css -->
+  
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">
@@ -14,9 +15,14 @@
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/tabela-usuarios.css">
+  <link rel="stylesheet" href="../../css/edit.css">
   <link rel="stylesheet" href="../../css/style2.css">
+  <link rel="stylesheet" href="../../css/cielo-perfil.css">
+  
   <!-- endinject -->
-  <link rel="shortcut icon" href="../../images/favicon.png" />
+ <link rel="shortcut icon" href="../../images/favicon.png" />
+ 
 </head>
 
 <body>
@@ -116,7 +122,7 @@
 				 </ul>
             </div>
           </li>
-		    <li class="nav-item">
+		<li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
               <i class="fas fa-chart-pie menu-icon"></i>
               <span class="menu-title">Tiquei</span>
@@ -150,7 +156,7 @@
 			
             </div>
           </li>
-		     
+		    
 		  <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="fas fa-table menu-icon"></i>
@@ -194,36 +200,54 @@
               </ul>
               </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="fa fa-window-restore menu-icon"></i>
+              <span class="menu-title">Integração</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="cielo-guia-victor.html">CNPJs Cliente Cielo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="envio-sms-victor.html"> Envio SMS </a></li>
+                <li class="nav-item"> <a class="nav-link" href="indicadores-sms-victor.html"> Indicadores SMS </a></li>
+              </ul>
+            </div>
+          </li>
          </ul>
       </nav>
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
 		<div class="right_col" role="main">
-          <div class="row">
-              <div class="col-lg-6 grid-margin stretch-card ">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Operadoras requeridas pelos clientes </h4>
-                     <div class="col-lg-6">
-                               <select class="form-control">
-                               <option>Hoje</option>
-                               <option>Ontem</option>
-                                <option>últimos 15 dias</option>
-                                <option>Último mês</option>
-                                <option>Último ano</option>
-                                </select>
-                            </div>
-                    <br><br>
-                    <canvas id="prototipo2"></canvas>
-                  </div>
-                </div>
-              </div>
-			
-			
-			
-			</div>
-			</div>
+         <div class="row">
+            <div class="col-12">
+               <div class="card">
+                 <div class="card-body">
+            
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+                    <select  class="selectDropdown">
+                      <option value='1'>1</option>
+                      <option value='2'>2</option>
+                      <option value='3'>3</option>
+                      <option value='4'>4</option>
+                    </select>
+                  
+                    <script type="text/javascript">
+                        $('.selectDropdown').on('change', function(e) {
+                    $(this).children(':not(:selected)').prop('disabled', true);
+                });
+                    </script>
+                   
+                      
+                 </div>
+               </div>
+             </div>
+          </div>
+         
+		  
+		
 		</div>
 			
         <!-- content-wrapper ends -->
@@ -246,7 +270,6 @@
   <script src="../../vendors/js/vendor.bundle.addons.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
   <script src="../../js/off-canvas.js"></script>
@@ -256,7 +279,11 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-   <script src="../../js/prototipo2.js"></script>
+  <script src="../../js/dropify.js"></script>
+  <script src="../../js/add-select.js"></script>
+  <script src="../../js/paginate.js"></script>
+  <script src="../../js/validation.js"></script>
+  <script src="../../js/form-addons2.js"></script>
   <!-- End custom js for this page-->
 </body>
 

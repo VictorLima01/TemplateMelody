@@ -249,7 +249,6 @@ border-color: grey;
 border-width: 5px;
 width: 10%;
 }
-
       </style>
       <div class="main-panel">
         <div class="content-wrapper">
@@ -258,61 +257,10 @@ width: 10%;
               <div class="col-12">
                 <div class="card">
                   <div class="card-body">
-                    <H4>Indicadores SMS</H4>
+                    <H4>Indicadores Cielo</H4>
+                    <br>
                     <div class="row">
-                      <div class="col-md-6 grid-margin stretch-card">
-                        <!-- Modal starts -->
-                        <div class="text-center">
-                          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
-                            data-target="#exampleModal-3">Enviar SMS<i class="fa fa-phone ml-1"></i></button>
-                        </div>
-                        <div class="modal fade" id="exampleModal-3" tabindex="-1" role="dialog"
-                          aria-labelledby="exampleModalLabel-3" aria-hidden="true">
-                          <div class="modal-dialog modal-sm" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel-3"> Envie um SMS</h5>
-                                <button type="button"   class="close" data-dismiss="modal" aria-label="Close">
-                                  <span  aria-hidden="true">&times;</span>
-                                </button>
-                              </div>
-                              <div class="modal-body">
-                                <form>
-                                  <div class="form-group">
-                                    <label for="formGroupExampleInput">Remetente</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput"
-                                      placeholder="Remetente">
-                                  </div>
-                                  <div class="form-group col-md-6">
-                                    <label for="inputAddress">Telefone</label>
-                                    <select class="js-example-tokenizer form-control " multiple="multiple" id=" tags"
-                                      placeholder="Telefone" required>
-                                      <option>119879878</option>
-                                      <option>119879878</option>
-                                      <option>119879878</option>
-                                    </select>
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="formGroupExampleInput2">Mensagem</label>
-                                    <textarea rows="5" type="text" class="form-control" id="formGroupExampleInput2"
-                                      placeholder="Mensagem"></textarea>
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-success">Enviar <i
-                                    class="fa fa-phone ml-1"></i></button>
-                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Modal Ends -->
-
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 grid-margin stretch-card">
+                      <!-- <div class="col-md-6 grid-margin stretch-card">
                         <div class="card">
                           <div class="card-body">
                             <div class="row grid-margin">
@@ -321,28 +269,28 @@ width: 10%;
                                   <div class="card-body">
                                     <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
                                       <div class="d-inline-block">
-                                        <i class="fa fa-phone text-white icon-lg"></i>
+                                         <i class="fa fa-building text-white icon-lg"></i>
                                       </div>
                                       <hr>
                                       <div class="statistics-item">
                                         <p>
         
-                                          Total Mensagem
+                                          Total Pv 
                                         </p>
-                                        <h2>1000</h2>
-                                        <small class="text-gray">mensagens</small>
+                                        <h2>60</h2>
+                                        <small class="text-gray">PV's</small>
                                       </div>
                                       <div class="d-inline-block">
-                                        <i class="fa fa-phone text-white icon-lg"></i>
+                                         <i class="fa fa-building text-white icon-lg"></i>
                                       </div>
                                         <hr>
                                       <div class="statistics-item">
                                         <p>
                                           <i class="icon-sm fa fa-user mr-2"></i>
-                                          Total mensagens enviadas
+                                          Total único CNPJs
                                         </p>
-                                        <h2>30.000</h2>
-                                        <small class="text-gray">enviados</small>
+                                        <h2>54</h2>
+                                        <small class="text-gray">CNPJs</small>
                                       </div>
                                     
                                     
@@ -354,7 +302,7 @@ width: 10%;
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                      
                     <div class="col-md-6 grid-margin">
                       <div class="card">
@@ -363,30 +311,42 @@ width: 10%;
                             <div class="col-12">
                               <div class="card card-statistics">
                                 <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-6">
+                                      <select class="form-control">
+                                        <option value="">Geral</option>
+                                        <option>Hoje</option>
+                                        <option>Ontem</option>
+                                        <option>últimos 15 dias</option>
+                                        <option>Último mês</option>
+                                        <option>Último ano</option>
+                                      </select>
+                                    </div>
+                                  </div>
                                   <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
                                     <div class="d-inline-block">
-                                      <i class="fa fa-phone text-white icon-lg"></i>
+                                       <i class="fa fa-building text-white icon-lg"></i>
                                     </div>
                                     <hr>
                                     <div class="statistics-item">
                                       <p>
       
-                                        Total Remetentes
+                                        Total PV's cadastrados
                                       </p>
-                                      <h2>3</h2>
-                                      <small class="text-gray">remetentes</small>
+                                      <h2>30.000</h2>
+                                      <small class="text-gray">PV's</small>
                                     </div>
                                     <div class="d-inline-block">
-                                      <i class="fa fa-phone text-white icon-lg"></i>
+                                       <i class="fa fa-building text-white icon-lg"></i>
                                     </div>
                                       <hr>
                                     <div class="statistics-item">
                                       <p>
                                         <i class="icon-sm fa fa-user mr-2"></i>
-                                        Total mensagens
+                                        Total de CNPJs
                                       </p>
-                                      <h2>30.000</h2>
-                                      <small class="text-gray">enviadas</small>
+                                      <h2>27.345</h2>
+                                      <small class="text-gray">cnpj</small>
                                     </div>
                                   
                                   
@@ -401,57 +361,10 @@ width: 10%;
                     </div>
                   </div>
                     <div class="row">
-                      <div class="col-md-6 grid-margin stretch-card">
-                        <div class="card">
-                          <div class="card-body">
-                            <div class="row grid-margin">
-                              <div class="col-12">
-                                <div class="card card-statistics">
-                                  <div class="card-body">
-                                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
-                                      <div class="d-inline-block">
-                                        <i class="fa fa-mobile text-white icon-lg"></i>
-                                      </div>
-                                      <hr>
-                                      <div class="statistics-item">
-                                        <p>
-        
-                                          Total Telefones
-                                        </p>
-                                        <h2>30.000</h2>
-                                        <small class="text-gray">telefones</small>
-                                      </div>
-                                      <div class="d-inline-block">
-                                        <i class="fa fa-mobile text-white icon-lg"></i>
-                                      </div>
-                                        <hr>
-                                      <div class="statistics-item">
-                                        <p>
-                                          <i class="icon-sm fa fa-user mr-2"></i>
-                                          Total Telefones únicos
-                                        </p>
-                                        <h2>15.000</h2>
-                                        <small class="text-gray">enviados</small>
-                                      </div>
-                                    
-                                    
-                                    
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-                  
-                  </div>
-                  <div class="row">
                       <div class="col-lg-6 grid-margin stretch-card ">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Envios de SMSs por remetente </h4>
+                            <h4 class="card-title">Cadastros por dia </h4>
                             <div class="col-lg-6">
                               <select class="form-control">
                                 <option>Hoje</option>
@@ -462,14 +375,14 @@ width: 10%;
                               </select>
                             </div>
                             <br><br>
-                            <canvas id="sms-dispositivo"></canvas>
+                            <canvas id="cadastro-dia"></canvas>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-6 grid-margin stretch-card ">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Envios de SMSs com sucesso </h4>
+                            <h4 class="card-title">Cadastro por hora </h4>
                             <div class="col-lg-6">
                               <select class="form-control">
                                 <option>Hoje</option>
@@ -480,7 +393,7 @@ width: 10%;
                               </select>
                             </div>
                             <br><br>
-                            <canvas id="sms-sucesso-falha"></canvas>
+                            <canvas id="cadastro-hora"></canvas>
                           </div>
                         </div>
                       </div>
@@ -489,7 +402,7 @@ width: 10%;
                       <div class="col-lg-6 grid-margin stretch-card ">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Total de SMS enviados por hora </h4>
+                            <h4 class="card-title">Status por cadastros</h4>
                             <div class="col-lg-6">
                               <select class="form-control">
                                 <option>Hoje</option>
@@ -500,14 +413,14 @@ width: 10%;
                               </select>
                             </div>
                             <br><br>
-                            <canvas id="sms-periodo"></canvas>
+                            <canvas id="status-cadastro"></canvas>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-6 grid-margin stretch-card ">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Total de SMS enviados por dia </h4>
+                            <h4 class="card-title">Status por cadastro realizado </h4>
                             <diiv class="row">
                               <div class="col-lg-6">
                                 <select class="form-control">
@@ -518,29 +431,38 @@ width: 10%;
                                   <option>Último ano</option>
                                 </select>
                               </div>
+                          </div>
+                          <canvas id="status-cadastro-realizado"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 grid-margin stretch-card ">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">CNPJs únicos por data</h4>
+                            <diiv class="row">
                               <div class="col-lg-6">
                                 <select class="form-control">
-                                  <option>Todos os meses</option>
-                                  <option>Janeiro</option>
-                                  <option>Fevereiro</option>
-                                  <option>Março</option>
-                                  <option>Abril</option>
-                                  <option>Maio</option>
+                                  <option>Hoje</option>
+                                  <option>Ontem</option>
+                                  <option>últimos 15 dias</option>
+                                  <option>Último mês</option>
+                                  <option>Último ano</option>
                                 </select>
                               </div>
+
                           </div>
 
                           <br><br>
-                          <canvas id="sms-periodo2"></canvas>
+                          <canvas id="cnpj-unico-data"></canvas>
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
                       <div class="col-lg-6 grid-margin stretch-card ">
                         <div class="card">
                           <div class="card-body">
-                            <h4 class="card-title">Total unicos por remetente </h4>
-                            <div class="row">
+                            <h4 class="card-title">CNPJs únicos por hora</h4>
+                            <diiv class="row">
                               <div class="col-lg-6">
                                 <select class="form-control">
                                   <option>Hoje</option>
@@ -550,198 +472,116 @@ width: 10%;
                                   <option>Último ano</option>
                                 </select>
                               </div>
-                            </div>
-                            <canvas id="total-unico"></canvas>
+
                           </div>
+
+                          <br><br>
+                          <canvas id="cnpj-unico-hora"></canvas>
                         </div>
                       </div>
-                      <div class="col-lg-6 grid-margin stretch-card ">
-                        <div class="card">
-                          <div class="card-body">
-                            <h4 class="card-title">Total únicos Telefones </h4>
-                            <div class="row">
-                              <div class="col-lg-6">
-                                <select class="form-control">
-                                  <option>Hoje</option>
-                                  <option>Ontem</option>
-                                  <option>últimos 15 dias</option>
-                                  <option>Último mês</option>
-                                  <option>Último ano</option>
-                                </select>
-                              </div>
-                              <div class="col-lg-6">
-                                <div class="text-center">
-                                  <button type="button" class="btn btn-primary btn-sm" data-toggle="modal"
-                                    data-target="#exampleModal">Ver mais</button>
-                                </div>
-                              </div>
-                            </div>
-                            <canvas id="total-unico3"></canvas>
-                          </div>
-                          </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Modal starts -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <div class="row">
-                                <div class="col-12">
-                                   <div class="card">
-                                     <div class="card-body">
-                                         <h4 class="card-title">Todos Envios</h4>
-                                         <div id="divConteudo">
-                                         <table id="tabela" class="table table-hover">
-                                            <thead class="thead-dark">
-                                              <tr>
-                                                <th scope="col">Remetente</th>
-                                                <th scope="col">Número</th>
-                                                <th scope="col">Quantidade de envios</th>
-                                             </tr>
-                                             <tr>
-                                                <th><input type="text" class="form-control" id="txtColuna1" placeholder="Busque Remetente"/></th>
-                                                <th><input type="text" class="form-control" id="txtColuna2" placeholder="Busque Número"/></th>
-                                                <th><input type="text" class="form-control" id="txtColuna3" placeholder="Busque Quantidade"/></th>
-                                             </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td scope="row">Felipe Carvalho</td>
-                                                <td>1111111111</td>
-                                                <td>2000</td>
-                                               
-                                              </tr>
-                                              <tr>
-                                                <td scope="row">Maria Dantas</td>
-                                                <td>1111111111</td>
-                                                <td>1456</td>
-                                               
-                                              </tr>
-                                              <tr>
-                                                <td scope="row">João Alves</td>
-                                                <td>1111111111</td>
-                                                <td>2000</td>
-                                               
-                                              </tr>
-                                              <tr>
-                                                <td scope="row">Ana Alves</td>
-                                                <td>111111111</td>
-                                                <td>1789</td>
-                                                
-                                              </tr>
-                                              <tr>
-                                                <td scope="row">Joaquim Silva</td>
-                                                <td>1111111111</td>
-                                                <td>2000</td>
-                                               
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                         </div>
-                                         <nav>
-                                            <ul class="pagination">
-                                              <li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a></li>
-                                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                              <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                              <li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li>
-                                            </ul>
-                                          </nav>
-                                                 </div>
-                                             </div>
-                                        </div>
-                                     </div>
-                            </div>
-                            </div>
-                        </div>
-                      </div>
-                      <!-- Modal Ends -->
+                      
                     </div>
-<!--           
-                    <div class="row">
+       <div class="row">
+        <div class="col-lg-6 grid-margin stretch-card ">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Segmentos cadastrados</h4>
+              <diiv class="row">
+                <div class="col-lg-6">
+                  <select class="form-control">
+                    <option>Hoje</option>
+                    <option>Ontem</option>
+                    <option>últimos 15 dias</option>
+                    <option>Último mês</option>
+                    <option>Último ano</option>
+                  </select>
+                </div>
+
+            </div>
+
+            <br><br>
+            <canvas id="segmentos-cadastrados"></canvas>
+          </div>
+        </div>
+       </div>
+                    <!-- <div class="row">
                       <div class="col-md-6 grid-margin">
                         <div class="card">
                           <div class="card-body">
                             <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
                               <div class="d-inline-block">
-                                <i class="fa fa-phone text-black icon-lg"></i>
+                                <i class="fa fa-building text-black icon-lg"></i>
+                               
                               </div>
                               <hr>
                               <div class="statistics-item">
                                 <p>
 
-                                  Total SMS
+                                  Total Pv 
                                 </p>
-                                <h2>1000</h2>
-                                <small class="text-gray">SMS's</small>
+                                <h2>60</h2>
+                                <small class="text-gray">PV's</small>
                               </div>
-                                <hr>
+                              <hr>
                               <div class="statistics-item">
                                 <p>
                                   <i class="icon-sm fa fa-user mr-2"></i>
-                                  Total único de envios
+                                  Total único CNPJs
                                 </p>
-                                <h2>3</h2>
-                                <small class="text-gray">Telefones</small>
+                                <h2>54</h2>
+                                <small class="text-gray">CNPJs</small>
                               </div>
-
+                              
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>  -->
+
+                    </div> -->
                   </div>
                 </div>
-
-
               </div>
             </div>
 
-            <!-- content-wrapper ends -->
-            <!-- partial:../../partials/_footer.html -->
-            <footer class="footer">
-              <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a
-                    href="https://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
-                    class="far fa-heart text-danger"></i></span>
-              </div>
-            </footer>
-            <!-- partial -->
-          </div>
-          <!-- main-panel ends -->
 
-          <!-- page-body-wrapper ends -->
+          </div>
         </div>
-        <!-- container-scroller -->
-        <!-- plugins:js -->
-        <script src="../../vendors/js/vendor.bundle.base.js"></script>
-        <script src="../../vendors/js/vendor.bundle.addons.js"></script>
-        <!-- endinject -->
-        <!-- Plugin js for this page-->
-        <!-- End plugin js for this page-->
-        <!-- inject:js -->
-        <script src="../../js/off-canvas.js"></script>
-        <script src="../../js/hoverable-collapse.js"></script>
-        <script src="../../js/misc.js"></script>
-        <script src="../../js/settings.js"></script>
-        <script src="../../js/todolist.js"></script>
-        <!-- endinject -->
-        <!-- Custom js for this page-->
-        <script src="../../js/validation.js"></script>
-        <script src="../../js/add-select.js"></script>
-        <script src="../../js/modal-demo.js"></script>
-        <script src="../../js/chart-sms.js"></script>
-        <!-- End custom js for this page-->
+
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a
+                href="https://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
+                class="far fa-heart text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/misc.js"></script>
+    <script src="../../js/settings.js"></script>
+    <script src="../../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../../js/add-select.js"></script>
+    <script src="../../js/modal-demo.js"></script>
+    <script src="../../js/chart-cielo.js"></script>
+    <!-- End custom js for this page-->
 </body>
 
 </html>
