@@ -80,5 +80,8 @@
    right: calc(50% - 150px);
    width: 300px !important;
 }
- 
+
+.pill{
+    margin-top: -1px;
+}
  
