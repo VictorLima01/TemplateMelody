@@ -283,67 +283,152 @@
                      <table id="tabela" class="table table-hover">
                         <thead >
                           <tr>
-                            <th scope="col">Remetente</th>
+                            <th scope="col">Quantidade</th>
                             <th scope="col">Mensagem</th>
-                            <th scope="col">Data</th>
-                            <th scope="col">Horário</th>
+                            <th scope="col">Origem</th>
+                            <th>Ações</th>
                          </tr>
                          <tr>
-                            <th><input type="text" class="form-control" id="txtColuna1" placeholder="Busque Remetente"/></th>
+                            <th><input type="text" class="form-control" id="txtColuna1" placeholder="Busque Quantidade"/></th>
                             <th><input type="text" class="form-control" id="txtColuna2" placeholder="Busque Mensagem"/></th>
-                            <th><input type="text" class="form-control" id="txtColuna3" placeholder="Busque Data"/></th>
-                            <th><input type="text" class="form-control" id="txtColuna4" placeholder="Busque Horário"/></th>
+                            <th><input type="text" class="form-control" id="txtColuna3" placeholder="Busque Origem"/></th>
                          </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td scope="row">Felipe Carvalho</td>
+                            <td scope="row">33</td>
                             <td>Nova atualização, aproveite</td>
-                            <td>25/05/2020</td>
-                            <td>12:36</td>
+                            <td>Tiquei</td>
+                            <td><button type="button"
+                              class="btn btn-info btn-rounded btn-sm my-0" data-toggle="modal" data-target="#exampleModal">
+                             + Detalhes
+                          </button></td>
                           </tr>
                           <tr>
-                            <td scope="row">Maria Dantas</td>
+                            <td scope="row">2000</td>
+                            <td>Tiquei Mensagem</td>
+                            <td>Tiquei</td>
+                            <td><button type="button"
+                              class="btn btn-info btn-rounded btn-sm my-0">
+                             + Detalhes
+                          </button></td>
+                          </tr>
+                          <tr>
+                            <td scope="row">7000</td>
+                            <td>Baixe app Tiquei</td>
+                            <td>Tiquei</td>
+                            <td><button type="button"
+                              class="btn btn-info btn-rounded btn-sm my-0">
+                             + Detalhes
+                          </button></td>
+                          </tr>
+                          <tr>
+                            <td scope="row">354</td>
                             <td>Nova atualização</td>
-                            <td>24/05/2020</td>
-                            <td>6:56</td>
+                            <td>Tiquei</td>
+                            <td><button type="button"
+                              class="btn btn-info btn-rounded btn-sm my-0">
+                             + Detalhes
+                          </button></td>
+                          
                           </tr>
                           <tr>
-                            <td scope="row">João Alves</td>
-                            <td>Nova atualização, aproveite</td>
-                            <td>25/05/2020</td>
-                            <td>12:36</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">Ana Alves</td>
-                            <td>Nova atualização</td>
-                            <td>23/05/2020</td>
-                            <td>7:54</td>
-                          </tr>
-                          <tr>
-                            <td scope="row">Joaquim Silva</td>
-                            <td>Nova atualização, aproveite</td>
-                            <td>25/05/2020</td>
-                            <td>12:36</td>
+                            <td scope="row">12000</td>
+                            <td>Nova plataforma Tiquei</td>
+                            <td>Tiquei</td>
+                            <td><button type="button"
+                              class="btn btn-info btn-rounded btn-sm my-0">
+                             + Detalhes
+                          </button></td>
+                            
                           </tr>
                         </tbody>
                       </table>
                      </div>
-                     <nav>
-                        <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-left"></i></a></li>
-                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fa fa-chevron-right"></i></a></li>
-                        </ul>
-                      </nav>
                              </div>
                          </div>
                     </div>
                  </div>
-		
+		   <!-- modal start -->
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Todos contatos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="divConteudo">
+                <table id="tabela2" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Origem</th>
+                      <th>Contato</th>
+                      <th>Mensagem</th>
+                      <th>Data</th>
+                      <th>Hora</th>
+                    </tr>
+                    <tr>
+                      <th><input type="text" class="form-control" id="txtColuna1" placeholder="Busque ID"/></th>
+                      <th><input type="text" class="form-control" id="txtColuna2" placeholder="Busque Origem"/></th>
+                      <th><input type="text" class="form-control" id="txtColuna3" placeholder="Busque Contato"/></th>
+                      <th><input type="text" class="form-control" id="txtColuna4" placeholder="Busque Mensagem"/></th>
+                      <th><input type="text" class="form-control" id="txtColuna5" placeholder="Busque Data"/></th>
+                      <th><input type="text" class="form-control" id="txtColuna6" placeholder="Busque Hora"/></th>
+                   </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">12356</td>
+                      <td>Tiquei</td>
+                      <td>11949712830</td>
+                      <td>Nova atualização, aproveite</td>
+                      <td>21/05/2020</td>
+                      <td>11:34:24</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">297879</td>
+                      <td>Tiquei</td>
+                      <td>119876534</td>
+                      <td>Nova atualização, aproveite</td>
+                      <td>21/05/2020</td>
+                      <td>11:34:24</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">309898</td>
+                      <td>Tiquei</td>
+                      <td>1197806543</td>
+                      <td>Nova atualização, aproveite</td>
+                      <td>21/05/2020</td>
+                      <td>11:34:24</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">485875</td>
+                      <td>Tiquei</td>
+                      <td>119567875</td>
+                      <td>Nova atualização, aproveite</td>
+                      <td>21/05/2020</td>
+                      <td>11:34:24</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">553457</td>
+                      <td>Tiquei</td>
+                      <td>119567875</td>
+                      <td>Nova atualização, aproveite</td>
+                      <td>21/05/2020</td>
+                      <td>11:34:24</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal ends -->
 		</div>
 			
         <!-- content-wrapper ends -->
@@ -375,9 +460,9 @@
   <script src="../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <script src="../../js/modal-demo.js"></script>
   <script src="../../js/dropify.js"></script>
   <script src="../../js/add-select.js"></script>
-  <script src="../../js/paginate.js"></script>
   <script src="../../js/validation.js"></script>
   <script src="../../js/form-addons2.js"></script>
   <!-- End custom js for this page-->
