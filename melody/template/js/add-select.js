@@ -10,18 +10,7 @@ $(".js-example-tokenizer").select2({
 
 $('.js-example-tokenizer').on("change", function (e) {
 
-  
 
-
-  var valor = $(this).val();
-  if (valor == "produto") {
-    $('#id-da-div').hide();
-  } 
-  else {
-    $('#id-da-div').show();
-  }
-  
-  log("change");
 });
 
 console.log(".js-example-tokenizer");
