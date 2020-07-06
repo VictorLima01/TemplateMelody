@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+
   <title>Indicadores Tiquei</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="../../vendors/iconfonts/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.addons.css">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../css/user-profile.css">
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="../../css/style2.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
@@ -27,8 +40,9 @@
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg"
+            alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -49,12 +63,12 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-        
-       
-          
+
+
+
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-              <img src="http://via.placeholder.com/30x30" alt="profile"/>
+              <img src="http://via.placeholder.com/30x30" alt="profile" />
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
@@ -68,9 +82,10 @@
               </a>
             </div>
           </li>
-         
+
         </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
           <span class="fas fa-bars"></span>
         </button>
       </div>
@@ -78,14 +93,14 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:../../partials/_settings-panel.html -->
-      
-      
-         
-          <!-- To do section tab ends -->
-         
-          <!-- chat tab ends -->
-        
-      
+
+
+
+      <!-- To do section tab ends -->
+
+      <!-- chat tab ends -->
+
+
       <!-- partial -->
       <!-- partial:../../partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -93,7 +108,7 @@
           <li class="nav-item nav-profile">
             <div class="nav-link">
               <div class="profile-image">
-                <img src="http://via.placeholder.com/40x40" alt="image"/>
+                <img src="http://via.placeholder.com/40x40" alt="image" />
               </div>
               <div class="profile-name">
                 <p class="name">
@@ -105,44 +120,56 @@
               </div>
             </div>
           </li>
-         
-           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false"
+              aria-controls="page-layouts">
               <i class="fab fa-trello menu-icon"></i>
               <span class="menu-title">Rede de Observação</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="page-layouts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="posclientes-victor.html">Possíveis clientes</a></li>
+                <li class="nav-item d-none d-lg-block"> <a class="nav-link" href="posclientes-victor.html">Possíveis
+                    clientes</a></li>
                 <li class="nav-item"> <a class="nav-link" href="form-victor.html">Adicionar nova franquia</a></li>
-				 </ul>
+              </ul>
             </div>
           </li>
-		   <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false"
+              aria-controls="e-commerce">
               <i class="fas fa-chart-pie menu-icon"></i>
               <span class="menu-title">Tiquei</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="e-commerce">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-cadastro-victor.html">Cadastros</a></li> 
-                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-login-victor.html">Logins</a></li>
-                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-financeiro-victor.html">Financeiro</a></li>
-				<b><label>Transações</label></b>
-				 <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-vendas-victor.html">Vendas</a></li>
-				  <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-recebimentos-victor.html">Recebimentos</a></li>
-				   <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-taxas-victor.html">Taxas</a></li>
-				 <b><label>Usuários</label></b>
-				  <li class="nav-item"><a class="nav-link" href="indicadores-usuarios-tiquei-victor.html">Tabela de todos os usuários</a></li>
-				  <li class="nav-item"><a class="nav-link" href="perfil-usuarios-access-victor.html">Perfil de usuários Access</a></li>
-				  <li class="nav-item"><a class="nav-link" href="perfil-usuarios-tiquei-victor.html">Perfil de usuários</a></li>
-				   <li class="nav-item"><a class="nav-link" href="mudar-senha-victor.html">Mudar Senha</a></li>
-				  <b><label>Operadoras</label></b>
-				   <li class="nav-item"><a class="nav-link" href="cielo-victor.html">Cielo</a></li> 
+                <li class="nav-item"><a class="nav-link"
+                    href="exemplo-indicadores-tiquei-cadastro-victor.html">Cadastros</a></li>
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-login-victor.html">Logins</a>
+                </li>
+                <li class="nav-item"><a class="nav-link"
+                    href="exemplo-indicadores-tiquei-financeiro-victor.html">Financeiro</a></li>
+                <b><label>Transações</label></b>
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-vendas-victor.html">Vendas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link"
+                    href="exemplo-indicadores-tiquei-recebimentos-victor.html">Recebimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="exemplo-indicadores-tiquei-taxas-victor.html">Taxas</a>
+                </li>
+                <b><label>Usuários</label></b>
+                <li class="nav-item"><a class="nav-link" href="indicadores-usuarios-tiquei-victor.html">Tabela de todos
+                    os usuários</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfil-usuarios-access-victor.html">Perfil de usuários
+                    Access</a></li>
+                <li class="nav-item"><a class="nav-link" href="perfil-usuarios-tiquei-victor.html">Perfil de
+                    usuários</a></li>
+                <li class="nav-item"><a class="nav-link" href="mudar-senha-victor.html">Mudar Senha</a></li>
+                <b><label>Operadoras</label></b>
+                <li class="nav-item"><a class="nav-link" href="cielo-victor.html">Cielo</a></li>
                 <li class="nav-item"><a class="nav-link" href="getnet-victor.html">Getnet</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="sodexo-victor.html">Sodexo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="sodexo-victor.html">Sodexo</a></li>
                 <li class="nav-item"> <a class="nav-link" href="vr-victor.html">VR</a></li>
                 <li class="nav-item"> <a class="nav-link" href="ticket-victor.html">Ticket</a></li>
                 <li class="nav-item"> <a class="nav-link" href="bin-victor.html">Bin</a></li>
@@ -150,11 +177,11 @@
                 <li class="nav-item"> <a class="nav-link" href="rede-victor.html">Rede</a></li>
                 <li class="nav-item"> <a class="nav-link" href="vero-victor.html">Vero</a></li>
               </ul>
-			
+
             </div>
           </li>
-		    
-		  <li class="nav-item">
+
+          <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="fas fa-table menu-icon"></i>
               <span class="menu-title">Organizador de Tarefas</span>
@@ -162,208 +189,288 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-			   <li class="nav-item"> <a class="nav-link" href="form-cliente-planilha-victor.html">Cadastro Cliente</a></li>
-			  <li class="nav-item"> <a class="nav-link" href="perfil-cliente-victor.html">Perfil Cliente</a></li>
-			   <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
-			    <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access Collect</a></li>
-			   <b><label>Domínio do Adm</label></b>
-				<li class="nav-item"> <a class="nav-link" href="controle-responsaveis-planilha-victor.html">Responsáveis das tarefas</a></li>
-               <li class="nav-item"> <a class="nav-link" href="form-planilha-victor.html">Add Tarefas Splitter</a></li>
-				<li class="nav-item"> <a class="nav-link" href="form-planilha-collect-victor.html">Add Tarefas Collect</a></li>
-               
+                <li class="nav-item"> <a class="nav-link" href="form-cliente-planilha-victor.html">Cadastro Cliente</a>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="perfil-cliente-victor.html">Perfil Cliente</a></li>
+                <li class="nav-item"> <a class="nav-link" href="splitter-planilha-victor.html">Splitter</a></li>
+                <li class="nav-item"> <a class="nav-link" href="accesscollect-indicadores-victor.html">Access
+                    Collect</a></li>
+                <b><label>Domínio do Adm</label></b>
+                <li class="nav-item"> <a class="nav-link" href="controle-responsaveis-planilha-victor.html">Responsáveis
+                    das tarefas</a></li>
+                <li class="nav-item"> <a class="nav-link" href="form-planilha-victor.html">Add Tarefas Splitter</a></li>
+                <li class="nav-item"> <a class="nav-link" href="form-planilha-collect-victor.html">Add Tarefas
+                    Collect</a></li>
+
               </ul>
             </div>
           </li>
- <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false"
+              aria-controls="form-elements">
               <i class="far fa-compass menu-icon"></i>
               <span class="menu-title">Accesstage</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-			   <b><label>Geral(Fornax,Tiquei e Apus)</label></b>
+                <b><label>Geral(Fornax,Tiquei e Apus)</label></b>
                 <li class="nav-item"> <a class="nav-link" href="indicadores-geral-victor.html">Indicadores</a></li>
-				 <b><label>Contas á pagar</label></b>
+                <b><label>Contas á pagar</label></b>
                 <li class="nav-item"> <a class="nav-link" href="indicadores-pay-victor.html">Access Pay</a></li>
                 <li class="nav-item"> <a class="nav-link" href="indicadores-true-victor.html">Access True</a></li>
-				 <b><label>Contas á receber</label></b>
+                <b><label>Contas á receber</label></b>
                 <li class="nav-item"> <a class="nav-link" href="indicadores-account-victor.html">Access Account</a></li>
-                <li class="nav-item"> <a class="nav-link" href="indicadores-billbank-victor.html">Access Bill Bank</a></li>
-				 <b><label>Tesouraria</label></b>
+                <li class="nav-item"> <a class="nav-link" href="indicadores-billbank-victor.html">Access Bill Bank</a>
+                </li>
+                <b><label>Tesouraria</label></b>
                 <li class="nav-item"> <a class="nav-link" href="indicadores-check-victor.html">Access Check</a></li>
                 <li class="nav-item"> <a class="nav-link" href="indicadores-card-victor.html">Access Card</a></li>
-                
+
               </ul>
-              </div>
+            </div>
           </li>
-         </ul>
+        </ul>
       </nav>
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-		<div class="right_col" role="main">
-          <div class="row">
-		      <div class="col-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <div class="border-bottom text-center pb-4">
-                        <img src="http://via.placeholder.com/90x90" alt="profile" class="img-lg rounded-circle mb-3"/>
-                        <p>João Alves</p>
-                        <p>Adiministrador<p>
-                      </div>
-                     <div class="py-4">
-                        <p class="clearfix">
-                          <span class="float-left">
-                            Nome Completo
-                          </span>
-                          <span class="float-right text-muted">
-                            João Alves
-                          </span>
-                        </p>
-                        <p class="clearfix">
-                          <span class="float-left">
-                            Email
-                          </span>
-                          <span class="float-right text-muted">
-                            access@access.com.br
-                          </span>
-                        </p>
-                        <p class="clearfix">
-                          <span class="float-left">
-                            Senha
-                          </span>
-                          <span class="float-right text-muted">
-                            123456
-                          </span>
-                        </p>
-                      </div>
-                      <button class="btn btn-primary btn-block">Trocar senha</button>
+          <div class="card">
+            <div class="card-body">
+              <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel-2" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel-2">Esqueceu a senha</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                    <div class="col-lg-8 pl-lg-5">
-                      <div class="d-flex justify-content-between">
-                        <div>
-                          <h3>João Alves</h3>
-                          <div class="d-flex align-items-center">
-                            <h5 class="mb-0 mr-2 text-muted">São Paulo - SP</h5>
-                           
+                    <div class="modal-body">
+                          <div class="container bootstrap snippet profile-container">
+  
+                            <div class="row">
+                              <div class="col-sm-12 section-container">
+                                <div class="tab-pane active" id="home">
+                                  <form id="editable-form" class="editable-form">
+                                    <div class="row no-margin">
+                                      <div class="col-md-12 no-padding">
+                                        <div class="form-group no-margin">
+                                          <div class="col-input-left">
+                                            <label>
+                                              <h6>Senha antiga</h6>
+                                            </label>
+                                            <div class="input-container">
+                                              <input type="password" href="#" class="form-control" value="">
+                                              <div class="edit-container">
+                                                <button type="submit" class="btn btn-primary btn-sm editable-submit">
+                                                  <i class="fa fa-fw fa-check"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-sm editable-cancel">
+                                                  <i class="fa fa-fw fa-times"></i>
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row no-margin">
+                                      <div class="col-md-12 no-padding">
+                                        <div class="form-group no-margin">
+                                          <div class="col-input-left">
+                                            <label>
+                                              <h6>Senha atual</h6>
+                                            </label>
+                                            <div class="input-container">
+                                              <input type="text" href="#" class="form-control" value="">
+                                              <div class="edit-container">
+                                                <button type="submit" class="btn btn-primary btn-sm editable-submit">
+                                                  <i class="fa fa-fw fa-check"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-sm editable-cancel">
+                                                  <i class="fa fa-fw fa-times"></i>
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <br>
+                                    <div class="row no-margin">
+                                      <div class="col-md-12 no-padding">
+                                        <div class="form-group no-margin">
+                                          <div class="col-input-left">
+                                            <label>
+                                              <h6>Confirmar senha</h6>
+                                            </label>
+                                            <div class="input-container">
+                                              <input type="text" href="#" class="form-control" value="">
+                                              <div class="edit-container">
+                                                <button type="submit" class="btn btn-primary btn-sm editable-submit">
+                                                  <i class="fa fa-fw fa-check"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-default btn-sm editable-cancel">
+                                                  <i class="fa fa-fw fa-times"></i>
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+            
+            
+            
+                                </div>
+                               
+                              </div>
+                              <!--/tab-content-->
+            
+                            </div>
+                            <!--/col-9-->
                           </div>
-                        </div>
-                        <div>
-                          
-                        </div>
-                      </div>
-                      <div class="mt-4 py-2 border-top border-bottom">
-                        <ul class="nav profile-navbar">
-                         
-                          <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                              <i class="fas fa-file"></i>
-                              Feed
-                            </a>
-                          </li>
-                          
-                          
-                        </ul>
-                      </div>
-                      <div class="profile-feed">
-                        <div class="d-flex align-items-start profile-feed-item">
-                          <img src="http://via.placeholder.com/40x40" alt="profile" class="img-sm rounded-circle"/>
-                          <div class="ml-4">
-                            <h6>
-                              Accesstage
-                            </h6>
-                            <p>
-                             Confira Organizador de tarefas
-                            </p>
-                   
-                          </div>
-						  
-                        </div>
-                       <div class="d-flex align-items-start profile-feed-item">
-                          <img src="http://via.placeholder.com/40x40" alt="profile" class="img-sm rounded-circle"/>
-                          <div class="ml-4">
-                              <h6>
-                              Accesstage 
-                            </h6>
-                            <p>
-                             Confira indicadores do Tiquei
-                            </p>
-                          
-                          </div>
-                          
-                          </div>
-						   <div class="d-flex align-items-start profile-feed-item">
-                          <img src="http://via.placeholder.com/40x40" alt="profile" class="img-sm rounded-circle"/>
-                          <div class="ml-4">
-                              <h6>
-                              Accesstage 
-                            </h6>
-                            <p>
-                             Confira indicadores dos produtos Accesstage
-                            </p>
-                          
-                          </div>
-                          
-                          </div>
-                        <div class="d-flex align-items-start profile-feed-item">
-                          <img src="http://via.placeholder.com/40x40" alt="profile" class="img-sm rounded-circle"/>
-                          <div class="ml-4">
-                              <h6>
-                              Accesstage 
-                            </h6>
-                            <p>
-                             Confira indicadores das transações
-                            </p>
-                          
-                          </div>
-                          
-                          </div>
-                        
-                      </div>
                     </div>
-					
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success">Salvar</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <div class="container bootstrap snippet profile-container">
+  
+                <div class="row">
+                  <div class="col-sm-3">
+                    <!--left col-->
+
+
+                    <div class="text-center">
+                      <img src="../../images/teste_profile.png" class=" img-circle">
+                    </div>
+                    </hr>
+                    <br>
+                    <h3 class="text-center">Nome do usuário</h3>
+                  </div>
+                  <!--/col-3-->
+
+                  <div class="col-sm-9 section-container">
+                    <div class="tab-pane active" id="home">
+                      <h3 class="personal-title">Perfil</h3>
+
+                      <form id="editable-form" class="editable-form">
+                        <div class="row no-margin">
+                          <div class="col-md-6 no-padding">
+                            <div class="form-group no-margin">
+                              <div class="col-input-left">
+                                <label>
+                                  <h6>Nome completo</h6>
+                                </label>
+                                <div class="input-container">
+                                  <input type="text" href="#" class="form-control" value="João Neto Alves">
+                                  <div class="edit-container">
+                                    <button type="submit" class="btn btn-primary btn-sm editable-submit">
+                                      <i class="fa fa-fw fa-check"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-sm editable-cancel">
+                                      <i class="fa fa-fw fa-times"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 no-padding">
+                            <div class="form-group no-margin">
+                              <div class="col-input">
+                                <label>
+                                  <h6>Email</h6>
+                                </label>
+                                <div class="input-container">
+                                  <input type="text" href="#" class="form-control" value="access@access.com.br">
+                                  <div class="edit-container">
+                                    <button type="submit" class="btn btn-primary btn-sm editable-submit">
+                                      <i class="fa fa-fw fa-check"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-default btn-sm editable-cancel">
+                                      <i class="fa fa-fw fa-times"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="row no-margin">
+                          <div class="col-md-6 no-padding">
+                            <div class="form-group no-margin">
+                              <div class="col-input-left">
+                               
+                                  <a href="#" data-toggle="modal" data-target="#exampleModal-2">Esqueceu a senha</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-success">Salvar</button>
+                      </form>
+
+                   
+
+                    </div>
+                   
+                  </div>
+                  <!--/tab-content-->
+
+                </div>
+                <!--/col-9-->
+              </div>
+              <!--/row-->
             </div>
-		</div>
-		<br><br>
-		
-			
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="far fa-heart text-danger"></i></span>
           </div>
-        </footer>
-        <!-- partial -->
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+            <footer class="footer">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a
+                    href="https://www.urbanui.com/" target="_blank">Urbanui</a>. All rights reserved.</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i
+                    class="far fa-heart text-danger"></i></span>
+              </div>
+            </footer>
+          </div>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
       </div>
-      <!-- main-panel ends -->
-    
-    <!-- page-body-wrapper ends -->
-  </div>
-  <!-- container-scroller -->
-  <!-- plugins:js -->
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
-  <script src="../../vendors/js/vendor.bundle.addons.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page-->
-  <!-- End plugin js for this page-->
-  <!-- inject:js -->
-  <script src="../../js/off-canvas.js"></script>
-  <script src="../../js/hoverable-collapse.js"></script>
-  <script src="../../js/misc.js"></script>
-  <script src="../../js/settings.js"></script>
-  <script src="../../js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="../../js/profile-demo.js"></script>
-  <!-- End custom js for this page-->
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../vendors/js/vendor.bundle.addons.js"></script>
+
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="../../js/off-canvas.js"></script>
+    <script src="../../js/hoverable-collapse.js"></script>
+    <script src="../../js/misc.js"></script>
+    <script src="../../js/settings.js"></script>
+    <script src="../../js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../../js/exemplo2-perfil.js"></script>
+    <script src="../../js/x-editable2.js"></script>
+    <script src="../../js/user-profile.js"></script>
+    <!-- End custom js for this page-->
 </body>
 
 </html>
