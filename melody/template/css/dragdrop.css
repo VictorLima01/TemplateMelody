@@ -1,0 +1,80 @@
+/*cards*/
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  .big-box{
+	  max-width: 100%;
+	  max-height: auto;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 100px;
+ }
+  
+  .box {
+	margin-top: 10px;
+   
+    /* display:inline-block; */
+    cursor: move;
+  }
+  
+  .box.over {
+    border: 3px dotted #666;
+  }
+
+  
+  [draggable] {
+    user-select: none;
+  }
+
+ fieldset {
+	border: 0;
+	padding: 0 2.4rem;
+}
+ fieldset + fieldset {
+	margin-top: 6.4rem;
+}
+ fieldset legend {
+	font: 700 1.6rem Archivo;
+	color: black;
+	margin-bottom: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: 1.6rem;
+	border-bottom: 1px solid grey;
+}
+ fieldset legend button {
+	background: none;
+	border: 0;
+	color: purple;
+	font: 700 1.4rem Archivo;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+ fieldset legend button:hover {
+	color: palevioletred;
+}
+/*Button de excluir*/
+.relative-parent {
+    height: auto;
+    width: auto;
+}
+.relative{
+    height: auto;
+     width: auto;
+     position: relative;
+     top: 15px;
+     left: 7px;
+     bottom: 10px;
+}
+.icon-style{
+    position: relative;
+    height: 5px;
+    width: 5px;
+    bottom: 7px;
+    right: 5px;
+}
