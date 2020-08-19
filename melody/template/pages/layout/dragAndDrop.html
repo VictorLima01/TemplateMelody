@@ -19,40 +19,14 @@
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/style2.css">
-  <link rel="stylesheet" href="../../css/buttonStyle.css">
+
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
 
 </head>
 
 <body>
-  <!-- <script>
-      
-    function remChild(obj){
-        $($(obj).next()).slideUp(200,function()
-        {
-            $(obj).next().remove();
-            $(obj).remove();
-        console.log(obj);
-        });           
-     }
-    $(document).ready(function(obj){
-    
-        original = document.getElementById('ValuWrapper');
-        crossButton = document.getElementById('cross');
-    
-        $(".buttonImg").click(function(){
-            repeat();
-        
-        });
-    
-        $("body").on("click",".buttonImgTop",function(){
-            remChild(this);
-        console.log("clicou");
-        });
-    });       
-    
-        </script> -->
+
   <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
@@ -256,262 +230,492 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="right_col" role="main">
-              <div class="row">
-                  <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                          <fieldset>
-                              <legend >Favoritos
-                                  <button type="button" id="button_id">+ Categorias</button>
-                                  </legend>
-                          </fieldset>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                      <div class="card-body">
+                        <fieldset>
+                            <legend >Favoritos
+                                <button type="button" id="button_id">+ Categorias</button>
+                            </legend>
+                        </fieldset>
+                      </div>
                   </div>
-                  
-              </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12 mt-3" >     
-                  <button type="button" id="cross" class="btn btn-danger btn-icon buttonImgTop relative">
+                  <!-- <button type="button" id="cross" class="btn btn-danger btn-icon buttonImgTop relative">
                     <i class="fas fa-trash icon-style"></i>
-                  </button>
-                    <div class="card relative-parent" id="ValuWrapper">
+                  </button> -->
+                    <div class="card big-box" id="ValuWrapper">
                     
                         <div class="card-body " >
                           <div class="row">
                            
-                            <div class="col-2">
+                            <div class="col-4">
                               <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Tiquei </h5>
                             </div>
                             <div class="col-0">
                               <i  class="fas fa-pencil-alt"></i>
                             </div>
-                            <div class="col-1">
-                              <!-- <i type="button" class="fas fa-trash text-danger buttonImgTop" id="cross"></i>  -->
-                             
+                            <div class="col-2">
+                              <i type="button" class="fas fa-trash text-danger"></i>
                             </div>
-                           
+                          </div>
+                          <div class="row">
+                            <div class="col-2">
+                              <p class="card-description">
+                               Arraste os items
+                              </p>
+                            </div>
                           </div>
                             
                             <div class="container">
-                                <div draggable="true" class="col-lg-6 grid-margin stretch-card box">
-                                    <div class="card">
+                              <div class="row">
+                                <div  class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                                  <div class="card stretch-card box" draggable="true" ondragstart="drag(event)" id="drag1" >
+                                    <div class="card-body">
+                                      <div class="row">
+                         
+                                        <div class="col-8">
+                                          <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 1 </h5>
+                                        </div>
+                                        <div class="col-0">
+                                          <i  class="fas fa-pencil-alt"></i>
+                                          <i type="button" class="fas fa-trash text-danger"></i>
+                                        </div>
+                                       
+                                      </div>
+                                      <table class="table">
+                                         <div class="col-sm-6">
+                                            <td>
+                                               <select class="form-control selector-role all-filters align-dropdown-cadastros"
+                                                  id="select-quantidade-recebimentos-dispositivos">
+                                               </select>
+                                            </td>
+                                         </div>
+                                      </table>
+                                      <canvas id="cep-periodo"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div  class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                                  <div class="card stretch-card box" draggable="true" ondragstart="drag(event)" id="drag2">
+                                    <div class="card-body">
+                                      <div class="row">
+                         
+                                        <div class="col-8">
+                                          <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Grafico 2 </h5>
+                                        </div>
+                                        <div class="col-0">
+                                          <i  class="fas fa-pencil-alt"></i>
+                                          <i type="button" class="fas fa-trash text-danger"></i>
+                                        </div>
+                                        
+                                       
+                                      </div>
+                                      <table class="table">
+                                         <div class="col-sm-6">
+                                            <td>
+                                               <select class="form-control selector-role all-filters align-dropdown-cadastros"
+                                                  id="select-quantidade-recebimentos-dispositivos">
+                                               </select>
+                                            </td>
+                                         </div>
+                                      </table>
+                                      <canvas id="segmentos-cadastrados"></canvas>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <div class="card stretch-card box" draggable="true" ondragstart="drag(event)" id="drag3">
                                       <div class="card-body">
                                         <div class="row">
                            
-                                          <div class="col-2">
-                                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 1 </h5>
+                                          <div class="col-8">
+                                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Tabela 3 </h5>
                                           </div>
                                           <div class="col-0">
                                             <i  class="fas fa-pencil-alt"></i>
+                                            <i type="button" class="fas fa-trash text-danger"></i>
                                           </div>
                                          
                                         </div>
-                                        <table class="table">
-                                           <div class="col-sm-6">
-                                              <td>
-                                                 <select class="form-control selector-role all-filters align-dropdown-cadastros"
-                                                    id="select-quantidade-recebimentos-dispositivos">
-                                                 </select>
-                                              </td>
-                                           </div>
-                                        </table>
-                                        <canvas id="fornecedores-periodo2"></canvas>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div draggable="true" class="col-lg-6 grid-margin stretch-card box">
-                                    <div class="card">
-                                      <div class="card-body">
                                         <div class="row">
-                           
-                                          <div class="col-2">
-                                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Grafico 2 </h5>
+                                          <div class="table-responsive">
+                                            <table class="table">
+                                              <thead>
+                                                <tr>
+                                                  <th>Tela</th>
+                                                  <th>Endpoint</th>
+                                                  <th>Sub-título</th>
+                                                  <th>Nome do menu</th>
+                                                  <th>Icone</th>
+                                                  <th>Ação</th>
+                                                </tr>
+                                             </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <td>Home</td>
+                                                  <td>'https://hom.tiquei.com.br/tiquei-api/'</td>
+                                                  <td></td>
+                                                  <td>Home</td>
+                                                  <td>fa fa-home <i class="fa fa-home"></i></td>
+                                                  <td>
+                                                    <button type="submit" class="btn btn-outline-dark "><i class="fas fa-pencil-alt"></i> Editar </button>
+                                                    <button type="submit" class="btn btn-outline-danger">
+                                                  <i class="fas fa-trash"></i> Excluir </button>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Usuário Access</td>
+                                                  <td>'https://hom.tiquei.com.br/tiquei-api/'</td>
+                                                  <td></td>
+                                                  <td>Usuários</td>
+                                                  <td>fa fa-user <i class="fa fa-users"></i></td>
+                                                  <td>
+                                                    <button type="submit" class="btn btn-outline-dark "><i class="fas fa-pencil-alt"></i> Editar </button>
+                                                    <button type="submit" class="btn btn-outline-danger">
+                                                  <i class="fas fa-trash"></i> Excluir </button>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Cadastros</td>
+                                                  <td>'https://hom.tiquei.com.br/tiquei-api/'</td>
+                                                  <td>Indicadores</td>
+                                                  <td>Tiquei</td>
+                                                  <td>fas fa-chart <i class="fas fa-chart-pie"></i></td>
+                                                  <td>
+                                                    <button type="submit" class="btn btn-outline-dark "><i class="fas fa-pencil-alt"></i> Editar </button>
+                                                    <button type="submit" class="btn btn-outline-danger">
+                                                  <i class="fas fa-trash"></i> Excluir </button>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Painel</td>
+                                                  <td>'https://hom.tiquei.com.br/tiquei-api/'</td>
+                                                  <td>Indicadores</td>
+                                                  <td>AccessCheck</td>
+                                                  <td>fas fa-chart <i class="fas fa-chart-pie"></i></td>
+                                                  <td>
+                                                    <button type="submit" class="btn btn-outline-dark "><i class="fas fa-pencil-alt"></i> Editar </button>
+                                                    <button type="submit" class="btn btn-outline-danger">
+                                                  <i class="fas fa-trash"></i> Excluir </button>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Adicionar Tarefas</td>
+                                                  <td>'https://hom.tiquei.com.br/tiquei-api/'</td>
+                                                  <td>Domínio Adm</td>
+                                                  <td>Processos</td>
+                                                  <td>far fa-file <i class="far fa-file-alt"></i></td>
+                                                  <td>
+                                                    <button type="submit" class="btn btn-outline-dark "><i class="fas fa-pencil-alt"></i> Editar </button>
+                                                    <button type="submit" class="btn btn-outline-danger">
+                                                  <i class="fas fa-trash"></i> Excluir </button>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Implantação</td>
+                                                  <td>'https://hom.tiquei.com.br/tiquei-api/'</td>
+                                                  <td>Cielo API</td>
+                                                  <td>Integração</td>
+                                                  <td>fas fa-chart <i class="fas fa-chart-pie"></i></td>
+                                                  <td>
+                                                    <button type="submit" class="btn btn-outline-dark "><i class="fas fa-pencil-alt"></i> Editar </button>
+                                                    <button type="submit" class="btn btn-outline-danger">
+                                                  <i class="fas fa-trash"></i> Excluir </button>
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Consulta</td>
+                                                  <td>'https://hom.tiquei.com.br/tiquei-api/'</td>
+                                                  <td>CEP</td>
+                                                  <td>Integração</td>
+                                                  <td>fa fa-window <i  class="fa fa-window-restore"></i></td>
+                                                  <td>
+                                                    <button type="submit" class="btn btn-outline-dark "><i class="fas fa-pencil-alt"></i> Editar </button>
+                                                    <button type="submit" class="btn btn-outline-danger">
+                                                  <i class="fas fa-trash"></i> Excluir </button>
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
                                           </div>
-                                          <div class="col-0">
-                                            <i  class="fas fa-pencil-alt"></i>
-                                          </div>
-                                          
-                                         
                                         </div>
-                                        <table class="table">
-                                           <div class="col-sm-6">
-                                              <td>
-                                                 <select class="form-control selector-role all-filters align-dropdown-cadastros"
-                                                    id="select-quantidade-recebimentos-dispositivos">
-                                                 </select>
-                                              </td>
-                                           </div>
-                                        </table>
-                                        <canvas id="fornecedores-periodo2"></canvas>
                                       </div>
                                     </div>
-                                  </div>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-           
             <div class="row">
-             
-                <div class="col-12 mt-3"  >
-                  <button type="button" id="cross" class="btn btn-danger btn-icon buttonImgTop relative">
-                    <i class="fas fa-trash icon-style"></i>
-                  </button>
-                    <div class="card relative-parent" id="ValuWrapper">
-                        <div class="card-body " >
-                          <div class="row">
-                           
-                            <div class="col-2">
-                              <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Access Check </h5>
-                            </div>
-                            <div class="col-0">
-                              <i  class="fas fa-pencil-alt"></i>
-                            </div>
-                           
-                           
+              <div class="col-12 mt-3" >     
+                  <div class="card big-box" id="ValuWrapper" >
+                  
+                      <div class="card-body " >
+                        <div class="row">
+                         
+                          <div class="col-4">
+                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Access Check </h5>
                           </div>
-                            <div class="container">
-                                <div draggable="true" class="col-lg-6 grid-margin stretch-card box">
-                                    <div class="card">
-                                      <div class="card-body">
-                                        <div class="row">
-                           
-                                          <div class="col-2">
-                                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 3 </h5>
-                                          </div>
-                                          <div class="col-0">
-                                            <i  class="fas fa-pencil-alt"></i>
-                                          </div>
-                                         
-                                         
-                                        </div>
-                                        <table class="table">
-                                           <div class="col-sm-6">
-                                              <td>
-                                                 <select class="form-control selector-role all-filters align-dropdown-cadastros"
-                                                    id="select-quantidade-recebimentos-dispositivos">
-                                                 </select>
-                                              </td>
-                                           </div>
-                                        </table>
-                                        <canvas id="fornecedores-periodo2"></canvas>
+                          <div class="col-0">
+                            <i  class="fas fa-pencil-alt"></i>
+                          </div>
+                          <div class="col-2">
+                            <i type="button" class="fas fa-trash text-danger"></i>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-2">
+                            <p class="card-description">
+                             Arraste os items
+                            </p>
+                          </div>
+                        </div>
+                          
+                          <div class="container">
+                            <div class="row">
+                              <div  class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div class="card box" draggable="true" ondragstart="drag(event)" id="drag4" >
+                                  <div class="card-body">
+                                    <div class="row">
+                       
+                                      <div class="col-8">
+                                        <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 4 </h5>
                                       </div>
+                                      <div class="col-0">
+                                        <i  class="fas fa-pencil-alt"></i>
+                                        <i type="button" class="fas fa-trash text-danger"></i>
+                                      </div>
+                                     
+                                    </div>
+                                    <table class="table-responsive">
+                                      <div class="card card-statistics">
+                                        <div class="card-body">
+                                            <div class="container resumo-container mt-3">
+                                                <div class="row">
+                                                    <div class="col resumo-item">
+                                                        <p class="resumo-text">
+                                                            <i class="icon-sm fas fa-chart-line mr-2"></i>
+                                                            Total Ceps
+                                                        </p>
+                                                        <h4 class="resumo-title" id="TotalCep">0</h4>
+                                                        <button type="button" class="btn btn-outline-success btn-rounded btn-fw align-ver-button-resumo" id="ver-cep">Ver mais +</button>
+                                                    </div>
+                                                    <div class="col-sm resumo-item">
+                                                        <p class="resumo-text">
+                                                            <i class="icon-sm fas fa-chart-line mr-2"></i>
+                                                            Total Correios
+                                                        </p>
+                                                        <h4 class="resumo-title" id="TotalCorreios">0</h4>
+                                                        <button type="button" class="btn btn-outline-success btn-rounded btn-fw align-ver-button-resumo" id="ver-correios">Ver mais +</button>
+                                                    </div>
+                                                    <div class="col-sm resumo-item">
+                                                        <p class="resumo-text">
+                                                            <i class="icon-sm fas fa-chart-line mr-2"></i>
+                                                            Total ViaCep
+                                                        </p>
+                                                        <h4 class="resumo-title" id="TotalViaCep">0</h4>
+                                                        <button type="button" class="btn btn-outline-success btn-rounded btn-fw align-ver-button-resumo" id="ver-viacep">Ver mais +</button>
+                                                    </div>
+                                                    <div class="col-sm resumo-item">
+                                                        <p class="resumo-text">
+                                                            <i class="icon-sm fas fa-chart-line mr-2"></i>
+                                                            Total Cidades
+                                                        </p>
+                                                        <h4 class="resumo-title" id="TotalCidades">0</h4>
+                                                        <button type="button" class="btn btn-outline-success btn-rounded btn-fw align-ver-button-resumo" id="ver-cidades">Ver mais +</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div class="card box" draggable="true" ondragstart="drag(event)" id="drag5">
+                                  <div class="card-body">
+                                    <div class="row">
+                       
+                                      <div class="col-8">
+                                        <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Grafico 5 </h5>
+                                      </div>
+                                      <div class="col-0">
+                                        <i  class="fas fa-pencil-alt"></i>
+                                        <i type="button" class="fas fa-trash text-danger"></i>
+                                      </div>
+                                      
+                                     
+                                    </div>
+                                    <table class="table">
+                                       <div class="col-sm-6">
+                                          <td>
+                                             <select class="form-control selector-role all-filters align-dropdown-cadastros"
+                                                id="select-quantidade-recebimentos-dispositivos">
+                                             </select>
+                                          </td>
+                                       </div>
+                                    </table>
+                                    <canvas id="cep-periodo2"></canvas>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                                  <div class="card box" draggable="true" ondragstart="drag(event)" id="drag6">
+                                    <div class="card-body">
+                                      <div class="row">
+                         
+                                        <div class="col-8">
+                                          <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 6 </h5>
+                                        </div>
+                                        <div class="col-0">
+                                          <i  class="fas fa-pencil-alt"></i>
+                                          <i type="button" class="fas fa-trash text-danger"></i>
+                                        </div>
+                                       
+                                      </div>
+                                      <table class="table">
+                                         <div class="col-sm-6">
+                                            <td>
+                                               <select class="form-control selector-role all-filters align-dropdown-cadastros"
+                                                  id="select-quantidade-recebimentos-dispositivos">
+                                               </select>
+                                            </td>
+                                         </div>
+                                      </table>
+                                      <canvas id="cep-por-fornecedores"></canvas>
                                     </div>
                                   </div>
-                                  <div draggable="true" class="col-lg-6 grid-margin stretch-card box">
-                                    <div class="card">
-                                      <div class="card-body">
-                                        <div class="row">
-                           
-                                          <div class="col-2">
-                                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 4 </h5>
-                                          </div>
-                                          <div class="col-0">
-                                            <i  class="fas fa-pencil-alt"></i>
-                                          </div>
-                                         
-                                         
-                                        </div>
-                                        <table class="table">
-                                           <div class="col-sm-6">
-                                              <td>
-                                                 <select class="form-control selector-role all-filters align-dropdown-cadastros"
-                                                    id="select-quantidade-recebimentos-dispositivos">
-                                                 </select>
-                                              </td>
-                                           </div>
-                                        </table>
-                                        <canvas id="fornecedores-periodo2"></canvas>
-                                      </div>
-                                    </div>
-                                  </div>
+                              </div>
                             </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3" >     
+                <div class="card big-box" id="ValuWrapper">
+                
+                    <div class="card-body " >
+                      <div class="row">
+                       
+                        <div class="col-4">
+                          <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Integração </h5>
+                        </div>
+                        <div class="col-0">
+                          <i  class="fas fa-pencil-alt"></i>
+                        </div>
+                        <div class="col-2">
+                          <i type="button" class="fas fa-trash text-danger"></i>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-2">
+                          <p class="card-description">
+                           Arraste os items
+                          </p>
+                        </div>
+                      </div>
+                        
+                        <div class="container">
+                          <div class="row">
+                            <div  class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)" >
+                              <div class="card box" draggable="true" ondragstart="drag(event)" id="drag7" >
+                                <div class="card-body">
+                                  <div class="row">
+                     
+                                    <div class="col-8">
+                                      <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 7 </h5>
+                                    </div>
+                                    <div class="col-0">
+                                      <i  class="fas fa-pencil-alt"></i>
+                                      <i type="button" class="fas fa-trash text-danger"></i>
+                                    </div>
+                                   
+                                  </div>
+                                  <table class="table">
+                                     <div class="col-sm-6">
+                                        <td>
+                                           <select class="form-control selector-role all-filters align-dropdown-cadastros"
+                                              id="select-quantidade-recebimentos-dispositivos">
+                                           </select>
+                                        </td>
+                                     </div>
+                                  </table>
+                                  <canvas id="cep-estado"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                            <div  class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                              <div class="card box" draggable="true" ondragstart="drag(event)" id="drag8">
+                                <div class="card-body">
+                                  <div class="row">
+                     
+                                    <div class="col-8">
+                                      <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Grafico 8 </h5>
+                                    </div>
+                                    <div class="col-0">
+                                      <i  class="fas fa-pencil-alt"></i>
+                                      <i type="button" class="fas fa-trash text-danger"></i>
+                                    </div>
+                                    
+                                   
+                                  </div>
+                                  <table class="table">
+                                     <div class="col-sm-6">
+                                        <td>
+                                           <select class="form-control selector-role all-filters align-dropdown-cadastros"
+                                              id="select-quantidade-recebimentos-dispositivos">
+                                           </select>
+                                        </td>
+                                     </div>
+                                  </table>
+                                  <canvas id="fornecedores-periodo"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div class="card box" draggable="true" ondragstart="drag(event)" id="drag9">
+                                  <div class="card-body">
+                                    <div class="row">
+                       
+                                      <div class="col-8">
+                                        <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 9 </h5>
+                                      </div>
+                                      <div class="col-0">
+                                        <i  class="fas fa-pencil-alt"></i>
+                                        <i type="button" class="fas fa-trash text-danger"></i>
+                                      </div>
+                                     
+                                    </div>
+                                    <table class="table">
+                                       <div class="col-sm-6">
+                                          <td>
+                                             <select class="form-control selector-role all-filters align-dropdown-cadastros"
+                                                id="select-quantidade-recebimentos-dispositivos">
+                                             </select>
+                                          </td>
+                                       </div>
+                                    </table>
+                                    <canvas id="fornecedores-periodo2"></canvas>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 mt-3">
-                  <button type="button" id="cross" class="btn btn-danger btn-icon buttonImgTop relative">
-                    <i class="fas fa-trash icon-style"></i>
-                  </button>
-                    <div  class="card relative-parent" id="ValuWrapper" >
-                        <div class="card-body "  >
-                          <div class="row">
-                           
-                            <div class="col-2">
-                              <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Integração </h5>
-                            </div>
-                            <div class="col-0">
-                              <i  class="fas fa-pencil-alt"></i>
-                            </div>
-                          </div>
-                            <div class="container">
-                                <div draggable="true" class="col-lg-6 grid-margin stretch-card box">
-                                    <div class="card">
-                                      <div class="card-body">
-                                        <div class="row">
-                           
-                                          <div class="col-2">
-                                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Gráfico 5 </h5>
-                                          </div>
-                                          <div class="col-0">
-                                            <i  class="fas fa-pencil-alt"></i>
-                                          </div>
-                                         
-                                         
-                                        </div>
-                                        <table class="table">
-                                           <div class="col-sm-6">
-                                              <td>
-                                                 <select class="form-control selector-role all-filters align-dropdown-cadastros"
-                                                    id="select-quantidade-recebimentos-dispositivos">
-                                                 </select>
-                                              </td>
-                                           </div>
-                                        </table>
-                                        <canvas id="fornecedores-periodo2"></canvas>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div draggable="true" class="col-lg-6 grid-margin stretch-card box">
-                                    <div class="card">
-                                      <div class="card-body">
-                                        <div class="row">
-                           
-                                          <div class="col-2">
-                                            <h5 contenteditable="true" class="align-tittle-7 margin-botton-tittle">Grafico 6 </h5>
-                                          </div>
-                                          <div class="col-0">
-                                            <i  class="fas fa-pencil-alt"></i>
-                                          </div>
-                                          
-                                         
-                                        </div>
-                                        <table class="table">
-                                           <div class="col-sm-6">
-                                              <td>
-                                                 <select class="form-control selector-role all-filters align-dropdown-cadastros"
-                                                    id="select-quantidade-recebimentos-dispositivos">
-                                                 </select>
-                                              </td>
-                                           </div>
-                                        </table>
-                                        <canvas id="fornecedores-periodo2"></canvas>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-                <div id="whatever"></div>
-         
-      
+        </div>
+                  <div id="whatever"></div>
             
             <!-- content-wrapper ends -->
             <!-- partial:../../partials/_footer.html -->
@@ -544,10 +748,12 @@
       <script src="../../js/todolist.js"></script>
       <!-- endinject -->
       <!-- Custom js for this page-->
-      <script src="../../js/editableLabel.js"></script>
-     <script src="../../js/removeClick.js"></script> 
-      <script src="../../js/addNewDiv.js"></script>
-      <script src="../../js/ocultar-div.js"></script>
+      <!-- <script src="../../js/dragAndDropTest.js"></script> -->
+      <!-- <script src="../../js/editableLabel.js"></script> -->
+     <!-- <script src="../../js/removeClick.js"></script> 
+      <script src="../../js/addNewDiv.js"></script> -->
+      <script src="../../js/chart-cep.js"></script>
+      <script src="../../js/chart-cielo.js"></script>
       <script src="../../js/draganddrop.js"></script>
       <!-- End custom js for this page-->
 </body>
